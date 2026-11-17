@@ -32,8 +32,8 @@ function qaData(includeDrafts: boolean): Plugin {
 }
 
 // Base path:
-//  - "/"              for a user site (mmm-megahed.github.io) or a custom domain
-//  - "/<repo-name>/"  for a project site (mmm-megahed.github.io/<repo-name>/)
+//  - "/"              for a user site (mo-meg.github.io) or a custom domain
+//  - "/<repo-name>/"  for a project site (mo-meg.github.io/<repo-name>/)
 // The GitHub Actions workflow computes this automatically and passes VITE_BASE_PATH.
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')

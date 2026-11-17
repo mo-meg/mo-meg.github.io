@@ -55,12 +55,11 @@ uv run python -m qa_generator.cli approve <id> …     # or --all after reviewin
 
 ## Publish on GitHub Pages
 
-1. Create the repository under `mmm-megahed` — `mmm-megahed.github.io` (site at `https://mmm-megahed.github.io/`,
-   recommended) or any name (site at `https://mmm-megahed.github.io/<repo>/`). The workflow detects which and sets the
-   Vite base path automatically.
+1. The repository is `mo-meg/mo-meg.github.io` → site at `https://mo-meg.github.io/`. (Any other repo name would
+   publish to `https://mo-meg.github.io/<repo>/`; the workflow detects which and sets the Vite base path.)
 2. Push:
    ```bash
-   git remote add origin https://github.com/mmm-megahed/mmm-megahed.github.io.git
+   git remote add origin https://github.com/mo-meg/mo-meg.github.io.git
    git push -u origin main
    ```
 3. *Settings → Pages → Build and deployment → Source: **GitHub Actions***.
@@ -71,7 +70,7 @@ uv run python -m qa_generator.cli approve <id> …     # or --all after reviewin
 1. Repository variable `CUSTOM_DOMAIN` (e.g. `megahed.dev`) — the workflow then builds with base `/`, uses it for
    canonical/Open Graph URLs, and writes `CNAME`.
 2. DNS: apex → `A` 185.199.108.153 / .109.153 / .110.153 / .111.153 (and `AAAA` 2606:50c0:8000::153 … 8003::153);
-   subdomain → `CNAME mmm-megahed.github.io`.
+   subdomain → `CNAME mo-meg.github.io`.
 3. *Settings → Pages → Custom domain*, then **Enforce HTTPS**.
 
 ## Updating content
