@@ -18,6 +18,8 @@ export const experience: TimelineEntry[] = [
       'Engineering speech recognition and speaker diarization pipelines.',
       'Building NLP and LLM-driven analysis workflows.',
       'Extracting actionable insights from sales conversations.',
+      'Building live meeting assistance: real-time transcription in English and German with in-meeting coaching.',
+      'Building AI-assisted monitoring and root-cause analysis for AI pipelines on AWS, using locally hosted LLMs.',
       'Collaborating with business teams to identify AI use cases.',
     ],
   },

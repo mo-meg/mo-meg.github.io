@@ -17,7 +17,7 @@
         "meeting-intelligence"
       ],
       "source_files": {
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
       },
       "generated_hash": "6161b43ca09f60d2",
       "i18n": {
@@ -73,7 +73,7 @@
         "specialization"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394"
+        "profile/professional-profile.md": "71c5bb6e5b011a3b"
       },
       "generated_hash": "d33905cac0ded8ff",
       "i18n": {
@@ -130,8 +130,8 @@
         "languages"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394",
-        "contact/contact.md": "ae9afe07af702033"
+        "profile/professional-profile.md": "71c5bb6e5b011a3b",
+        "contact/contact.md": "305debb13a6ce60b"
       },
       "generated_hash": "cf974c34e3d7d64a",
       "i18n": {
@@ -188,8 +188,8 @@
         "languages"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394",
-        "contact/contact.md": "ae9afe07af702033"
+        "profile/professional-profile.md": "71c5bb6e5b011a3b",
+        "contact/contact.md": "305debb13a6ce60b"
       },
       "generated_hash": "d60d97f55b9654dd",
       "i18n": {
@@ -249,8 +249,8 @@
         "role-fit"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394",
-        "skills/technical-skills.md": "bd44c1689b135b0a"
+        "profile/professional-profile.md": "71c5bb6e5b011a3b",
+        "skills/technical-skills.md": "a92a77894685613f"
       },
       "generated_hash": "20a269528474008c",
       "i18n": {
@@ -307,7 +307,7 @@
         "role-fit"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394"
+        "profile/professional-profile.md": "71c5bb6e5b011a3b"
       },
       "generated_hash": "34623a949782cf10",
       "i18n": {
@@ -363,8 +363,8 @@
         "meeting-intelligence"
       ],
       "source_files": {
-        "experience/prolumios.md": "ebdeb42d07ea448b",
-        "profile/professional-profile.md": "d6d58578bb40e394"
+        "experience/prolumios.md": "7f1288c72ce80f7e",
+        "profile/professional-profile.md": "71c5bb6e5b011a3b"
       },
       "generated_hash": "0feec6f62a3b690f",
       "i18n": {
@@ -420,8 +420,8 @@
         "meeting-intelligence"
       ],
       "source_files": {
-        "profile/professional-profile.md": "d6d58578bb40e394",
-        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "profile/professional-profile.md": "71c5bb6e5b011a3b",
+        "experience/prolumios.md": "7f1288c72ce80f7e",
         "education/education-and-activities.md": "7820a984d7f8ae5d"
       },
       "generated_hash": "986dd987bd26e321",
@@ -478,8 +478,8 @@
         "meeting-intelligence"
       ],
       "source_files": {
-        "experience/prolumios.md": "ebdeb42d07ea448b",
-        "contact/contact.md": "ae9afe07af702033"
+        "experience/prolumios.md": "7f1288c72ce80f7e",
+        "contact/contact.md": "305debb13a6ce60b"
       },
       "generated_hash": "316354e20a6589a0",
       "i18n": {
@@ -535,8 +535,8 @@
         "business-and-ai"
       ],
       "source_files": {
-        "experience/prolumios.md": "ebdeb42d07ea448b",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "experience/prolumios.md": "7f1288c72ce80f7e",
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
       },
       "generated_hash": "7928236d4221827f",
       "i18n": {
@@ -592,13 +592,13 @@
         "employment-dates"
       ],
       "source_files": {
-        "experience/prolumios.md": "ebdeb42d07ea448b"
+        "experience/prolumios.md": "7f1288c72ce80f7e"
       },
-      "generated_hash": "91b49f702c8921cd",
+      "generated_hash": "5709bc4ffc7ae155",
       "i18n": {
         "en": {
           "question": "What does Mohamed do at Prolumios?",
-          "answer": "At **Prolumios** (professional work), Mohamed is an AI Engineer focused on **integrating AI into CRM systems**:\n\n- developing end-to-end AI solutions for enterprise CRMs\n- engineering speech recognition and speaker diarization pipelines\n- building NLP and LLM-driven analysis workflows\n- extracting actionable insights from sales conversations\n- collaborating with business teams to identify AI use cases",
+          "answer": "At **Prolumios** (professional work), Mohamed is an AI Engineer focused on **integrating AI into CRM systems**:\n\n- end-to-end AI solutions for enterprise CRMs\n- speech recognition and speaker diarization pipelines\n- NLP and LLM-driven analysis of sales conversations\n- live meeting assistance: real-time English/German transcription with in-meeting coaching\n- AI-assisted monitoring and root-cause analysis for AI pipelines on AWS, using locally hosted LLMs\n- identifying AI use cases with business teams\n\nThis work is commercial, so it is described only at a high level.",
           "paraphrases": [
             "prolumios",
             "his job at prolumios",
@@ -610,7 +610,7 @@
         },
         "de": {
           "question": "Was macht Mohamed bei Prolumios?",
-          "answer": "Bei **Prolumios** (Berufstätigkeit) ist Mohamed AI Engineer mit Fokus auf der **Integration von KI in CRM-Systeme**:\n\n- End-to-End-KI-Lösungen für Enterprise-CRMs entwickeln\n- Pipelines für Spracherkennung und Speaker Diarization bauen\n- NLP- und LLM-basierte Analyse-Workflows entwickeln\n- verwertbare Erkenntnisse aus Verkaufsgesprächen gewinnen\n- mit Fachbereichen KI-Anwendungsfälle identifizieren",
+          "answer": "Bei **Prolumios** (Berufstätigkeit) ist Mohamed AI Engineer mit Fokus auf der **Integration von KI in CRM-Systeme**:\n\n- End-to-End-KI-Lösungen für Enterprise-CRMs\n- Pipelines für Spracherkennung und Speaker Diarization\n- NLP- und LLM-basierte Analyse von Verkaufsgesprächen\n- Live-Meeting-Unterstützung: Echtzeit-Transkription auf Englisch/Deutsch mit Coaching im Gespräch\n- KI-gestütztes Monitoring und Ursachenanalyse für KI-Pipelines auf AWS mit lokal betriebenen LLMs\n- KI-Anwendungsfälle gemeinsam mit Fachbereichen identifizieren\n\nDa es sich um kommerzielle Arbeit handelt, wird sie nur allgemein beschrieben.",
           "paraphrases": [
             "seine aufgaben bei prolumios",
             "aktuelle stelle",
@@ -621,7 +621,7 @@
         },
         "ar": {
           "question": "ماذا يعمل محمد في Prolumios؟",
-          "answer": "في **Prolumios** (عمل مهني)، يعمل محمد مهندس ذكاء اصطناعي مع التركيز على **دمج الذكاء الاصطناعي في أنظمة CRM**:\n\n- تطوير حلول ذكاء اصطناعي متكاملة لأنظمة CRM في المؤسسات\n- بناء خطوط معالجة للتعرّف على الكلام وتمييز المتحدثين\n- تطوير سير عمل للتحليل بمعالجة اللغة الطبيعية والنماذج اللغوية الكبيرة\n- استخلاص رؤى قابلة للتنفيذ من محادثات المبيعات\n- التعاون مع فرق الأعمال لتحديد حالات الاستخدام",
+          "answer": "في **Prolumios** (عمل مهني)، يعمل محمد مهندس ذكاء اصطناعي مع التركيز على **دمج الذكاء الاصطناعي في أنظمة CRM**:\n\n- حلول ذكاء اصطناعي متكاملة لأنظمة CRM في المؤسسات\n- خطوط معالجة للتعرّف على الكلام وتمييز المتحدثين\n- تحليل محادثات المبيعات بمعالجة اللغة الطبيعية والنماذج اللغوية\n- مساعدة مباشرة أثناء الاجتماعات: تفريغ نصي فوري بالإنجليزية والألمانية مع توجيه أثناء المحادثة\n- مراقبة وتحليل أسباب الأعطال لخطوط معالجة الذكاء الاصطناعي على AWS باستخدام نماذج لغوية محلية\n- تحديد حالات استخدام الذكاء الاصطناعي مع فرق الأعمال\n\nهذا عمل تجاري، لذا يُوصف بشكل عام فقط.",
           "paraphrases": [
             "مهامه في Prolumios",
             "وظيفته الحالية",
@@ -709,8 +709,8 @@
         "employment-dates"
       ],
       "source_files": {
-        "experience/prolumios.md": "ebdeb42d07ea448b",
-        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346"
+        "experience/prolumios.md": "7f1288c72ce80f7e",
+        "ml-nlp/ml-nlp-experience.md": "e98376b599a5a23e"
       },
       "generated_hash": "73f887fd0faf5c3a",
       "i18n": {
@@ -767,7 +767,7 @@
       ],
       "source_files": {
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
       },
       "generated_hash": "e22a010fe6050883",
       "i18n": {
@@ -885,7 +885,7 @@
       ],
       "source_files": {
         "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
-        "contact/contact.md": "ae9afe07af702033"
+        "contact/contact.md": "305debb13a6ce60b"
       },
       "generated_hash": "d054e7f0bcceb9b6",
       "i18n": {
@@ -942,7 +942,7 @@
       ],
       "source_files": {
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "skills/technical-skills.md": "bd44c1689b135b0a"
+        "skills/technical-skills.md": "a92a77894685613f"
       },
       "generated_hash": "ec0046364fadc55c",
       "i18n": {
@@ -1155,6 +1155,123 @@
       }
     },
     {
+      "id": "personal-ai-os",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Personal AI OS — GitHub",
+          "href": "https://github.com/mo-meg/AI-Agent-System-Local"
+        },
+        {
+          "label": "Projects",
+          "href": "#projects"
+        }
+      ],
+      "related": [
+        "personal-ai-os-routing",
+        "projects-overview",
+        "llms-and-agents"
+      ],
+      "source_files": {
+        "projects/personal-ai-os.md": "c67ea146fc72dd36"
+      },
+      "generated_hash": "978c72a50c787db5",
+      "i18n": {
+        "en": {
+          "question": "What is Mohamed's Personal AI OS?",
+          "answer": "**Personal AI OS** is a personal project: a fully local, **multi-agent assistant** for daily life, running on Ollama and controlled through **Telegram**.\n\n- An intent router sends each message to a specialized agent: capture notes/tasks, daily planner, reminders, URL summarizer, chat, or vision.\n- **SQLite memory** keeps tasks, notes, reminders, and conversation context across restarts.\n- **Voice notes** are transcribed locally with Whisper; **photos** are described by LLaVA.\n- A scheduler pushes a morning plan and fires reminders; an optional allow-list restricts who can use the bot.",
+          "paraphrases": [
+            "personal ai os",
+            "telegram bot project",
+            "ai agent system",
+            "local ai assistant",
+            "his agent project",
+            "ai-agent-system-local"
+          ]
+        },
+        "de": {
+          "question": "Was ist Mohameds Personal AI OS?",
+          "answer": "**Personal AI OS** ist ein privates Projekt: ein vollständig lokaler **Multi-Agenten-Assistent** für den Alltag, der mit Ollama läuft und über **Telegram** gesteuert wird.\n\n- Ein Intent-Router leitet jede Nachricht an einen spezialisierten Agenten: Notizen/Aufgaben erfassen, Tagesplaner, Erinnerungen, URL-Zusammenfassung, Chat oder Bildverstehen.\n- **SQLite-Gedächtnis** speichert Aufgaben, Notizen, Erinnerungen und Gesprächskontext über Neustarts hinweg.\n- **Sprachnachrichten** werden lokal mit Whisper transkribiert, **Fotos** von LLaVA beschrieben.\n- Ein Scheduler sendet morgens einen Plan und löst Erinnerungen aus; eine optionale Allowlist beschränkt den Zugriff.",
+          "paraphrases": [
+            "personal ai os",
+            "telegram bot projekt",
+            "ki agentensystem",
+            "lokaler ki assistent",
+            "sein agentenprojekt"
+          ]
+        },
+        "ar": {
+          "question": "ما هو مشروع Personal AI OS الخاص بمحمد؟",
+          "answer": "**Personal AI OS** مشروع شخصي: **مساعد محلي متعدد الوكلاء** للحياة اليومية، يعمل عبر Ollama ويُدار من خلال **Telegram**.\n\n- يوجّه موجّه النوايا كل رسالة إلى وكيل متخصص: تدوين الملاحظات والمهام، أو التخطيط اليومي، أو التذكيرات، أو تلخيص الروابط، أو المحادثة، أو فهم الصور.\n- **ذاكرة SQLite** تحفظ المهام والملاحظات والتذكيرات وسياق المحادثة بعد إعادة التشغيل.\n- تُفرَّغ **الرسائل الصوتية** محليًا عبر Whisper، وتُوصف **الصور** عبر LLaVA.\n- يرسل مُجدول خطة صباحية وينفّذ التذكيرات، مع قائمة سماح اختيارية لتقييد الوصول.",
+          "paraphrases": [
+            "مشروع Personal AI OS",
+            "مشروع بوت تيليجرام",
+            "نظام وكلاء الذكاء الاصطناعي",
+            "مساعد ذكاء اصطناعي محلي",
+            "مشروع الوكلاء الخاص به"
+          ]
+        }
+      }
+    },
+    {
+      "id": "personal-ai-os-routing",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Personal AI OS — GitHub",
+          "href": "https://github.com/mo-meg/AI-Agent-System-Local"
+        }
+      ],
+      "related": [
+        "llms-and-agents",
+        "local-llms",
+        "personal-ai-os"
+      ],
+      "source_files": {
+        "projects/personal-ai-os.md": "c67ea146fc72dd36",
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
+      },
+      "generated_hash": "d9abd34c9751efcb",
+      "i18n": {
+        "en": {
+          "question": "How does the agent routing in the Personal AI OS work?",
+          "answer": "Two layers, cheapest first:\n\n1. **Regex fast-paths** catch obvious cases — a URL means summarize, \"remind me\" means reminder, \"done 3\" completes a task.\n2. Everything else goes to a **local LLM classifier** (Ollama) that must answer with one known intent; anything unexpected falls back to chat.\n\nFor reminders the model only **extracts** the time in a constrained format (e.g. `+30m`, `tomorrow 09:00`, ISO 8601) and code computes the exact time. The principle: models extract, code decides.",
+          "paraphrases": [
+            "intent router",
+            "how are messages routed to agents",
+            "agent orchestration",
+            "how does the reminder parsing work",
+            "intent classification with llm",
+            "multi agent architecture"
+          ]
+        },
+        "de": {
+          "question": "Wie funktioniert das Agenten-Routing im Personal AI OS?",
+          "answer": "Zwei Ebenen, die günstigste zuerst:\n\n1. **Regex-Schnellpfade** erkennen eindeutige Fälle – eine URL heißt Zusammenfassen, „remind me“ heißt Erinnerung, „done 3“ erledigt eine Aufgabe.\n2. Alles andere geht an einen **lokalen LLM-Klassifikator** (Ollama), der mit genau einem bekannten Intent antworten muss; alles Unerwartete landet im Chat.\n\nBei Erinnerungen **extrahiert** das Modell nur die Zeit in einem festen Format (z. B. `+30m`, `tomorrow 09:00`, ISO 8601), den genauen Zeitpunkt berechnet der Code. Das Prinzip: Modelle extrahieren, Code entscheidet.",
+          "paraphrases": [
+            "intent router",
+            "wie werden nachrichten an agenten verteilt",
+            "agenten orchestrierung",
+            "wie funktioniert die erinnerungserkennung",
+            "intent klassifikation mit llm"
+          ]
+        },
+        "ar": {
+          "question": "كيف يعمل توجيه الوكلاء في Personal AI OS؟",
+          "answer": "على مستويين، الأرخص أولًا:\n\n1. **قواعد سريعة (Regex)** تلتقط الحالات الواضحة — الرابط يعني التلخيص، و\"remind me\" تعني تذكيرًا، و\"done 3\" تُنهي مهمة.\n2. كل ما عدا ذلك يذهب إلى **مصنّف محلي بالنموذج اللغوي** (Ollama) يجب أن يجيب بنيّة واحدة معروفة، وأي نتيجة غير متوقعة تُحوَّل إلى المحادثة.\n\nفي التذكيرات **يستخرج** النموذج الوقت فقط بصيغة محددة (مثل `+30m` أو `tomorrow 09:00` أو ISO 8601)، ويحسب الكود الوقت الدقيق. المبدأ: النموذج يستخرج، والكود يقرّر.",
+          "paraphrases": [
+            "موجّه النوايا",
+            "كيف يتم توجيه الرسائل إلى الوكلاء",
+            "تنسيق الوكلاء",
+            "كيف يعمل تحليل التذكيرات",
+            "تصنيف النوايا بالنماذج اللغوية"
+          ]
+        }
+      }
+    },
+    {
       "id": "portfolio-assistant",
       "category": "projects",
       "status": "draft",
@@ -1229,13 +1346,15 @@
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
         "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
         "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f",
-        "profile/professional-profile.md": "d6d58578bb40e394"
+        "projects/personal-ai-os.md": "c67ea146fc72dd36",
+        "projects/smaller-ai-apps.md": "375e9501c788c0ec",
+        "profile/professional-profile.md": "71c5bb6e5b011a3b"
       },
-      "generated_hash": "28d0f3482d6421a6",
+      "generated_hash": "a800762aa8cc1c19",
       "i18n": {
         "en": {
           "question": "What AI projects has Mohamed built?",
-          "answer": "- **Multimodal RAG for Moodle** (academic research) — question answering over course PDFs, images, tables, and lecture videos with source attribution; FastAPI, Celery, pgvector, Ollama, Whisper.\n- **MedEntity** (research internship) — spaCy NER for biomedical entities in scientific articles, deployed on GCP.\n- **AI meeting intelligence** (professional, Prolumios) — ASR, diarization, and LLM analysis of sales calls integrated into CRMs.\n- **This portfolio's assistant** (personal) — offline-generated, human-reviewed multilingual Q&A.",
+          "answer": "- **Multimodal RAG for Moodle** (academic research) — Q&A over course PDFs, images, and lecture videos with source attribution.\n- **AI meeting intelligence** (professional, Prolumios) — speech recognition, diarization, and LLM analysis of sales calls inside CRMs.\n- **Personal AI OS** (personal) — local multi-agent assistant on Telegram with memory, reminders, voice, and vision.\n- **MedEntity** (research internship) — spaCy NER for biomedical entities, deployed on GCP.\n- **This portfolio's assistant** (personal) — offline-generated, human-reviewed multilingual Q&A.\n- Smaller apps: a local **EN/DE practice coach** and **DecideForMe**.",
           "paraphrases": [
             "show me his projects",
             "what has he built",
@@ -1247,7 +1366,7 @@
         },
         "de": {
           "question": "Welche KI-Projekte hat Mohamed umgesetzt?",
-          "answer": "- **Multimodales RAG für Moodle** (akademische Forschung) – Fragebeantwortung über Kurs-PDFs, Bilder, Tabellen und Vorlesungsvideos mit Quellenangaben; FastAPI, Celery, pgvector, Ollama, Whisper.\n- **MedEntity** (Forschungspraktikum) – spaCy-NER für biomedizinische Entitäten in wissenschaftlichen Artikeln, bereitgestellt auf GCP.\n- **KI-Meeting-Intelligence** (beruflich, Prolumios) – ASR, Diarization und LLM-Analyse von Verkaufsgesprächen, integriert in CRMs.\n- **Der Assistent dieses Portfolios** (privat) – offline generierte, manuell geprüfte mehrsprachige Q&A.",
+          "answer": "- **Multimodales RAG für Moodle** (akademische Forschung) – Fragebeantwortung über Kurs-PDFs, Bilder und Vorlesungsvideos mit Quellenangaben.\n- **KI-Meeting-Intelligence** (beruflich, Prolumios) – Spracherkennung, Diarization und LLM-Analyse von Verkaufsgesprächen im CRM.\n- **Personal AI OS** (privat) – lokaler Multi-Agenten-Assistent auf Telegram mit Gedächtnis, Erinnerungen, Sprache und Bildverstehen.\n- **MedEntity** (Forschungspraktikum) – spaCy-NER für biomedizinische Entitäten, bereitgestellt auf GCP.\n- **Der Assistent dieses Portfolios** (privat) – offline generierte, manuell geprüfte mehrsprachige Q&A.\n- Kleinere Apps: ein lokaler **EN/DE-Übungscoach** und **DecideForMe**.",
           "paraphrases": [
             "zeig mir seine projekte",
             "was hat er gebaut",
@@ -1258,13 +1377,73 @@
         },
         "ar": {
           "question": "ما هي مشاريع الذكاء الاصطناعي التي بناها محمد؟",
-          "answer": "- **نظام RAG متعدد الوسائط لمنصة Moodle** (بحث أكاديمي) — الإجابة عن الأسئلة من ملفات PDF والصور والجداول ومحاضرات الفيديو مع ذكر المصادر؛ باستخدام FastAPI وCelery وpgvector وOllama وWhisper.\n- **MedEntity** (تدريب بحثي) — نموذج spaCy للتعرّف على الكيانات الطبية الحيوية في المقالات العلمية، منشور على GCP.\n- **ذكاء الاجتماعات** (عمل مهني في Prolumios) — التعرّف على الكلام وتمييز المتحدثين وتحليل مكالمات المبيعات بالنماذج اللغوية ودمجها في أنظمة CRM.\n- **مساعد هذا الموقع** (مشروع شخصي) — أسئلة وأجوبة متعددة اللغات تُولَّد مسبقًا وتُراجع يدويًا.",
+          "answer": "- **نظام RAG متعدد الوسائط لمنصة Moodle** (بحث أكاديمي) — إجابات من ملفات PDF والصور ومحاضرات الفيديو مع ذكر المصادر.\n- **ذكاء الاجتماعات** (عمل مهني في Prolumios) — التعرّف على الكلام وتمييز المتحدثين وتحليل مكالمات المبيعات داخل أنظمة CRM.\n- **Personal AI OS** (مشروع شخصي) — مساعد محلي متعدد الوكلاء عبر Telegram مع ذاكرة وتذكيرات وصوت وفهم للصور.\n- **MedEntity** (تدريب بحثي) — نموذج spaCy للكيانات الطبية الحيوية منشور على GCP.\n- **مساعد هذا الموقع** (مشروع شخصي) — أسئلة وأجوبة متعددة اللغات معدّة مسبقًا ومراجَعة.\n- تطبيقات أصغر: **مدرّب محلي لممارسة الإنجليزية والألمانية** و**DecideForMe**.",
           "paraphrases": [
             "اعرض مشاريعه",
             "ماذا بنى",
             "قائمة المشاريع",
             "مشاريعه على GitHub",
             "ما الأنظمة التي طوّرها"
+          ]
+        }
+      }
+    },
+    {
+      "id": "smaller-ai-apps",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "EN/DE Practice Coach — GitHub",
+          "href": "https://github.com/mo-meg/local_en-de_coach"
+        },
+        {
+          "label": "DecideForMe — GitHub",
+          "href": "https://github.com/mo-meg/DecideForMe"
+        }
+      ],
+      "related": [
+        "projects-overview",
+        "see-code",
+        "local-llms"
+      ],
+      "source_files": {
+        "projects/smaller-ai-apps.md": "375e9501c788c0ec"
+      },
+      "generated_hash": "541353688686448a",
+      "i18n": {
+        "en": {
+          "question": "What smaller AI apps has Mohamed built?",
+          "answer": "Two personal projects:\n\n- **Local EN/DE Practice Coach** — conversation practice in English and German (B1/B2) with role-play scenarios and gentle corrections. Streamlit, a local LLM via Ollama (llama3.2), local text-to-speech, and optional voice input with NVIDIA NeMo Parakeet speech recognition.\n- **DecideForMe** — an LLM decision assistant that weighs two options against your stored priorities and returns a verdict, justification, and first step, via Firebase AI Logic or a local Ollama model.",
+          "paraphrases": [
+            "en de coach",
+            "language practice app",
+            "decideforme",
+            "decision assistant",
+            "other projects",
+            "side projects"
+          ]
+        },
+        "de": {
+          "question": "Welche kleineren KI-Apps hat Mohamed gebaut?",
+          "answer": "Zwei private Projekte:\n\n- **Lokaler EN/DE-Übungscoach** – Gesprächstraining auf Englisch und Deutsch (B1/B2) mit Rollenspielen und behutsamen Korrekturen. Streamlit, ein lokales LLM über Ollama (llama3.2), lokale Sprachausgabe und optionale Spracheingabe mit NVIDIA NeMo Parakeet.\n- **DecideForMe** – ein LLM-Entscheidungsassistent, der zwei Optionen anhand gespeicherter Prioritäten abwägt und Urteil, Begründung und ersten Schritt liefert – über Firebase AI Logic oder ein lokales Ollama-Modell.",
+          "paraphrases": [
+            "en de coach",
+            "sprachlern app",
+            "decideforme",
+            "entscheidungsassistent",
+            "nebenprojekte"
+          ]
+        },
+        "ar": {
+          "question": "ما هي تطبيقات الذكاء الاصطناعي الأصغر التي بناها محمد؟",
+          "answer": "مشروعان شخصيان:\n\n- **مدرّب محلي لممارسة الإنجليزية والألمانية** — محادثات تدريبية بمستوى B1/B2 مع سيناريوهات لعب أدوار وتصحيحات لطيفة، باستخدام Streamlit ونموذج لغوي محلي عبر Ollama (llama3.2) وتحويل النص إلى كلام محليًا، مع إدخال صوتي اختياري عبر NVIDIA NeMo Parakeet.\n- **DecideForMe** — مساعد قرارات بالنماذج اللغوية يوازن بين خيارين وفق أولوياتك المحفوظة ويقدّم الحكم والتبرير والخطوة الأولى، عبر Firebase AI Logic أو نموذج Ollama محلي.",
+          "paraphrases": [
+            "مدرب اللغة الإنجليزية والألمانية",
+            "تطبيق ممارسة اللغة",
+            "DecideForMe",
+            "مساعد اتخاذ القرار",
+            "مشاريع جانبية"
           ]
         }
       }
@@ -1286,7 +1465,7 @@
       ],
       "source_files": {
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
       },
       "generated_hash": "1dde6b88043bc834",
       "i18n": {
@@ -1338,12 +1517,12 @@
       ],
       "related": [
         "local-llms",
-        "portfolio-assistant",
-        "projects-overview"
+        "personal-ai-os-routing",
+        "portfolio-assistant"
       ],
       "source_files": {
         "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647"
       },
       "generated_hash": "85b733a212ab7d01",
       "i18n": {
@@ -1400,7 +1579,7 @@
         "vector-databases"
       ],
       "source_files": {
-        "skills/technical-skills.md": "bd44c1689b135b0a",
+        "skills/technical-skills.md": "a92a77894685613f",
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
       },
       "generated_hash": "46bd25d2f6a65439",
@@ -1457,7 +1636,7 @@
         "vector-databases"
       ],
       "source_files": {
-        "skills/technical-skills.md": "bd44c1689b135b0a",
+        "skills/technical-skills.md": "a92a77894685613f",
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
       },
       "generated_hash": "ef350a8f7c9a94a3",
@@ -1504,6 +1683,10 @@
       "status": "draft",
       "sources": [
         {
+          "label": "Personal AI OS — GitHub",
+          "href": "https://github.com/mo-meg/AI-Agent-System-Local"
+        },
+        {
           "label": "Technical expertise",
           "href": "#expertise"
         }
@@ -1514,15 +1697,16 @@
         "meeting-intelligence"
       ],
       "source_files": {
-        "skills/technical-skills.md": "bd44c1689b135b0a",
-        "experience/prolumios.md": "ebdeb42d07ea448b",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+        "skills/technical-skills.md": "a92a77894685613f",
+        "experience/prolumios.md": "7f1288c72ce80f7e",
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647",
+        "projects/personal-ai-os.md": "c67ea146fc72dd36"
       },
-      "generated_hash": "287f880816f708c3",
+      "generated_hash": "18917665ed2a49ec",
       "i18n": {
         "en": {
           "question": "Tell me about Mohamed's experience with LLMs and AI agents.",
-          "answer": "**LLMs:** he uses them in production-style systems — LLM-driven analysis of sales conversations (sentiment, themes, follow-up recommendations) at Prolumios, grounded generation in his Moodle RAG system with local models (Gemma, Phi-3 via Ollama) and OpenAI/Cohere provider abstractions, and the Gemini API with structured output for this portfolio.\n\n**AI agents and prompt engineering** are part of his skill set; a dedicated AI-agent project is not documented here — ask Mohamed directly for details.",
+          "answer": "**LLMs:** LLM-driven analysis of sales conversations at Prolumios; grounded generation in his Moodle RAG system with local models (Gemma, Phi-3 via Ollama) and OpenAI/Cohere provider abstractions; the Gemini API with structured output for this portfolio.\n\n**AI agents:** his **Personal AI OS** is a local multi-agent assistant on Telegram. An intent router (regex fast-paths plus LLM classification) dispatches messages to specialized agents — capture, planner, reminders, summarizer, chat, and vision — with persistent SQLite memory, Whisper voice notes, and LLaVA image understanding.",
           "paraphrases": [
             "llm experience",
             "has he built ai agents",
@@ -1534,7 +1718,7 @@
         },
         "de": {
           "question": "Welche Erfahrung hat Mohamed mit LLMs und KI-Agenten?",
-          "answer": "**LLMs:** Er setzt sie in produktionsnahen Systemen ein – LLM-basierte Analyse von Verkaufsgesprächen (Sentiment, Themen, Follow-up-Empfehlungen) bei Prolumios, belegte Generierung in seinem Moodle-RAG mit lokalen Modellen (Gemma, Phi-3 über Ollama) und Provider-Abstraktionen für OpenAI/Cohere sowie die Gemini-API mit Structured Output für dieses Portfolio.\n\n**KI-Agenten und Prompt Engineering** gehören zu seinen Kenntnissen; ein eigenes Agenten-Projekt ist hier nicht dokumentiert – fragen Sie Mohamed gern direkt.",
+          "answer": "**LLMs:** LLM-basierte Analyse von Verkaufsgesprächen bei Prolumios; belegte Generierung in seinem Moodle-RAG mit lokalen Modellen (Gemma, Phi-3 über Ollama) und Provider-Abstraktionen für OpenAI/Cohere; die Gemini-API mit Structured Output für dieses Portfolio.\n\n**KI-Agenten:** Sein **Personal AI OS** ist ein lokaler Multi-Agenten-Assistent auf Telegram. Ein Intent-Router (Regex-Schnellpfade plus LLM-Klassifikation) verteilt Nachrichten an spezialisierte Agenten – Erfassen, Planen, Erinnerungen, Zusammenfassen, Chat und Bildverstehen – mit persistentem SQLite-Gedächtnis, Whisper-Sprachnachrichten und LLaVA-Bildbeschreibung.",
           "paraphrases": [
             "llm erfahrung",
             "hat er ki agenten gebaut",
@@ -1545,7 +1729,7 @@
         },
         "ar": {
           "question": "ما هي خبرة محمد في النماذج اللغوية الكبيرة ووكلاء الذكاء الاصطناعي؟",
-          "answer": "**النماذج اللغوية الكبيرة:** يستخدمها في أنظمة قريبة من بيئة الإنتاج — تحليل محادثات المبيعات (المشاعر والمواضيع وتوصيات المتابعة) في Prolumios، والتوليد المستند إلى الأدلة في نظام RAG لمنصة Moodle بنماذج محلية (Gemma وPhi-3 عبر Ollama) مع واجهات لمزودي OpenAI وCohere، وواجهة Gemini API بمخرجات منظّمة لهذا الموقع.\n\n**وكلاء الذكاء الاصطناعي وهندسة الأوامر** من ضمن مهاراته، لكن لا يوجد مشروع وكلاء موثّق هنا — يمكنك سؤال محمد مباشرة.",
+          "answer": "**النماذج اللغوية:** تحليل محادثات المبيعات في Prolumios، والتوليد المستند إلى الأدلة في نظام RAG لمنصة Moodle بنماذج محلية (Gemma وPhi-3 عبر Ollama) مع واجهات لمزودي OpenAI وCohere، وواجهة Gemini API بمخرجات منظّمة لهذا الموقع.\n\n**وكلاء الذكاء الاصطناعي:** مشروعه **Personal AI OS** مساعد محلي متعدد الوكلاء يعمل عبر Telegram. يوجّه موجّه النوايا (قواعد سريعة مع تصنيف بالنموذج اللغوي) الرسائل إلى وكلاء متخصصين — للتدوين والتخطيط والتذكير والتلخيص والمحادثة وفهم الصور — مع ذاكرة دائمة في SQLite ورسائل صوتية عبر Whisper ووصف الصور عبر LLaVA.",
           "paraphrases": [
             "خبرته في النماذج اللغوية",
             "هل بنى وكلاء ذكاء اصطناعي",
@@ -1576,7 +1760,7 @@
         "projects-overview"
       ],
       "source_files": {
-        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346",
+        "ml-nlp/ml-nlp-experience.md": "e98376b599a5a23e",
         "projects/medentity-ner-spacy.md": "8f758e8ce346d142"
       },
       "generated_hash": "5ec83e6ff031a62e",
@@ -1638,8 +1822,8 @@
       ],
       "source_files": {
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822",
-        "skills/technical-skills.md": "bd44c1689b135b0a"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647",
+        "skills/technical-skills.md": "a92a77894685613f"
       },
       "generated_hash": "cc1558864b05d210",
       "i18n": {
@@ -1695,7 +1879,7 @@
         "llms-and-agents"
       ],
       "source_files": {
-        "skills/technical-skills.md": "bd44c1689b135b0a"
+        "skills/technical-skills.md": "a92a77894685613f"
       },
       "generated_hash": "4cbe9b48ea7afee7",
       "i18n": {
@@ -1752,8 +1936,8 @@
       ],
       "source_files": {
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822",
-        "skills/technical-skills.md": "bd44c1689b135b0a"
+        "rag-llm/rag-engineering-approach.md": "a7e02744fd83e647",
+        "skills/technical-skills.md": "a92a77894685613f"
       },
       "generated_hash": "b8846f213c725f9a",
       "i18n": {
@@ -2210,7 +2394,7 @@
       ],
       "source_files": {
         "education/education-and-activities.md": "7820a984d7f8ae5d",
-        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346"
+        "ml-nlp/ml-nlp-experience.md": "e98376b599a5a23e"
       },
       "generated_hash": "495499d49d6b6f2f",
       "i18n": {
@@ -2266,13 +2450,13 @@
         "see-code"
       ],
       "source_files": {
-        "contact/contact.md": "ae9afe07af702033"
+        "contact/contact.md": "305debb13a6ce60b"
       },
-      "generated_hash": "85e2b5eb42b6ab8e",
+      "generated_hash": "2a63a2c2880fbf5f",
       "i18n": {
         "en": {
           "question": "How can I contact Mohamed?",
-          "answer": "- **Email:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — the fastest way\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nHe is based in Berlin, Germany.",
+          "answer": "- **Email:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — the fastest way\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub (main):** [mo-meg](https://github.com/mo-meg)\n- **GitHub (academic projects):** [mmm-megahed](https://github.com/mmm-megahed)\n\nHe is based in Berlin, Germany.",
           "paraphrases": [
             "email address",
             "how to reach him",
@@ -2284,7 +2468,7 @@
         },
         "de": {
           "question": "Wie kann ich Mohamed kontaktieren?",
-          "answer": "- **E-Mail:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) – der schnellste Weg\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nEr lebt in Berlin.",
+          "answer": "- **E-Mail:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) – der schnellste Weg\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub (Hauptkonto):** [mo-meg](https://github.com/mo-meg)\n- **GitHub (akademische Projekte):** [mmm-megahed](https://github.com/mmm-megahed)\n\nEr lebt in Berlin.",
           "paraphrases": [
             "e-mail adresse",
             "wie erreiche ich ihn",
@@ -2295,7 +2479,7 @@
         },
         "ar": {
           "question": "كيف يمكنني التواصل مع محمد؟",
-          "answer": "- **البريد الإلكتروني:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — الطريقة الأسرع\n- **لينكدإن:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nيقيم في برلين، ألمانيا.",
+          "answer": "- **البريد الإلكتروني:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — الطريقة الأسرع\n- **لينكدإن:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub (الحساب الرئيسي):** [mo-meg](https://github.com/mo-meg)\n- **GitHub (المشاريع الأكاديمية):** [mmm-megahed](https://github.com/mmm-megahed)\n\nيقيم في برلين، ألمانيا.",
           "paraphrases": [
             "البريد الإلكتروني",
             "كيف أصل إليه",
@@ -2322,8 +2506,8 @@
         "contact"
       ],
       "source_files": {
-        "contact/contact.md": "ae9afe07af702033",
-        "profile/professional-profile.md": "d6d58578bb40e394"
+        "contact/contact.md": "305debb13a6ce60b",
+        "profile/professional-profile.md": "71c5bb6e5b011a3b"
       },
       "generated_hash": "b8dbc9b0a2981a73",
       "i18n": {
@@ -2379,7 +2563,7 @@
         "see-code"
       ],
       "source_files": {
-        "contact/contact.md": "ae9afe07af702033"
+        "contact/contact.md": "305debb13a6ce60b"
       },
       "generated_hash": "383f3f8c984bae71",
       "i18n": {
@@ -2425,29 +2609,31 @@
       "status": "draft",
       "sources": [
         {
-          "label": "MR.Multi.RAG-Moodle — GitHub",
-          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+          "label": "Personal AI OS — GitHub",
+          "href": "https://github.com/mo-meg/AI-Agent-System-Local"
         },
         {
-          "label": "MedEntity_NER_spaCy — GitHub",
-          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
         }
       ],
       "related": [
-        "medentity-accuracy",
         "projects-overview",
+        "medentity-accuracy",
         "contact"
       ],
       "source_files": {
-        "contact/contact.md": "ae9afe07af702033",
+        "contact/contact.md": "305debb13a6ce60b",
         "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
-        "projects/medentity-ner-spacy.md": "8f758e8ce346d142"
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
+        "projects/personal-ai-os.md": "c67ea146fc72dd36",
+        "projects/smaller-ai-apps.md": "375e9501c788c0ec"
       },
-      "generated_hash": "3261ee0d421be172",
+      "generated_hash": "b1b8250020a66dd6",
       "i18n": {
         "en": {
           "question": "Where can I see Mohamed's code?",
-          "answer": "On GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). The most relevant public repositories are the **multimodal RAG system for Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) and the **spaCy NER project** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). His work at Prolumios is commercial and not published here.",
+          "answer": "Mohamed has two GitHub accounts:\n\n- **[github.com/mo-meg](https://github.com/mo-meg)** (main) — e.g. the [Personal AI OS](https://github.com/mo-meg/AI-Agent-System-Local), the [EN/DE practice coach](https://github.com/mo-meg/local_en-de_coach), and [DecideForMe](https://github.com/mo-meg/DecideForMe).\n- **[github.com/mmm-megahed](https://github.com/mmm-megahed)** (academic) — the [multimodal RAG for Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle) and [MedEntity NER](https://github.com/mmm-megahed/MedEntity_NER_spaCy).\n\nHis work at Prolumios is commercial and not published.",
           "paraphrases": [
             "github",
             "source code",
@@ -2459,7 +2645,7 @@
         },
         "de": {
           "question": "Wo kann ich Mohameds Code sehen?",
-          "answer": "Auf GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). Die wichtigsten öffentlichen Repositories sind das **multimodale RAG-System für Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) und das **spaCy-NER-Projekt** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). Seine Arbeit bei Prolumios ist kommerziell und hier nicht veröffentlicht.",
+          "answer": "Mohamed hat zwei GitHub-Konten:\n\n- **[github.com/mo-meg](https://github.com/mo-meg)** (Hauptkonto) – z. B. das [Personal AI OS](https://github.com/mo-meg/AI-Agent-System-Local), der [EN/DE-Übungscoach](https://github.com/mo-meg/local_en-de_coach) und [DecideForMe](https://github.com/mo-meg/DecideForMe).\n- **[github.com/mmm-megahed](https://github.com/mmm-megahed)** (akademisch) – das [multimodale RAG für Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle) und [MedEntity NER](https://github.com/mmm-megahed/MedEntity_NER_spaCy).\n\nSeine Arbeit bei Prolumios ist kommerziell und nicht veröffentlicht.",
           "paraphrases": [
             "github",
             "quellcode",
@@ -2470,13 +2656,68 @@
         },
         "ar": {
           "question": "أين يمكنني رؤية أكواد محمد؟",
-          "answer": "على GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). أهم المستودعات العامة هي **نظام RAG متعدد الوسائط لمنصة Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) و**مشروع spaCy للتعرّف على الكيانات** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). أما عمله في Prolumios فهو تجاري وغير منشور هنا.",
+          "answer": "لدى محمد حسابان على GitHub:\n\n- **[github.com/mo-meg](https://github.com/mo-meg)** (الحساب الرئيسي) — مثل [Personal AI OS](https://github.com/mo-meg/AI-Agent-System-Local) و[مدرّب الإنجليزية والألمانية](https://github.com/mo-meg/local_en-de_coach) و[DecideForMe](https://github.com/mo-meg/DecideForMe).\n- **[github.com/mmm-megahed](https://github.com/mmm-megahed)** (أكاديمي) — [نظام RAG متعدد الوسائط لمنصة Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle) و[MedEntity](https://github.com/mmm-megahed/MedEntity_NER_spaCy).\n\nأما عمله في Prolumios فهو تجاري وغير منشور.",
           "paraphrases": [
             "GitHub",
             "الكود المصدري",
             "اعرض مستودعاته",
             "أمثلة على الكود",
             "حسابه على GitHub"
+          ]
+        }
+      }
+    },
+    {
+      "id": "two-github-accounts",
+      "category": "contact",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "contact",
+        "open-to-roles",
+        "salary-availability"
+      ],
+      "source_files": {
+        "contact/contact.md": "305debb13a6ce60b"
+      },
+      "generated_hash": "4cc67a9390b407b5",
+      "i18n": {
+        "en": {
+          "question": "Why does Mohamed have two GitHub accounts?",
+          "answer": "**[github.com/mo-meg](https://github.com/mo-meg)** is his **main account** for current and personal projects. **[github.com/mmm-megahed](https://github.com/mmm-megahed)** holds his **academic projects** — the multimodal RAG for Moodle and the MedEntity NER project from FernUniversität in Hagen.",
+          "paraphrases": [
+            "mo-meg or mmm-megahed",
+            "which github account",
+            "main github account",
+            "two github profiles",
+            "academic github"
+          ]
+        },
+        "de": {
+          "question": "Warum hat Mohamed zwei GitHub-Konten?",
+          "answer": "**[github.com/mo-meg](https://github.com/mo-meg)** ist sein **Hauptkonto** für aktuelle und private Projekte. **[github.com/mmm-megahed](https://github.com/mmm-megahed)** enthält seine **akademischen Projekte** – das multimodale RAG für Moodle und das MedEntity-NER-Projekt der FernUniversität in Hagen.",
+          "paraphrases": [
+            "mo-meg oder mmm-megahed",
+            "welches github konto",
+            "haupt github konto",
+            "zwei github profile",
+            "akademisches github"
+          ]
+        },
+        "ar": {
+          "question": "لماذا لدى محمد حسابان على GitHub؟",
+          "answer": "**[github.com/mo-meg](https://github.com/mo-meg)** هو **حسابه الرئيسي** للمشاريع الحالية والشخصية، بينما يضم **[github.com/mmm-megahed](https://github.com/mmm-megahed)** **مشاريعه الأكاديمية** — نظام RAG متعدد الوسائط لمنصة Moodle ومشروع MedEntity من FernUniversität in Hagen.",
+          "paraphrases": [
+            "mo-meg أم mmm-megahed",
+            "أي حساب GitHub",
+            "حساب GitHub الرئيسي",
+            "حسابان على GitHub",
+            "GitHub الأكاديمي"
           ]
         }
       }

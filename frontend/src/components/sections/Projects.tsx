@@ -1,7 +1,8 @@
 import { ArrowUpRight, Layers } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useMemo, useState } from 'react'
-import { projectCategories, projects, type Project, type ProjectCategory } from '../../data/projects'
+import { profile } from '../../data/profile'
+import { miniProjects, projectCategories, projects, type Project, type ProjectCategory } from '../../data/projects'
 import { FlowPipeline } from '../diagrams/FlowPipeline'
 import { GithubIcon } from '../ui/BrandIcons'
 import { Reveal } from '../ui/Reveal'
@@ -17,6 +18,10 @@ export function Projects() {
 
   const visible = useMemo(
     () => (filter === 'All' ? projects : projects.filter((p) => p.categories.includes(filter))),
+    [filter],
+  )
+  const visibleMini = useMemo(
+    () => (filter === 'All' ? miniProjects : miniProjects.filter((p) => p.categories.includes(filter))),
     [filter],
   )
 
@@ -100,9 +105,47 @@ export function Projects() {
         </AnimatePresence>
       </motion.div>
 
-      <Reveal className="mt-8 text-sm text-muted">
+      {visibleMini.length > 0 && (
+        <div className="mt-12">
+          <h3 className="font-mono text-[11px] tracking-[0.16em] text-subtle uppercase">More AI projects</h3>
+          <ul className="mt-4 grid gap-4 md:grid-cols-2">
+            {visibleMini.map((p) => (
+              <li key={p.id} className="card flex flex-col p-5 transition-colors hover:border-line-strong">
+                <div className="flex items-start justify-between gap-3">
+                  <h4 className="font-semibold text-fg">{p.title}</h4>
+                  <span className={`shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-medium ${contextStyle['Personal project']}`}>
+                    Personal project
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.description}</p>
+                <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Technologies">
+                  {p.stack.map((s) => (
+                    <li key={s} className="chip">
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={p.repo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 self-start text-sm text-muted hover:text-accent"
+                >
+                  <GithubIcon size={14} /> Repository <ArrowUpRight size={13} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <Reveal className="mt-10 text-sm text-muted">
         More code on{' '}
-        <a href="https://github.com/mmm-megahed" target="_blank" rel="noreferrer" className="text-accent underline-offset-4 hover:underline">
+        <a href={profile.github} target="_blank" rel="noreferrer" className="text-accent underline-offset-4 hover:underline">
+          github.com/mo-meg
+        </a>{' '}
+        · academic projects on{' '}
+        <a href={profile.githubAcademic} target="_blank" rel="noreferrer" className="text-accent underline-offset-4 hover:underline">
           github.com/mmm-megahed
         </a>
         .

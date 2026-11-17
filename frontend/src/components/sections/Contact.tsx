@@ -17,7 +17,13 @@ export function Contact() {
   }
 
   const links = [
-    { href: profile.github, label: 'GitHub', value: 'github.com/mmm-megahed', icon: <GithubIcon size={18} /> },
+    { href: profile.github, label: 'GitHub', value: 'github.com/mo-meg', icon: <GithubIcon size={18} /> },
+    {
+      href: profile.githubAcademic,
+      label: 'GitHub · academic projects',
+      value: 'github.com/mmm-megahed',
+      icon: <GithubIcon size={18} />,
+    },
     { href: profile.linkedin, label: 'LinkedIn', value: 'in/mohamed-megahed-WiInfo', icon: <LinkedinIcon size={18} /> },
   ]
 
@@ -50,7 +56,7 @@ export function Contact() {
               </button>
             </div>
 
-            <ul className="mt-10 grid gap-3 sm:grid-cols-3">
+            <ul className="mt-10 grid gap-3 sm:grid-cols-2">
               {links.map((l) => (
                 <li key={l.label}>
                   <a

@@ -1,4 +1,4 @@
-export type ProjectCategory = 'RAG & LLM' | 'NLP' | 'Speech AI' | 'Infrastructure'
+export type ProjectCategory = 'RAG & LLM' | 'AI Agents' | 'NLP' | 'Speech AI' | 'Infrastructure'
 
 export type ProjectContext = 'Academic research' | 'Professional work' | 'Personal project'
 
@@ -24,7 +24,7 @@ export interface Project {
   media?: { src: string; alt: string }[]
 }
 
-export const projectCategories: ProjectCategory[] = ['RAG & LLM', 'NLP', 'Speech AI', 'Infrastructure']
+export const projectCategories: ProjectCategory[] = ['RAG & LLM', 'AI Agents', 'NLP', 'Speech AI', 'Infrastructure']
 
 const repoUrl = import.meta.env.VITE_REPO_URL as string | undefined
 
@@ -91,40 +91,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'cloud-ner',
-    title: 'Cloud-Based Information Extraction with spaCy NER',
-    short:
-      'A Named Entity Recognition model trained with spaCy to extract biomedical entities from scientific articles, served through a web interface and deployed on Google Cloud Platform.',
-    context: 'Academic research',
-    organization: 'Research internship · FernUniversität in Hagen',
-    categories: ['NLP', 'Infrastructure'],
-    problem:
-      'Scientific and medical articles contain domain entities — chemicals, cell types, genes, proteins, anatomical terms — that general-purpose NER models do not recognize. Extracting them requires annotated data, a domain-specific model, and an accessible way for users to apply it.',
-    solution: [
-      'Built a web-based annotation interface to support creating labelled training data.',
-      'Trained a spaCy NER model from scratch on the CRAFT corpus, covering ontology-based entity types such as CHEBI, CL, GO, MONDO, NCBITaxon, PR, SO, and UBERON.',
-      'Packaged the model with a Streamlit interface that highlights extracted entities in user text with displaCy.',
-      'Containerized the application with Docker and configured Google Cloud Platform resources for training and deployment.',
-    ],
-    flow: [
-      { label: 'Scientific articles', detail: 'CRAFT corpus' },
-      { label: 'Annotation interface', detail: 'labelled spans' },
-      { label: 'spaCy training', detail: 'NER pipeline' },
-      { label: 'Docker image', detail: 'model + web UI' },
-      { label: 'GCP deployment', detail: 'cloud inference' },
-      { label: 'Entity extraction', detail: 'highlighted entities' },
-    ],
-    stack: ['Python', 'spaCy', 'displaCy', 'Streamlit', 'Docker', 'Google Cloud Platform'],
-    challenges: [
-      'Modelling a large set of fine-grained biomedical entity types from ontology-based annotations.',
-      'Configuring and right-sizing cloud resources for model training and serving.',
-      'Making a domain NER model usable by non-developers through a simple web interface.',
-    ],
-    contribution:
-      'Implemented the annotation interface, the spaCy training pipeline, the Streamlit application, and the containerized GCP deployment.',
-    repo: 'https://github.com/mmm-megahed/MedEntity_NER_spaCy',
-  },
-  {
     id: 'prolumios-meeting-intelligence',
     title: 'Prolumios — AI-Powered Meeting Intelligence for CRM',
     short:
@@ -160,6 +126,73 @@ export const projects: Project[] = [
       'Developed end-to-end AI functionality: speech recognition and diarization pipelines, NLP/LLM analysis workflows, and the backend integration with CRM systems, working with business teams to identify use cases.',
   },
   {
+    id: 'personal-ai-os',
+    title: 'Personal AI OS — Local Multi-Agent Assistant on Telegram',
+    short:
+      'A fully local, multi-agent assistant for daily life: Ollama models behind an intent router, persistent memory, reminders, voice notes, and image understanding — controlled through Telegram.',
+    context: 'Personal project',
+    categories: ['AI Agents', 'Speech AI'],
+    problem:
+      'Everyday capture — tasks, notes, links to read later, reminders, quick questions — is scattered across apps, and cloud assistants send all of it to third parties. The goal: one chat interface that understands free-form requests, runs entirely on my own machine, and remembers context across restarts.',
+    solution: [
+      'An orchestrator classifies each message into an intent (summarize, plan, capture, remind, list tasks/notes, done, chat): regex fast-paths handle obvious cases, an Ollama LLM classifies the rest, and unknown outputs are sanitized to a safe default.',
+      'Specialized agents handle each intent: URL/text summarization, note and task capture, a task-aware daily planner, natural-language reminders (LLM extraction into a constrained time format, parsed deterministically), and a conversational agent with recent-turn memory.',
+      'Persistent memory in SQLite via SQLAlchemy: tasks, notes, reminders, and per-user conversation context survive restarts.',
+      'Multimodal input: Telegram voice notes are transcribed locally with Whisper and routed like text; photos are described by the LLaVA vision model.',
+      'APScheduler pushes a personalized morning plan and checks due reminders; an optional allow-list of Telegram user IDs restricts access.',
+    ],
+    flow: [
+      { label: 'Telegram', detail: 'text · voice · photo' },
+      { label: 'Whisper / LLaVA', detail: 'voice → text · image → text' },
+      { label: 'Intent router', detail: 'regex fast-path + LLM' },
+      { label: 'Agents', detail: 'capture · plan · remind · chat' },
+      { label: 'SQLite memory', detail: 'tasks · notes · context' },
+      { label: 'Scheduler', detail: 'daily plan · reminders' },
+    ],
+    stack: ['Python', 'Ollama', 'LLaVA', 'Whisper', 'python-telegram-bot', 'SQLAlchemy', 'SQLite', 'APScheduler'],
+    challenges: [
+      'Routing free-form messages reliably with small local models — combining cheap deterministic rules with LLM classification and output sanitization.',
+      'Turning natural-language times into exact reminders without trusting the model blindly: the LLM only extracts, code does the date math.',
+      'Keeping everything local, including speech and vision, while staying responsive on a personal machine.',
+    ],
+    contribution: 'Designed and built the agent architecture, memory layer, multimodal input handling, scheduler, and Telegram interface.',
+    repo: 'https://github.com/mo-meg/AI-Agent-System-Local',
+  },
+  {
+    id: 'cloud-ner',
+    title: 'Cloud-Based Information Extraction with spaCy NER',
+    short:
+      'A Named Entity Recognition model trained with spaCy to extract biomedical entities from scientific articles, served through a web interface and deployed on Google Cloud Platform.',
+    context: 'Academic research',
+    organization: 'Research internship · FernUniversität in Hagen',
+    categories: ['NLP', 'Infrastructure'],
+    problem:
+      'Scientific and medical articles contain domain entities — chemicals, cell types, genes, proteins, anatomical terms — that general-purpose NER models do not recognize. Extracting them requires annotated data, a domain-specific model, and an accessible way for users to apply it.',
+    solution: [
+      'Built a web-based annotation interface to support creating labelled training data.',
+      'Trained a spaCy NER model from scratch on the CRAFT corpus, covering ontology-based entity types such as CHEBI, CL, GO, MONDO, NCBITaxon, PR, SO, and UBERON.',
+      'Packaged the model with a Streamlit interface that highlights extracted entities in user text with displaCy.',
+      'Containerized the application with Docker and configured Google Cloud Platform resources for training and deployment.',
+    ],
+    flow: [
+      { label: 'Scientific articles', detail: 'CRAFT corpus' },
+      { label: 'Annotation interface', detail: 'labelled spans' },
+      { label: 'spaCy training', detail: 'NER pipeline' },
+      { label: 'Docker image', detail: 'model + web UI' },
+      { label: 'GCP deployment', detail: 'cloud inference' },
+      { label: 'Entity extraction', detail: 'highlighted entities' },
+    ],
+    stack: ['Python', 'spaCy', 'displaCy', 'Streamlit', 'Docker', 'Google Cloud Platform'],
+    challenges: [
+      'Modelling a large set of fine-grained biomedical entity types from ontology-based annotations.',
+      'Configuring and right-sizing cloud resources for model training and serving.',
+      'Making a domain NER model usable by non-developers through a simple web interface.',
+    ],
+    contribution:
+      'Implemented the annotation interface, the spaCy training pipeline, the Streamlit application, and the containerized GCP deployment.',
+    repo: 'https://github.com/mmm-megahed/MedEntity_NER_spaCy',
+  },
+  {
     id: 'portfolio-assistant',
     title: 'Portfolio Assistant — Offline-Generated, Human-Reviewed Q&A',
     short:
@@ -191,5 +224,36 @@ export const projects: Project[] = [
     ],
     contribution: 'Designed and implemented the generator, review workflow, matcher, chat UI, tests, and CI/CD.',
     repo: repoUrl,
+  },
+]
+
+/** Smaller AI apps: shown as compact cards (no case-study dialog). */
+export interface MiniProject {
+  id: string
+  title: string
+  description: string
+  categories: ProjectCategory[]
+  stack: string[]
+  repo: string
+}
+
+export const miniProjects: MiniProject[] = [
+  {
+    id: 'en-de-coach',
+    title: 'Local EN/DE Practice Coach',
+    description:
+      'Conversation practice in English and German (B1/B2) with role-play scenarios and gentle corrections. Runs locally: Ollama (llama3.2) for the coach, a local text-to-speech API for spoken replies, and optional voice input with NVIDIA NeMo Parakeet speech recognition.',
+    categories: ['Speech AI', 'RAG & LLM'],
+    stack: ['Python', 'Streamlit', 'Ollama', 'NVIDIA NeMo', 'TTS'],
+    repo: 'https://github.com/mo-meg/local_en-de_coach',
+  },
+  {
+    id: 'decide-for-me',
+    title: 'DecideForMe',
+    description:
+      'An LLM decision assistant that weighs two options against your stored life priorities and returns a structured verdict, justification, and first step — via Firebase AI Logic in the cloud or a local Ollama model.',
+    categories: ['RAG & LLM'],
+    stack: ['React', 'TypeScript', 'Firebase AI Logic', 'Firestore', 'Ollama'],
+    repo: 'https://github.com/mo-meg/DecideForMe',
   },
 ]

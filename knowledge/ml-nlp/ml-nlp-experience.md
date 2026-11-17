@@ -16,6 +16,10 @@ category: ml-nlp
 - Automatic Speech Recognition with Whisper: used professionally at Prolumios for meeting/sales-call transcription, and in the Multimodal RAG for Moodle project to transcribe lecture videos.
 - Speaker diarization pipelines at Prolumios to attribute transcript segments to speakers.
 
+## Speech in personal projects
+
+- Whisper transcription of voice notes in his Personal AI OS; NVIDIA NeMo Parakeet speech recognition for optional voice input in his EN/DE practice coach.
+
 ## LLM-based text analysis
 
 - At Prolumios: NLP and LLM-driven analysis of sales conversations, including sentiment detection, theme detection, sales insights, and automated follow-up recommendations.

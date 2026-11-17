@@ -9,7 +9,8 @@ url: https://www.linkedin.com/in/mohamed-megahed-WiInfo/
 
 - Email: mohamed.megahed@web.de (the fastest way to reach him)
 - LinkedIn: https://www.linkedin.com/in/mohamed-megahed-WiInfo/
-- GitHub: https://github.com/mmm-megahed
+- GitHub (main account): https://github.com/mo-meg
+- GitHub (academic projects — Master's research and research internship): https://github.com/mmm-megahed
 - Location: Berlin, Germany
 
 For hiring, job opportunities, collaboration, or project inquiries, visitors should contact Mohamed by email or through LinkedIn. The portfolio website also has a contact section with these links.

@@ -11,7 +11,9 @@ export const profile = {
   intro:
     'AI Engineer with a Master’s degree in Business Informatics from FernUniversität in Hagen. I design, build, and deploy practical AI systems — retrieval-augmented generation, multimodal retrieval, LLM-driven analysis, NLP, and speech pipelines — with a focus on architectures that are scalable, reliable, and privacy-conscious.',
   email: 'mohamed.megahed@web.de',
-  github: 'https://github.com/mmm-megahed',
+  github: 'https://github.com/mo-meg',
+  /** Second account: academic projects (Master's research, research internship). */
+  githubAcademic: 'https://github.com/mmm-megahed',
   linkedin: 'https://www.linkedin.com/in/mohamed-megahed-WiInfo/',
   languages: [
     { name: 'Arabic', level: 'Native' },

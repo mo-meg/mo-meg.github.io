@@ -16,6 +16,8 @@ Focus: integrating Artificial Intelligence into CRM (Customer Relationship Manag
 - Engineering speech recognition and speaker diarization pipelines.
 - Building NLP and LLM-driven analysis workflows.
 - Extracting actionable insights from sales conversations.
+- Building live meeting assistance: real-time transcription in English and German with in-meeting coaching.
+- Building AI-assisted monitoring and root-cause analysis for AI pipelines on AWS, using locally hosted LLMs.
 - Collaborating with business teams to identify AI use cases.
 
 ## AI-powered meeting intelligence
@@ -39,4 +41,4 @@ Audio → ASR (Whisper) → speaker diarization → speaker-attributed transcrip
 
 ## What is not documented
 
-The knowledge base does not contain Prolumios customer names, performance metrics, user numbers, business results, or exact employment dates. These details are not available here.
+Prolumios work is commercial and confidential; it is described here only at a high level. The knowledge base does not contain Prolumios repositories, internal system names, customer names, performance metrics, user numbers, business results, or exact employment dates. These details are not available here.

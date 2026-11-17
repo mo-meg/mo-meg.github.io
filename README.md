@@ -44,7 +44,7 @@ Preview the production build *with* drafts: `QA_INCLUDE_DRAFTS=true npm run buil
 
 ## Current state of the Q&A
 
-`qa.json` contains **43 draft items** in English, German, and Arabic, written strictly from `knowledge/` so the site
+`qa.json` contains **47 draft items** in English, German, and Arabic, written strictly from `knowledge/` so the site
 works immediately. **None are approved yet**, so the published site hides the assistant until you review them:
 
 ```bash
@@ -82,6 +82,12 @@ uv run python -m qa_generator.cli approve <id> …     # or --all after reviewin
 | Facts for the assistant | edit `knowledge/**/*.md` → `generate` → review → `approve` → push |
 | New GitHub project | `uv run python -m qa_generator.cli github mmm-megahed/<repo>` → `generate` → review |
 | An answer's wording | edit `frontend/src/data/qa.json` directly (protected from regeneration), push |
+
+## GitHub accounts
+
+`github.com/mo-meg` is the main account (hero, footer, contact, structured data); `github.com/mmm-megahed` is linked
+as "academic projects" (Moodle RAG, MedEntity). Both live in `frontend/src/data/profile.ts` (`github`, `githubAcademic`).
+Prolumios work (commercial) is described only at a high level — no repository names or links.
 
 ## Notes
 

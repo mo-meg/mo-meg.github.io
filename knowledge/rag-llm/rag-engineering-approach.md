@@ -37,6 +37,10 @@ Audio → ASR → speaker diarization → transcript → LLM analysis → busine
 
 Not every problem needs a live LLM. For his portfolio assistant, Mohamed deliberately chose offline-generated, human-reviewed answers instead of a live RAG chatbot: for a small, well-known knowledge base this removes hallucination risk, hosting, API cost, and abuse surface, while Gemini still does the heavy lifting offline.
 
+## Agents
+
+In his Personal AI OS, an orchestrator routes each message to a specialized agent: cheap deterministic rules (regex fast-paths) handle obvious cases, a local LLM classifies the rest, and model output is sanitized to a known set of intents. For reminders the LLM only extracts the time in a constrained format and code does the date math — models extract, code decides.
+
 ## LLM providers
 
 Mohamed has worked with locally hosted open models through Ollama (e.g. Gemma, Phi-3), with provider abstractions supporting OpenAI and Cohere in the Moodle project, and with the Google Gemini API for offline content generation in his portfolio project.

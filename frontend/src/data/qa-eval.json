@@ -337,6 +337,51 @@
       "expected": "see-code"
     },
     {
+      "text": "Has he built an AI agent system?",
+      "lang": "en",
+      "expected": "llms-and-agents"
+    },
+    {
+      "text": "Tell me about his Telegram AI assistant",
+      "lang": "en",
+      "expected": "personal-ai-os"
+    },
+    {
+      "text": "Was ist das Personal AI OS?",
+      "lang": "de",
+      "expected": "personal-ai-os"
+    },
+    {
+      "text": "ما هو مشروع المساعد المحلي على تيليجرام؟",
+      "lang": "ar",
+      "expected": "personal-ai-os"
+    },
+    {
+      "text": "How does the intent routing between agents work?",
+      "lang": "en",
+      "expected": "personal-ai-os-routing"
+    },
+    {
+      "text": "What other side projects has he made?",
+      "lang": "en",
+      "expected": "smaller-ai-apps"
+    },
+    {
+      "text": "Tell me about the DecideForMe app",
+      "lang": "en",
+      "expected": "smaller-ai-apps"
+    },
+    {
+      "text": "Which GitHub account is his main one?",
+      "lang": "en",
+      "expected": "two-github-accounts"
+    },
+    {
+      "text": "Warum gibt es zwei GitHub-Konten?",
+      "lang": "de",
+      "expected": "two-github-accounts"
+    },
+    {
       "text": "What's the best pizza place in Berlin?",
       "lang": "en",
       "expected": null
