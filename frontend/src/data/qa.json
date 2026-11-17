@@ -2437,7 +2437,7 @@
     {
       "id": "training-courses",
       "category": "education",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Education & training",
