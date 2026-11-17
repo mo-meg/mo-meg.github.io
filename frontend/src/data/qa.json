@@ -4,7 +4,7 @@
     {
       "id": "engineering-approach",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Architecture",
@@ -60,7 +60,7 @@
     {
       "id": "languages",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "About",
@@ -117,7 +117,7 @@
     {
       "id": "location",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -175,7 +175,7 @@
     {
       "id": "role-fit",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -232,7 +232,7 @@
     {
       "id": "specialization",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "About",
@@ -294,7 +294,7 @@
     {
       "id": "who-is-mohamed",
       "category": "profile",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "About",
@@ -350,7 +350,7 @@
     {
       "id": "ai-engineering-experience",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Experience",
@@ -407,7 +407,7 @@
     {
       "id": "business-and-ai",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "About",
@@ -465,7 +465,7 @@
     {
       "id": "employment-dates",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -522,7 +522,7 @@
     {
       "id": "meeting-intelligence",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Architecture — AI Meeting Intelligence",
@@ -579,7 +579,7 @@
     {
       "id": "prolumios-role",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Experience",
@@ -635,7 +635,7 @@
     {
       "id": "research-internship",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Experience",
@@ -696,7 +696,7 @@
     {
       "id": "speech-experience",
       "category": "experience",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Experience",
@@ -753,7 +753,7 @@
     {
       "id": "local-llms",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -810,7 +810,7 @@
     {
       "id": "medentity",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MedEntity_NER_spaCy — GitHub",
@@ -867,7 +867,7 @@
     {
       "id": "medentity-accuracy",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MedEntity_NER_spaCy — GitHub",
@@ -928,7 +928,7 @@
     {
       "id": "multimodal-rag-evaluation",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -985,7 +985,7 @@
     {
       "id": "multimodal-rag-modalities",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -1041,7 +1041,7 @@
     {
       "id": "multimodal-rag-overview",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -1101,7 +1101,7 @@
     {
       "id": "multimodal-rag-stack",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -1157,7 +1157,7 @@
     {
       "id": "personal-ai-os",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Personal AI OS — GitHub",
@@ -1217,7 +1217,7 @@
     {
       "id": "personal-ai-os-routing",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Personal AI OS — GitHub",
@@ -1274,7 +1274,7 @@
     {
       "id": "portfolio-assistant",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Projects",
@@ -1330,7 +1330,7 @@
     {
       "id": "projects-overview",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Projects",
@@ -1391,7 +1391,7 @@
     {
       "id": "smaller-ai-apps",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "EN/DE Practice Coach — GitHub",
@@ -1451,7 +1451,7 @@
     {
       "id": "source-attribution",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Architecture",
@@ -1508,7 +1508,7 @@
     {
       "id": "why-no-live-chatbot",
       "category": "projects",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Projects",
@@ -1566,7 +1566,7 @@
     {
       "id": "backend-skills",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -1623,7 +1623,7 @@
     {
       "id": "llm-evaluation",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -1680,7 +1680,7 @@
     {
       "id": "llms-and-agents",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Personal AI OS — GitHub",
@@ -1743,7 +1743,7 @@
     {
       "id": "nlp-ml",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -1804,7 +1804,7 @@
     {
       "id": "rag-experience",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -1866,7 +1866,7 @@
     {
       "id": "tech-stack",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -1922,7 +1922,7 @@
     {
       "id": "vector-databases",
       "category": "skills",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Architecture",
@@ -1980,7 +1980,7 @@
     {
       "id": "ci-cd",
       "category": "cloud",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -2037,7 +2037,7 @@
     {
       "id": "cloud-experience",
       "category": "cloud",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -2093,7 +2093,7 @@
     {
       "id": "docker-containers",
       "category": "cloud",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "MR.Multi.RAG-Moodle — GitHub",
@@ -2150,7 +2150,7 @@
     {
       "id": "monitoring",
       "category": "cloud",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Technical expertise",
@@ -2207,7 +2207,7 @@
     {
       "id": "certifications",
       "category": "education",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Education",
@@ -2268,7 +2268,7 @@
     {
       "id": "education",
       "category": "education",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Education",
@@ -2324,7 +2324,7 @@
     {
       "id": "masters-subjects",
       "category": "education",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Education",
@@ -2380,7 +2380,7 @@
     {
       "id": "teaching-activities",
       "category": "education",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Education & activities",
@@ -2437,7 +2437,7 @@
     {
       "id": "contact",
       "category": "contact",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -2493,7 +2493,7 @@
     {
       "id": "open-to-roles",
       "category": "contact",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -2550,7 +2550,7 @@
     {
       "id": "salary-availability",
       "category": "contact",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
@@ -2606,7 +2606,7 @@
     {
       "id": "see-code",
       "category": "contact",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Personal AI OS — GitHub",
@@ -2670,7 +2670,7 @@
     {
       "id": "two-github-accounts",
       "category": "contact",
-      "status": "draft",
+      "status": "approved",
       "sources": [
         {
           "label": "Contact",
