@@ -1,0 +1,40 @@
+# Local development stack: PostgreSQL + pgvector and the API.
+#   cp .env.example .env   # add GEMINI_API_KEY
+#   docker compose up -d --build
+#   docker compose run --rm api python -m app.cli sync --prune
+#   docker compose run --rm api python -m app.cli github mmm-megahed/MR.Multi.RAG-Moodle
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: portfolio
+      POSTGRES_DB: portfolio
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portfolio -d portfolio"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://portfolio:portfolio@db:5432/portfolio
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      KNOWLEDGE_DIR: /knowledge
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ../knowledge:/knowledge:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:

@@ -1,0 +1,216 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------
+   Design tokens
+   Dark-first palette: deep navy/charcoal surfaces, cyan + violet accents.
+   ------------------------------------------------------------------ */
+:root {
+  --bg: #f7f8fb;
+  --bg-elevated: #ffffff;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-strong: #ffffff;
+  --border: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.18);
+  --fg: #0b1220;
+  --fg-muted: #475569;
+  --fg-subtle: #64748b;
+  --accent: #0891b2;
+  --accent-2: #7c3aed;
+  --accent-3: #2563eb;
+  --grid: rgba(15, 23, 42, 0.05);
+  --node: 8, 145, 178;
+}
+
+.dark {
+  --bg: #07090f;
+  --bg-elevated: #0c1018;
+  --surface: rgba(17, 22, 33, 0.6);
+  --surface-strong: #111621;
+  --border: rgba(148, 163, 184, 0.12);
+  --border-strong: rgba(148, 163, 184, 0.22);
+  --fg: #e6e9ef;
+  --fg-muted: #9aa4b5;
+  --fg-subtle: #6b7587;
+  --accent: #22d3ee;
+  --accent-2: #a78bfa;
+  --accent-3: #60a5fa;
+  --grid: rgba(148, 163, 184, 0.05);
+  --node: 34, 211, 238;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-3: var(--accent-3);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--accent) 30%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@utility container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: var(--container-6xl);
+  padding-inline: 1.25rem;
+  @variant sm {
+    padding-inline: 2rem;
+  }
+}
+
+@utility glass {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+@utility card {
+  @apply glass rounded-2xl;
+}
+
+@utility eyebrow {
+  @apply font-mono text-xs tracking-[0.18em] text-accent uppercase;
+}
+
+@utility text-gradient {
+  background: linear-gradient(100deg, var(--fg) 20%, var(--accent) 60%, var(--accent-2) 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility grid-bg {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 75%);
+}
+
+@utility chip {
+  @apply inline-flex items-center rounded-md border border-line px-2 py-0.5 font-mono text-[11px] text-muted;
+  background: color-mix(in oklab, var(--surface-strong) 60%, transparent);
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-all duration-200 disabled:opacity-50;
+}
+
+@utility btn-primary {
+  @apply btn text-white;
+  background: linear-gradient(135deg, #0891b2, #6d28d9);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.15) inset,
+    0 8px 24px -10px rgba(34, 211, 238, 0.45);
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+@utility btn-ghost {
+  @apply btn border border-line-strong text-fg hover:border-accent/60 hover:bg-surface;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Markdown inside chat answers */
+.prose-chat {
+  @apply text-sm leading-relaxed;
+}
+.prose-chat p {
+  @apply my-2 first:mt-0 last:mb-0;
+}
+.prose-chat ul {
+  @apply my-2 list-disc pl-5;
+}
+.prose-chat ol {
+  @apply my-2 list-decimal pl-5;
+}
+.prose-chat li {
+  @apply my-0.5;
+}
+.prose-chat a {
+  @apply text-accent underline underline-offset-2;
+}
+.prose-chat strong {
+  @apply font-semibold text-fg;
+}
+.prose-chat code {
+  @apply rounded bg-black/10 px-1 py-0.5 font-mono text-[12px] dark:bg-white/10;
+}
+.prose-chat pre {
+  @apply my-2 overflow-x-auto rounded-lg border border-line bg-black/80 p-3 text-[12px] text-slate-100;
+}
+.prose-chat pre code {
+  @apply bg-transparent p-0;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3 {
+  @apply mt-3 mb-1 font-semibold;
+}
+.prose-chat table {
+  @apply my-2 w-full border-collapse text-xs;
+}
+.prose-chat th,
+.prose-chat td {
+  @apply border border-line px-2 py-1 text-left;
+}
+
+/* Animated data-flow along architecture edges */
+.arch-flow {
+  animation: arch-flow 1.6s linear infinite;
+}
+@keyframes arch-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}

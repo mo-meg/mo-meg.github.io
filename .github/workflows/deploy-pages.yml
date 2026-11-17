@@ -1,0 +1,81 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["frontend/**", ".github/workflows/deploy-pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # Base path + site URL:
+      #  - custom domain (repo variable CUSTOM_DOMAIN) or <user>.github.io repo → "/"
+      #  - any other repo → "/<repo>/"
+      - name: Compute base path
+        run: |
+          REPO="${GITHUB_REPOSITORY#*/}"
+          OWNER="${GITHUB_REPOSITORY_OWNER,,}"
+          if [ -n "${{ vars.CUSTOM_DOMAIN }}" ]; then
+            BASE="/"; SITE="https://${{ vars.CUSTOM_DOMAIN }}/"
+          elif [ "${REPO,,}" = "${OWNER}.github.io" ]; then
+            BASE="/"; SITE="https://${OWNER}.github.io/"
+          else
+            BASE="/${REPO}/"; SITE="https://${OWNER}.github.io/${REPO}/"
+          fi
+          echo "VITE_BASE_PATH=$BASE" >> "$GITHUB_ENV"
+          echo "VITE_SITE_URL=$SITE" >> "$GITHUB_ENV"
+          echo "VITE_REPO_URL=https://github.com/${GITHUB_REPOSITORY}" >> "$GITHUB_ENV"
+          echo "Base: $BASE  Site: $SITE"
+
+      - run: npm ci
+      - run: npm run lint
+      - name: Build
+        run: npm run build
+        env:
+          # Set the repository variable CHAT_API_URL to your deployed backend to enable the assistant.
+          VITE_CHAT_API_URL: ${{ vars.CHAT_API_URL }}
+
+      - name: SPA fallback + custom domain
+        run: |
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+          if [ -n "${{ vars.CUSTOM_DOMAIN }}" ]; then echo "${{ vars.CUSTOM_DOMAIN }}" > dist/CNAME; fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
