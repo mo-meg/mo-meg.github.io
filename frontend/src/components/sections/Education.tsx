@@ -2,10 +2,11 @@ import { GraduationCap, Presentation } from 'lucide-react'
 import { activities, education } from '../../data/experience'
 import { Reveal } from '../ui/Reveal'
 import { Section } from '../ui/Section'
+import { Training } from './Training'
 
 export function Education() {
   return (
-    <Section id="education" eyebrow="06 · Education & Activities" title="Education and teaching.">
+    <Section id="education" eyebrow="06 · Education & Activities" title="Education, training, and teaching.">
       <div className="grid gap-5 lg:grid-cols-2">
         <Reveal>
           <div className="card h-full p-6">
@@ -42,6 +43,7 @@ export function Education() {
           </div>
         </Reveal>
       </div>
+      <Training />
     </Section>
   )
 }

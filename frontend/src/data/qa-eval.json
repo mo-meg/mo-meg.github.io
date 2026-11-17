@@ -2,6 +2,21 @@
   "version": 1,
   "cases": [
     {
+      "text": "Has he taken any DataCamp courses?",
+      "lang": "en",
+      "expected": "training-courses"
+    },
+    {
+      "text": "Welche Weiterbildungen hat er gemacht?",
+      "lang": "de",
+      "expected": "training-courses"
+    },
+    {
+      "text": "ما هي دورات DataCamp التي أكملها؟",
+      "lang": "ar",
+      "expected": "training-courses"
+    },
+    {
       "text": "Can you introduce Mohamed Megahed to me?",
       "lang": "en",
       "expected": "who-is-mohamed"

@@ -2435,6 +2435,62 @@
       }
     },
     {
+      "id": "training-courses",
+      "category": "education",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Education & training",
+          "href": "#education"
+        }
+      ],
+      "related": [
+        "certifications",
+        "education",
+        "masters-subjects"
+      ],
+      "source_files": {
+        "education/training.md": "373cb611a8f18194"
+      },
+      "generated_hash": "6e02afd0ff3b11da",
+      "i18n": {
+        "en": {
+          "question": "Which courses and training has Mohamed completed?",
+          "answer": "Besides his degrees, Mohamed has completed **39 DataCamp courses** (statements of accomplishment, not exam-based certifications). Highlights:\n\n- **LLMs & GenAI:** RAG with LangChain, LLM applications with LangChain, fine-tuning Llama 3, Transformer models with PyTorch, Hugging Face, prompt engineering with the OpenAI API\n- **AI agents:** designing agentic systems with LangChain, building scalable agentic systems\n- **Data engineering:** ETL/ELT in Python, Apache Airflow\n\nFurther courses cover AI-assisted development, Python and software engineering, DevOps, cloud, and Git.",
+          "paraphrases": [
+            "datacamp courses",
+            "online courses",
+            "what has he learned recently",
+            "continuous learning",
+            "training and courses",
+            "does he do online training"
+          ]
+        },
+        "de": {
+          "question": "Welche Kurse und Weiterbildungen hat Mohamed abgeschlossen?",
+          "answer": "Neben seinen Abschlüssen hat Mohamed **39 DataCamp-Kurse** abgeschlossen (Statements of Accomplishment, keine prüfungsbasierten Zertifizierungen). Schwerpunkte:\n\n- **LLMs & GenAI:** RAG mit LangChain, LLM-Anwendungen mit LangChain, Fine-Tuning von Llama 3, Transformer-Modelle mit PyTorch, Hugging Face, Prompt Engineering mit der OpenAI-API\n- **KI-Agenten:** agentische Systeme mit LangChain entwerfen, skalierbare agentische Systeme bauen\n- **Data Engineering:** ETL/ELT in Python, Apache Airflow\n\nWeitere Kurse behandeln KI-gestützte Entwicklung, Python und Software Engineering, DevOps, Cloud und Git.",
+          "paraphrases": [
+            "datacamp kurse",
+            "online kurse",
+            "weiterbildung",
+            "was hat er zuletzt gelernt",
+            "welche schulungen hat er gemacht"
+          ]
+        },
+        "ar": {
+          "question": "ما هي الدورات التدريبية التي أكملها محمد؟",
+          "answer": "إلى جانب شهاداته الجامعية، أكمل محمد **39 دورة على DataCamp** (إفادات إتمام وليست شهادات احترافية قائمة على اختبار). أبرزها:\n\n- **النماذج اللغوية والذكاء الاصطناعي التوليدي:** RAG باستخدام LangChain، وتطبيقات النماذج اللغوية باستخدام LangChain، وضبط Llama 3، ونماذج Transformer باستخدام PyTorch، وHugging Face، وهندسة الأوامر مع OpenAI API\n- **وكلاء الذكاء الاصطناعي:** تصميم الأنظمة الوكيلية باستخدام LangChain وبناء أنظمة وكيلية قابلة للتوسع\n- **هندسة البيانات:** ETL/ELT بلغة Python وApache Airflow\n\nوتغطي دورات أخرى التطوير بمساعدة الذكاء الاصطناعي وPython وهندسة البرمجيات وDevOps والسحابة وGit.",
+          "paraphrases": [
+            "دورات DataCamp",
+            "الدورات عبر الإنترنت",
+            "التعلم المستمر",
+            "ما الذي تعلمه مؤخرًا",
+            "الدورات التدريبية التي حضرها"
+          ]
+        }
+      }
+    },
+    {
       "id": "contact",
       "category": "contact",
       "status": "approved",

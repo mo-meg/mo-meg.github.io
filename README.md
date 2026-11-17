@@ -81,6 +81,23 @@ uv run python -m qa_generator.cli approve <id> …     # or --all after reviewin
 | Facts for the assistant | edit `knowledge/**/*.md` → `generate` → review → `approve` → push |
 | New GitHub project | `uv run python -m qa_generator.cli github mmm-megahed/<repo>` → `generate` → review |
 | An answer's wording | edit `frontend/src/data/qa.json` directly (protected from regeneration), push |
+| New course or certificate | add one line to `frontend/src/data/training.ts` (+ `knowledge/education/training.md`), push — see below |
+
+## Courses and certificates
+
+All entries live in `frontend/src/data/training.ts`. To add one, append a line, e.g.
+
+```ts
+dc('Multi-Modal Systems with the OpenAI API', 'LLMs & Generative AI', { url: 'https://www.datacamp.com/statement-of-accomplishment/course/…' }),
+{ title: 'AWS Certified AI Practitioner', provider: 'AWS', topic: 'DevOps, cloud & Git', kind: 'certification', year: 2026, url: 'https://…' },
+```
+
+- `url`: public verification link (preferred). Or `pdf: 'file.pdf'` with the file in `frontend/public/certificates/`
+  (the build fails if it is missing).
+- `featured: true` puts it in the "Highlights" list (keep ~10). `kind: 'certification'` is for exam-based
+  certifications only; they are shown above the courses.
+- Also add it to `knowledge/education/training.md`, then run the Q&A generator (`generate`) so the assistant's
+  answer is refreshed for review.
 
 ## GitHub accounts
 
