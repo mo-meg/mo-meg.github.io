@@ -1,0 +1,26 @@
+name: Q&A generator CI
+
+on:
+  push:
+    paths: ["tools/qa-generator/**", "knowledge/**", "frontend/src/data/qa*.json", ".github/workflows/qa-generator-ci.yml"]
+  pull_request:
+    paths: ["tools/qa-generator/**", "knowledge/**", "frontend/src/data/qa*.json"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/qa-generator
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run pytest -q
+      # Cross-checks qa.json against knowledge/ (missing source files, stale approvals, …). No API key needed.
+      - run: uv run python -m qa_generator.cli validate

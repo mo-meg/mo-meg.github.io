@@ -1,151 +1,89 @@
 # Mohamed Megahed — AI Engineer Portfolio
 
-Portfolio website plus a RAG-based AI assistant that answers visitor questions about my background,
-grounded in a version-controlled knowledge base.
+A fully static portfolio site (GitHub Pages) with a multilingual assistant that answers visitor questions with
+**prepared, human-reviewed answers** — no backend, no API key in the browser, nothing to host.
 
 ```
 my_Portfolio/
-├── frontend/     React 19 + TypeScript + Vite + Tailwind v4 + Motion → static site on GitHub Pages
-├── backend/      FastAPI + Google Gen AI SDK (Gemini) + PostgreSQL/pgvector → deployed separately
-├── knowledge/    Markdown knowledge base for the assistant (independent of the website)
+├── frontend/            React 19 + TypeScript + Vite + Tailwind v4 + Motion  → GitHub Pages
+│   ├── src/data/qa.json        the assistant's Q&A (EN/DE/AR, status draft/approved/needs-review)
+│   ├── src/data/qa-eval.json   matcher test set (reworded + off-topic questions)
+│   └── src/qa/                 in-browser matcher, language detection, validation
+├── knowledge/           Markdown facts the Q&A is generated from (source of truth)
+├── tools/qa-generator/  offline Python tool: Gemini drafts → you review → approve
 └── .github/workflows/
-    ├── deploy-pages.yml   builds and deploys the frontend to GitHub Pages
-    └── backend-ci.yml     lint + tests (incl. pgvector integration) + Docker build
+    ├── deploy-pages.yml        lint + tests + validate + build + deploy
+    └── qa-generator-ci.yml     generator tests + qa.json ↔ knowledge/ consistency
 ```
 
-## Architecture
+## How the assistant works
 
-```
-GitHub Pages (static)                     Backend host (Cloud Run / Render / Fly / VPS)
-┌──────────────────────┐   POST /api/chat  ┌───────────────────────────────────────────┐
-│ React portfolio      │ ───────────────▶  │ FastAPI                                   │
-│  └ Chat widget (SSE) │ ◀─── stream ────  │  rate limit · CORS · size limits · timeouts│
-└──────────────────────┘                   │  Retriever ─▶ Gemini embeddings            │
-                                           │      └▶ PostgreSQL + pgvector (hybrid)     │
-                                           │  Generator ─▶ Gemini (streaming)           │
-                                           └───────────────────────────────────────────┘
-knowledge/*.md ──(python -m app.cli sync)──▶ chunk → embed → pgvector   (no frontend rebuild)
-```
+1. **Offline:** `tools/qa-generator` sends `knowledge/` to Gemini (structured output) and drafts questions, answers,
+   sources, German/Arabic versions, paraphrases, and test questions into `qa.json`.
+2. **Review:** you edit and `approve` items. Only approved items are compiled into the production bundle.
+3. **In the browser:** visitors click a question or type their own. The matcher detects the language (EN/DE/AR),
+   normalizes and stems the text, and scores it against every question and paraphrase. Above the threshold the
+   prepared answer is shown in the visitor's language; below it, the visitor gets a pre-filled email to you,
+   a LinkedIn link, and "did you mean…" suggestions. Typed questions never leave the browser.
 
-The site works without the backend: if `VITE_CHAT_API_URL` is not set at build time, the chat button is simply not
-rendered.
+Details: [`tools/qa-generator/README.md`](tools/qa-generator/README.md).
 
----
-
-## 1. Local development
-
-### Frontend
+## Local development
 
 ```bash
 cd frontend
 npm install
-npm run dev            # http://localhost:5173 (uses .env.development → chat API at http://localhost:8000)
-npm run lint           # oxlint
-npm run build          # type-check + production build into dist/
-npm run preview        # serve the production build
+npm run dev        # http://localhost:5173 — drafts are shown with a "draft" badge
+npm test           # matcher + validation + threshold sweep
+npm run lint
+npm run build      # validates qa.json, type-checks, builds dist/ (approved items only)
+npm run preview
 ```
 
-### Backend (assistant)
+Preview the production build *with* drafts: `QA_INCLUDE_DRAFTS=true npm run build && npm run preview`.
+
+## Current state of the Q&A
+
+`qa.json` contains **43 draft items** in English, German, and Arabic, written strictly from `knowledge/` so the site
+works immediately. **None are approved yet**, so the published site hides the assistant until you review them:
 
 ```bash
-cd backend
-cp .env.example .env               # set GEMINI_API_KEY
-docker compose up -d --build       # PostgreSQL + pgvector and the API on http://localhost:8000
-docker compose run --rm api python -m app.cli sync --prune          # index knowledge/
-docker compose run --rm api python -m app.cli github mmm-megahed/MR.Multi.RAG-Moodle
-docker compose run --rm api python -m app.cli github mmm-megahed/MedEntity_NER_spaCy
-curl localhost:8000/ready
+cd tools/qa-generator && uv sync
+uv run python -m qa_generator.cli status
+uv run python -m qa_generator.cli approve <id> …     # or --all after reviewing
 ```
 
-No Gemini key yet? Set `AI_PROVIDER=fake` and `RETRIEVAL_MIN_SCORE=0.1` in `.env` to run the whole stack with
-deterministic offline stand-ins (useful for UI work; answers are extractive and not meaningful).
+## Publish on GitHub Pages
 
-See [`backend/README.md`](backend/README.md) for the API, configuration, knowledge-base administration, tests, and
-evaluation.
-
----
-
-## 2. Publish on GitHub Pages
-
-1. **Create the repository** on GitHub under `mmm-megahed`:
-   - `mmm-megahed.github.io` → site at `https://mmm-megahed.github.io/` (recommended for a portfolio), or
-   - any name, e.g. `portfolio` → site at `https://mmm-megahed.github.io/portfolio/`.
-
-   The workflow detects which case applies and sets the Vite base path (`/` or `/<repo>/`) automatically.
-
-2. **Push** this folder:
+1. Create the repository under `mmm-megahed` — `mmm-megahed.github.io` (site at `https://mmm-megahed.github.io/`,
+   recommended) or any name (site at `https://mmm-megahed.github.io/<repo>/`). The workflow detects which and sets the
+   Vite base path automatically.
+2. Push:
    ```bash
    git remote add origin https://github.com/mmm-megahed/mmm-megahed.github.io.git
    git push -u origin main
    ```
-
-3. **Enable Pages**: *Settings → Pages → Build and deployment → Source: GitHub Actions*.
-   The `Deploy portfolio to GitHub Pages` workflow runs on every push to `main` that touches `frontend/`
-   (or manually via *Actions → Run workflow*).
-
-4. **Add your CV** (optional): put `frontend/public/cv/Mohamed_Megahed_CV.pdf` in the repo. The *Download CV*
-   button only appears when that file exists at build time.
-
-5. **Enable the assistant** once the backend is deployed (section 3): *Settings → Secrets and variables → Actions →
-   Variables* → add `CHAT_API_URL` = `https://your-backend.example.com` (no trailing slash), then re-run the workflow.
-   This is a public URL, not a secret — the Gemini key never leaves the backend.
+3. *Settings → Pages → Build and deployment → Source: **GitHub Actions***.
+4. Optional: add `frontend/public/cv/Mohamed_Megahed_CV.pdf` — the *Download CV* button appears only when it exists.
 
 ### Custom domain (later)
 
-1. Add a repository variable `CUSTOM_DOMAIN`, e.g. `megahed.dev`. The workflow then builds with base path `/`,
-   uses it for canonical/Open Graph URLs, and writes `CNAME` into the artifact.
-2. DNS at your registrar:
-   - apex domain: `A` records → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-     (and `AAAA` → `2606:50c0:8000::153`, `…8001::153`, `…8002::153`, `…8003::153`)
-   - subdomain (`www`/`portfolio`): `CNAME` → `mmm-megahed.github.io`
-3. *Settings → Pages → Custom domain* → enter the domain, wait for the DNS check, then tick **Enforce HTTPS**.
-4. Add the new origin to the backend's `ALLOWED_ORIGINS`.
+1. Repository variable `CUSTOM_DOMAIN` (e.g. `megahed.dev`) — the workflow then builds with base `/`, uses it for
+   canonical/Open Graph URLs, and writes `CNAME`.
+2. DNS: apex → `A` 185.199.108.153 / .109.153 / .110.153 / .111.153 (and `AAAA` 2606:50c0:8000::153 … 8003::153);
+   subdomain → `CNAME mmm-megahed.github.io`.
+3. *Settings → Pages → Custom domain*, then **Enforce HTTPS**.
 
----
+## Updating content
 
-## 3. Deploy the backend
-
-GitHub Pages only serves static files, so the API runs elsewhere. It is a standard container
-(`backend/Dockerfile`, listens on `$PORT`, health check at `/health`, readiness at `/ready`) and needs a PostgreSQL
-database with the `pgvector` extension (e.g. Neon, Supabase, Cloud SQL, or a self-hosted `pgvector/pgvector` image).
-
-Example — Google Cloud Run + a managed Postgres:
-
-```bash
-cd backend
-gcloud run deploy portfolio-assistant --source . --region europe-west3 --allow-unauthenticated \
-  --set-env-vars ENVIRONMENT=production,ALLOWED_ORIGINS=https://mmm-megahed.github.io,TRUST_PROXY_HEADERS=true \
-  --set-secrets GEMINI_API_KEY=gemini-api-key:latest,DATABASE_URL=portfolio-db-url:latest \
-  --max-instances 1
-```
-
-Production checklist:
-
-- `ENVIRONMENT=production` (disables `/docs`, rejects `AI_PROVIDER=fake` and wildcard origins).
-- `ALLOWED_ORIGINS` = exactly your Pages origin (`https://mmm-megahed.github.io`, no path) and/or custom domain.
-- `GEMINI_API_KEY` and `DATABASE_URL` from the platform's secret manager — never in the repo.
-- `TRUST_PROXY_HEADERS=true` only behind a load balancer that sets `X-Forwarded-For` (Cloud Run, Render, Fly).
-- Keep `DAILY_REQUEST_BUDGET` and the per-IP limits conservative; set a billing budget/alert in Google AI Studio.
-- Sessions and rate-limit counters are in memory: run **one instance** (or replace them with Redis).
-- `METRICS_TOKEN` set if `/metrics` is reachable publicly.
-- Index the knowledge base against the production DB:
-  `DATABASE_URL=… GEMINI_API_KEY=… uv run python -m app.cli sync --prune` (from `backend/`).
-
----
-
-## 4. Updating content
-
-| What changed | Do |
+| Change | Do |
 |---|---|
-| Website text, projects, skills | edit `frontend/src/data/*.ts`, push → Pages redeploys |
-| Assistant knowledge | edit/add `knowledge/**/*.md`, then `python -m app.cli sync --prune` — no frontend deploy |
-| New GitHub project | `python -m app.cli github mmm-megahed/<repo>` (+ add a case study in `frontend/src/data/projects.ts`) |
-| CV as PDF for the assistant | `python -m app.cli add cv.pdf --category profile --label "Professional CV"` |
+| Website sections (projects, skills, experience) | edit `frontend/src/data/*.ts`, push |
+| Facts for the assistant | edit `knowledge/**/*.md` → `generate` → review → `approve` → push |
+| New GitHub project | `uv run python -m qa_generator.cli github mmm-megahed/<repo>` → `generate` → review |
+| An answer's wording | edit `frontend/src/data/qa.json` directly (protected from regeneration), push |
 
-Everything in `knowledge/` may be quoted to visitors — keep it factual.
+## Notes
 
-## 5. Notes
-
-- Fonts are self-hosted (`@fontsource`), no third-party requests from the site — relevant for GDPR in Germany.
-- A German personal site used for job-seeking may need an *Impressum* and a privacy notice (the assistant sends
-  visitor questions to Google Gemini). Add them before promoting the site widely.
+- Fonts are self-hosted; the site makes no third-party requests (relevant for GDPR in Germany).
+- A German personal site used for job-seeking may need an *Impressum* and a short privacy notice.

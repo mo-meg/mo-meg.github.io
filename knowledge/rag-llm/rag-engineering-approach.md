@@ -6,7 +6,7 @@ category: rag-llm
 
 # How Mohamed approaches RAG and LLM systems
 
-This document summarizes the architecture principles visible in Mohamed's projects (Multimodal RAG for Moodle, the portfolio assistant, and LLM analysis at Prolumios).
+This document summarizes the architecture principles visible in Mohamed's projects (Multimodal RAG for Moodle and LLM analysis at Prolumios).
 
 ## RAG architecture
 
@@ -33,6 +33,10 @@ Audio → ASR → speaker diarization → transcript → LLM analysis → busine
 - Clear contracts between stages (audio → transcript → analysis), each producing an inspectable artefact.
 - Deliver results inside existing business tools (CRM) rather than in a separate application.
 
+## Choosing the right amount of AI
+
+Not every problem needs a live LLM. For his portfolio assistant, Mohamed deliberately chose offline-generated, human-reviewed answers instead of a live RAG chatbot: for a small, well-known knowledge base this removes hallucination risk, hosting, API cost, and abuse surface, while Gemini still does the heavy lifting offline.
+
 ## LLM providers
 
-Mohamed has worked with locally hosted open models through Ollama (e.g. Gemma, Phi-3), with provider abstractions supporting OpenAI and Cohere in the Moodle project, and with Google Gemini in the portfolio assistant.
+Mohamed has worked with locally hosted open models through Ollama (e.g. Gemma, Phi-3), with provider abstractions supporting OpenAI and Cohere in the Moodle project, and with the Google Gemini API for offline content generation in his portfolio project.

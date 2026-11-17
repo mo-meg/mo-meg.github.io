@@ -1,4 +1,5 @@
 declare const __HAS_CV__: boolean
+declare const __QA_COUNT__: number
 
 const base = import.meta.env.BASE_URL
 
@@ -6,7 +7,7 @@ const base = import.meta.env.BASE_URL
 export const asset = (path: string) => `${base}${path.replace(/^\//, '')}`
 
 export const config = {
-  /** Backend URL of the RAG assistant. When empty, the chat widget is not rendered. */
-  chatApiUrl: ((import.meta.env.VITE_CHAT_API_URL as string | undefined) ?? '').replace(/\/$/, ''),
+  /** Number of published Q&A items; the assistant is hidden when there are none. */
+  qaCount: __QA_COUNT__,
   cvUrl: __HAS_CV__ ? asset('cv/Mohamed_Megahed_CV.pdf') : null,
 }

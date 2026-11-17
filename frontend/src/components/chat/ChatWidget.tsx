@@ -16,7 +16,7 @@ export function ChatWidget() {
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
 
-  if (!config.chatApiUrl) return null
+  if (config.qaCount === 0) return null
 
   return (
     <>
@@ -33,7 +33,7 @@ export function ChatWidget() {
             className="fixed inset-x-2 top-2 bottom-2 z-50 overflow-hidden rounded-2xl border border-line-strong bg-bg-elevated/95 shadow-2xl shadow-black/30 backdrop-blur-xl sm:inset-auto sm:right-5 sm:bottom-24 sm:h-[min(640px,calc(100vh-8rem))] sm:w-[400px]"
           >
             <Suspense fallback={<div className="grid h-full place-items-center text-sm text-muted">Loading…</div>}>
-              <ChatPanel apiUrl={config.chatApiUrl} onClose={() => setOpen(false)} />
+              <ChatPanel onClose={() => setOpen(false)} />
             </Suspense>
           </motion.div>
         )}

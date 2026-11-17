@@ -17,12 +17,10 @@ category: cloud-devops
 ## Containers and orchestration
 
 - Docker and Docker Compose: the Multimodal RAG for Moodle system runs as a multi-container stack — Moodle, FastAPI API, Celery workers, Redis, PostgreSQL with pgvector, Ollama, Nginx reverse proxy, Prometheus, Grafana, node-exporter, and postgres-exporter.
-- The portfolio assistant backend ships with a Dockerfile and Docker Compose setup (FastAPI + PostgreSQL/pgvector).
 
 ## Monitoring and observability
 
 - Prometheus and Grafana monitoring for the Moodle RAG stack, including PostgreSQL and host metrics.
-- Prometheus metrics (request outcomes, latency, token usage) in the portfolio assistant.
 
 ## Data and databases
 
@@ -31,6 +29,6 @@ category: cloud-devops
 
 ## Version control and CI/CD
 
-- Git and GitHub; GitHub Actions for deploying the portfolio website to GitHub Pages.
+- Git and GitHub; GitHub Actions for testing and deploying the portfolio website to GitHub Pages.
 
 The knowledge base does not list any cloud certifications.

@@ -1,0 +1,2485 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "engineering-approach",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Architecture",
+          "href": "#architecture"
+        }
+      ],
+      "related": [
+        "llms-and-agents",
+        "local-llms",
+        "meeting-intelligence"
+      ],
+      "source_files": {
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "6161b43ca09f60d2",
+      "i18n": {
+        "en": {
+          "question": "How does Mohamed approach AI engineering?",
+          "answer": "His principles, visible across his projects:\n\n- **Separate ingestion from querying** — offline, idempotent ingestion; a read-only, latency-sensitive query path.\n- **Keep provenance** — every chunk carries source metadata so answers can cite their sources.\n- **Measure, don't guess** — tune chunking and top-k with evaluation (e.g. RAGAS).\n- **Move heavy work off the request path** — async workers for media processing.\n- **Use the right amount of AI** — e.g. local models when data must stay in-house, or prepared answers instead of a live chatbot.",
+          "paraphrases": [
+            "what is his engineering philosophy",
+            "how does he design ai systems",
+            "his architecture principles",
+            "how does he build rag systems",
+            "design decisions he makes",
+            "what is his approach to building ai"
+          ]
+        },
+        "de": {
+          "question": "Wie geht Mohamed an KI-Engineering heran?",
+          "answer": "Seine Prinzipien, sichtbar in seinen Projekten:\n\n- **Ingestion und Abfrage trennen** – Ingestion offline und idempotent, der Abfragepfad nur lesend und latenzoptimiert.\n- **Herkunft bewahren** – jeder Chunk trägt Quell-Metadaten, damit Antworten Quellen nennen können.\n- **Messen statt raten** – Chunking und Top-k per Evaluation (z. B. RAGAS) abstimmen.\n- **Aufwendiges aus dem Request-Pfad nehmen** – asynchrone Worker für Medienverarbeitung.\n- **So viel KI wie nötig** – z. B. lokale Modelle, wenn Daten im Haus bleiben müssen, oder vorbereitete Antworten statt eines Live-Chatbots.",
+          "paraphrases": [
+            "was ist seine engineering philosophie",
+            "wie entwirft er ki systeme",
+            "seine architekturprinzipien",
+            "wie baut er rag systeme",
+            "welche designentscheidungen trifft er"
+          ]
+        },
+        "ar": {
+          "question": "ما هو نهج محمد في هندسة الذكاء الاصطناعي؟",
+          "answer": "مبادئه الظاهرة في مشاريعه:\n\n- **فصل الإدخال عن الاستعلام** — إدخال البيانات يتم مسبقًا وبشكل قابل للتكرار، ومسار الاستعلام للقراءة فقط وسريع الاستجابة.\n- **الحفاظ على مصدر المعلومة** — كل مقطع يحمل بيانات مصدره لتتمكن الإجابات من ذكر المصادر.\n- **القياس بدل التخمين** — ضبط حجم المقاطع وعدد النتائج عبر التقييم (مثل RAGAS).\n- **إبعاد العمليات الثقيلة عن مسار الطلب** — معالجة الوسائط بعمّال غير متزامنين.\n- **استخدام القدر المناسب من الذكاء الاصطناعي** — مثل النماذج المحلية عندما يجب أن تبقى البيانات داخليًا، أو إجابات معدّة مسبقًا بدل روبوت محادثة مباشر.",
+          "paraphrases": [
+            "ما هي فلسفته الهندسية",
+            "كيف يصمم أنظمة الذكاء الاصطناعي",
+            "مبادئ التصميم لديه",
+            "كيف يبني أنظمة RAG",
+            "ما منهجيته في بناء الأنظمة"
+          ]
+        }
+      }
+    },
+    {
+      "id": "languages",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "About",
+          "href": "#about"
+        }
+      ],
+      "related": [
+        "location",
+        "role-fit",
+        "specialization"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394"
+      },
+      "generated_hash": "d33905cac0ded8ff",
+      "i18n": {
+        "en": {
+          "question": "Which languages does Mohamed speak?",
+          "answer": "- **Arabic** — native\n- **German** — C1\n- **English** — B2",
+          "paraphrases": [
+            "languages spoken",
+            "does he speak german",
+            "does he speak english",
+            "language skills",
+            "what is his german level",
+            "can he work in german"
+          ]
+        },
+        "de": {
+          "question": "Welche Sprachen spricht Mohamed?",
+          "answer": "- **Arabisch** – Muttersprache\n- **Deutsch** – C1\n- **Englisch** – B2",
+          "paraphrases": [
+            "sprachkenntnisse",
+            "spricht er deutsch",
+            "wie gut ist sein deutsch",
+            "spricht er englisch",
+            "welches deutschniveau hat er"
+          ]
+        },
+        "ar": {
+          "question": "ما هي اللغات التي يتحدثها محمد؟",
+          "answer": "- **العربية** — اللغة الأم\n- **الألمانية** — مستوى C1\n- **الإنجليزية** — مستوى B2",
+          "paraphrases": [
+            "هل يتحدث الألمانية",
+            "ما اللغات التي يجيدها",
+            "المهارات اللغوية",
+            "هل يتكلم الإنجليزية",
+            "ما مستواه في اللغة الألمانية",
+            "كم لغة يتحدث"
+          ]
+        }
+      }
+    },
+    {
+      "id": "location",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "role-fit",
+        "open-to-roles",
+        "languages"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394",
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "cf974c34e3d7d64a",
+      "i18n": {
+        "en": {
+          "question": "Where is Mohamed based?",
+          "answer": "Mohamed is based in **Berlin, Germany**.",
+          "paraphrases": [
+            "where does he live",
+            "location",
+            "which city is he in",
+            "is he in germany",
+            "where is he located",
+            "based in berlin"
+          ]
+        },
+        "de": {
+          "question": "Wo ist Mohamed ansässig?",
+          "answer": "Mohamed lebt und arbeitet in **Berlin**.",
+          "paraphrases": [
+            "wo wohnt er",
+            "wo lebt mohamed",
+            "standort",
+            "in welcher stadt ist er",
+            "ist er in deutschland",
+            "wohnort von mohamed"
+          ]
+        },
+        "ar": {
+          "question": "أين يقيم محمد؟",
+          "answer": "يقيم محمد في **برلين، ألمانيا**.",
+          "paraphrases": [
+            "أين يعيش",
+            "ما هو موقعه",
+            "في أي مدينة يقيم",
+            "هل هو في ألمانيا",
+            "مكان إقامة محمد"
+          ]
+        }
+      }
+    },
+    {
+      "id": "role-fit",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "location",
+        "open-to-roles",
+        "languages"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394",
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "d60d97f55b9654dd",
+      "i18n": {
+        "en": {
+          "question": "Which roles is Mohamed a good fit for?",
+          "answer": "His profile matches **AI Engineer, RAG Engineer, LLM Engineer, and Machine Learning Engineer** roles. He combines hands-on work on RAG and LLM systems, NLP, and speech AI with production engineering (APIs, async processing, containers, cloud) and a Business Informatics background for translating business needs into AI solutions.",
+          "paraphrases": [
+            "what positions is he looking for",
+            "which job titles fit him",
+            "what roles suit him",
+            "is he a machine learning engineer",
+            "is he a good fit for an llm engineer role",
+            "what kind of job does he want"
+          ]
+        },
+        "de": {
+          "question": "Für welche Rollen ist Mohamed geeignet?",
+          "answer": "Sein Profil passt zu Rollen als **AI Engineer, RAG Engineer, LLM Engineer und Machine Learning Engineer**. Er verbindet praktische Arbeit an RAG- und LLM-Systemen, NLP und Sprach-KI mit produktiver Softwareentwicklung (APIs, asynchrone Verarbeitung, Container, Cloud) und einem Wirtschaftsinformatik-Hintergrund, um Geschäftsanforderungen in KI-Lösungen zu übersetzen.",
+          "paraphrases": [
+            "welche stellen sucht er",
+            "welche jobtitel passen zu ihm",
+            "ist er ml engineer",
+            "passt er auf eine llm engineer stelle",
+            "welche position strebt er an"
+          ]
+        },
+        "ar": {
+          "question": "ما هي الوظائف المناسبة لمحمد؟",
+          "answer": "يتناسب ملفه مع وظائف **مهندس ذكاء اصطناعي، ومهندس RAG، ومهندس نماذج لغوية كبيرة، ومهندس تعلّم آلة**. يجمع بين الخبرة العملية في أنظمة RAG والنماذج اللغوية ومعالجة اللغة الطبيعية والكلام، وبين هندسة الأنظمة للإنتاج (واجهات API والمعالجة غير المتزامنة والحاويات والسحابة)، إضافةً إلى خلفية في نظم المعلومات الإدارية تساعده على تحويل احتياجات الأعمال إلى حلول ذكاء اصطناعي.",
+          "paraphrases": [
+            "ما الوظائف التي يبحث عنها",
+            "ما المسمى الوظيفي المناسب له",
+            "هل هو مهندس تعلم آلة",
+            "ما نوع الوظيفة التي يريدها",
+            "هل يناسب وظيفة مهندس LLM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "specialization",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "About",
+          "href": "#about"
+        },
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "languages",
+        "location",
+        "role-fit"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394",
+        "skills/technical-skills.md": "bd44c1689b135b0a"
+      },
+      "generated_hash": "20a269528474008c",
+      "i18n": {
+        "en": {
+          "question": "What does Mohamed specialize in?",
+          "answer": "Mohamed is an AI Engineer specializing in:\n\n- **RAG and LLM systems** — including multimodal retrieval with source attribution\n- **Machine Learning and NLP** — e.g. named entity recognition with spaCy\n- **Speech AI** — speech recognition (Whisper) and speaker diarization\n- **Production AI engineering** — FastAPI services, async workers, PostgreSQL/pgvector, Docker, AWS and GCP\n\nHe positions himself as an engineer who builds complete AI systems, from architecture to deployment.",
+          "paraphrases": [
+            "what is his specialization",
+            "what are his main areas of expertise",
+            "what is mohamed good at",
+            "focus areas",
+            "what kind of ai engineer is he",
+            "core expertise"
+          ]
+        },
+        "de": {
+          "question": "Worauf ist Mohamed spezialisiert?",
+          "answer": "Mohamed ist AI Engineer mit Schwerpunkt auf:\n\n- **RAG- und LLM-Systemen** – inklusive multimodalem Retrieval mit Quellenangaben\n- **Machine Learning und NLP** – z. B. Named Entity Recognition mit spaCy\n- **Sprach-KI** – Spracherkennung (Whisper) und Speaker Diarization\n- **Produktiver KI-Entwicklung** – FastAPI-Services, asynchrone Worker, PostgreSQL/pgvector, Docker, AWS und GCP\n\nEr versteht sich als Engineer, der vollständige KI-Systeme baut – von der Architektur bis zum Deployment.",
+          "paraphrases": [
+            "was sind seine schwerpunkte",
+            "mohameds spezialgebiete",
+            "worin ist er experte",
+            "seine spezialisierung",
+            "welche fachgebiete hat er",
+            "was kann mohamed besonders gut"
+          ]
+        },
+        "ar": {
+          "question": "ما هو تخصص محمد؟",
+          "answer": "محمد مهندس ذكاء اصطناعي متخصص في:\n\n- **أنظمة RAG والنماذج اللغوية الكبيرة** — بما في ذلك الاسترجاع متعدد الوسائط مع ذكر المصادر\n- **تعلّم الآلة ومعالجة اللغة الطبيعية** — مثل التعرّف على الكيانات المسماة باستخدام spaCy\n- **الذكاء الاصطناعي للكلام** — التعرّف على الكلام (Whisper) وتمييز المتحدثين\n- **هندسة أنظمة الذكاء الاصطناعي للإنتاج** — خدمات FastAPI ومعالجة غير متزامنة وPostgreSQL/pgvector وDocker وAWS وGCP\n\nيقدّم نفسه كمهندس يبني أنظمة ذكاء اصطناعي متكاملة من التصميم حتى النشر.",
+          "paraphrases": [
+            "ما هي مجالات خبرته",
+            "في ماذا يتخصص محمد",
+            "ما هي نقاط قوته",
+            "مجالات التركيز",
+            "ما نوع مهندس الذكاء الاصطناعي الذي هو عليه"
+          ]
+        }
+      }
+    },
+    {
+      "id": "who-is-mohamed",
+      "category": "profile",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "About",
+          "href": "#about"
+        }
+      ],
+      "related": [
+        "languages",
+        "location",
+        "role-fit"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394"
+      },
+      "generated_hash": "34623a949782cf10",
+      "i18n": {
+        "en": {
+          "question": "Who is Mohamed Megahed?",
+          "answer": "Mohamed Megahed is an **AI Engineer based in Berlin, Germany**. He holds a Master's degree in Business Informatics (M.Sc. Information Systems) from FernUniversität in Hagen.\n\nHe designs, builds, and deploys practical AI systems: retrieval-augmented generation (RAG) and multimodal retrieval, LLM-based analysis, NLP, and speech pipelines — with a focus on scalable, reliable, and privacy-conscious architectures that solve real business problems.",
+          "paraphrases": [
+            "who is mohamed",
+            "introduce mohamed megahed",
+            "tell me about yourself",
+            "short summary of mohamed",
+            "what is mohamed's background",
+            "give me an overview of his profile"
+          ]
+        },
+        "de": {
+          "question": "Wer ist Mohamed Megahed?",
+          "answer": "Mohamed Megahed ist **AI Engineer in Berlin**. Er hat einen Master in Wirtschaftsinformatik (M.Sc. Information Systems) der FernUniversität in Hagen.\n\nEr konzipiert, entwickelt und betreibt praxisnahe KI-Systeme: Retrieval-Augmented Generation (RAG) und multimodales Retrieval, LLM-basierte Analysen, NLP und Sprachverarbeitung – mit Fokus auf skalierbare, zuverlässige und datenschutzbewusste Architekturen für echte Geschäftsprobleme.",
+          "paraphrases": [
+            "wer ist mohamed",
+            "stell mohamed kurz vor",
+            "kurze zusammenfassung seines profils",
+            "was ist sein hintergrund",
+            "überblick über mohamed megahed"
+          ]
+        },
+        "ar": {
+          "question": "من هو محمد مجاهد؟",
+          "answer": "محمد مجاهد **مهندس ذكاء اصطناعي مقيم في برلين، ألمانيا**. حاصل على درجة الماجستير في نظم المعلومات الإدارية (Wirtschaftsinformatik) من جامعة FernUniversität in Hagen.\n\nيصمّم ويطوّر وينشر أنظمة ذكاء اصطناعي عملية: التوليد المعزّز بالاسترجاع (RAG) والاسترجاع متعدد الوسائط، والتحليل باستخدام النماذج اللغوية الكبيرة، ومعالجة اللغة الطبيعية، ومعالجة الكلام — مع التركيز على بنى قابلة للتوسع وموثوقة وتحترم الخصوصية لحل مشكلات أعمال حقيقية.",
+          "paraphrases": [
+            "من هو محمد",
+            "عرّفني على محمد مجاهد",
+            "نبذة مختصرة عن محمد",
+            "ما هي خلفيته",
+            "معلومات عن محمد مجاهد"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ai-engineering-experience",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Experience",
+          "href": "#experience"
+        }
+      ],
+      "related": [
+        "business-and-ai",
+        "employment-dates",
+        "meeting-intelligence"
+      ],
+      "source_files": {
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "profile/professional-profile.md": "d6d58578bb40e394"
+      },
+      "generated_hash": "0feec6f62a3b690f",
+      "i18n": {
+        "en": {
+          "question": "Tell me about Mohamed's AI engineering experience.",
+          "answer": "Mohamed works as an **AI Engineer at Prolumios**, integrating AI into enterprise CRM systems. He develops end-to-end AI solutions, engineers **speech recognition and speaker diarization pipelines**, builds **NLP and LLM-driven analysis workflows** for sales conversations, and works with business teams to identify AI use cases.\n\nHe also completed a **research internship** at FernUniversität in Hagen on cloud-based information extraction (spaCy NER on GCP), and built a **multimodal RAG system for Moodle** as academic research.",
+          "paraphrases": [
+            "what is his professional experience",
+            "work experience",
+            "where has he worked",
+            "what has he done as an ai engineer",
+            "his career so far",
+            "industry experience"
+          ]
+        },
+        "de": {
+          "question": "Welche Erfahrung hat Mohamed als AI Engineer?",
+          "answer": "Mohamed arbeitet als **AI Engineer bei Prolumios** und integriert KI in Enterprise-CRM-Systeme. Er entwickelt End-to-End-KI-Lösungen, baut **Pipelines für Spracherkennung und Speaker Diarization**, entwickelt **NLP- und LLM-basierte Analyse-Workflows** für Verkaufsgespräche und identifiziert gemeinsam mit Fachbereichen KI-Anwendungsfälle.\n\nAußerdem absolvierte er ein **Forschungspraktikum** an der FernUniversität in Hagen zur cloudbasierten Informationsextraktion (spaCy-NER auf GCP) und entwickelte als akademische Forschung ein **multimodales RAG-System für Moodle**.",
+          "paraphrases": [
+            "berufserfahrung",
+            "wo hat er gearbeitet",
+            "was hat er als ki ingenieur gemacht",
+            "sein bisheriger werdegang",
+            "praxiserfahrung in der industrie"
+          ]
+        },
+        "ar": {
+          "question": "ما هي خبرة محمد في هندسة الذكاء الاصطناعي؟",
+          "answer": "يعمل محمد **مهندس ذكاء اصطناعي في شركة Prolumios**، حيث يدمج الذكاء الاصطناعي في أنظمة إدارة علاقات العملاء (CRM) للمؤسسات. يطوّر حلولًا متكاملة، ويبني **خطوط معالجة للتعرّف على الكلام وتمييز المتحدثين**، ويطوّر **سير عمل للتحليل بمعالجة اللغة الطبيعية والنماذج اللغوية** لمحادثات المبيعات، ويعمل مع فرق الأعمال لتحديد حالات استخدام الذكاء الاصطناعي.\n\nكما أجرى **تدريبًا بحثيًا** في FernUniversität in Hagen حول استخراج المعلومات سحابيًا (spaCy NER على GCP)، وبنى **نظام RAG متعدد الوسائط لمنصة Moodle** كمشروع بحثي أكاديمي.",
+          "paraphrases": [
+            "ما هي خبرته المهنية",
+            "أين عمل",
+            "ماذا عمل كمهندس ذكاء اصطناعي",
+            "مسيرته المهنية",
+            "خبرته العملية"
+          ]
+        }
+      }
+    },
+    {
+      "id": "business-and-ai",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "About",
+          "href": "#about"
+        }
+      ],
+      "related": [
+        "ai-engineering-experience",
+        "employment-dates",
+        "meeting-intelligence"
+      ],
+      "source_files": {
+        "profile/professional-profile.md": "d6d58578bb40e394",
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "education/education-and-activities.md": "7820a984d7f8ae5d"
+      },
+      "generated_hash": "986dd987bd26e321",
+      "i18n": {
+        "en": {
+          "question": "How does Mohamed connect business requirements with AI?",
+          "answer": "His **Business Informatics** degree (with subjects like Business Intelligence, Digital Transformation, and Business/IT Alignment) gives him the business side; his engineering work gives him the technical side.\n\nAt Prolumios he **collaborates with business teams to identify AI use cases** and delivers results inside the tools they already use — for example, sales-conversation insights and follow-up recommendations integrated into the CRM.",
+          "paraphrases": [
+            "business understanding",
+            "does he understand business needs",
+            "can he talk to stakeholders",
+            "business and technology",
+            "how does he identify ai use cases",
+            "business it alignment"
+          ]
+        },
+        "de": {
+          "question": "Wie verbindet Mohamed Geschäftsanforderungen mit KI?",
+          "answer": "Sein **Wirtschaftsinformatik**-Studium (u. a. Business Intelligence, Digitale Transformation, Business/IT-Alignment) liefert die betriebswirtschaftliche Seite, seine Engineering-Arbeit die technische.\n\nBei Prolumios **identifiziert er gemeinsam mit Fachbereichen KI-Anwendungsfälle** und liefert Ergebnisse in den Werkzeugen, die diese bereits nutzen – etwa Erkenntnisse aus Verkaufsgesprächen und Follow-up-Empfehlungen direkt im CRM.",
+          "paraphrases": [
+            "versteht er geschäftsprozesse",
+            "business verständnis",
+            "kann er mit fachabteilungen arbeiten",
+            "wie findet er ki anwendungsfälle",
+            "business it alignment"
+          ]
+        },
+        "ar": {
+          "question": "كيف يربط محمد بين متطلبات الأعمال والذكاء الاصطناعي؟",
+          "answer": "تمنحه دراسته في **نظم المعلومات الإدارية** (ومنها ذكاء الأعمال والتحول الرقمي ومواءمة الأعمال مع تقنية المعلومات) الجانب الإداري، بينما يمنحه عمله الهندسي الجانب التقني.\n\nفي Prolumios **يتعاون مع فرق الأعمال لتحديد حالات استخدام الذكاء الاصطناعي**، ويقدّم النتائج داخل الأدوات التي يستخدمونها أصلًا — مثل رؤى محادثات المبيعات وتوصيات المتابعة المدمجة في نظام CRM.",
+          "paraphrases": [
+            "هل يفهم احتياجات الأعمال",
+            "الجمع بين الأعمال والتقنية",
+            "كيف يحدد حالات استخدام الذكاء الاصطناعي",
+            "هل يستطيع التواصل مع الإدارة",
+            "فهمه للجانب التجاري"
+          ]
+        }
+      }
+    },
+    {
+      "id": "employment-dates",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "ai-engineering-experience",
+        "business-and-ai",
+        "meeting-intelligence"
+      ],
+      "source_files": {
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "316354e20a6589a0",
+      "i18n": {
+        "en": {
+          "question": "Since when has Mohamed worked at Prolumios?",
+          "answer": "Exact employment dates are **not included** in the information Mohamed has published here. Please ask him directly by email at [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) for details.",
+          "paraphrases": [
+            "when did he start at prolumios",
+            "how long has he worked there",
+            "employment dates",
+            "how many years of experience does he have",
+            "start date of his job",
+            "years of experience"
+          ]
+        },
+        "de": {
+          "question": "Seit wann arbeitet Mohamed bei Prolumios?",
+          "answer": "Genaue Beschäftigungszeiträume sind in den hier veröffentlichten Informationen **nicht enthalten**. Bitte fragen Sie Mohamed direkt per E-Mail an [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) für Details.",
+          "paraphrases": [
+            "wann hat er bei prolumios angefangen",
+            "wie lange arbeitet er schon dort",
+            "wie viele jahre berufserfahrung",
+            "beschäftigungsdauer",
+            "seit wann ist er ai engineer"
+          ]
+        },
+        "ar": {
+          "question": "منذ متى يعمل محمد في Prolumios؟",
+          "answer": "تواريخ العمل الدقيقة **غير مذكورة** في المعلومات المنشورة هنا. يُرجى سؤال محمد مباشرة عبر البريد الإلكتروني [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) لمزيد من التفاصيل.",
+          "paraphrases": [
+            "متى بدأ العمل في Prolumios",
+            "كم سنة خبرة لديه",
+            "مدة عمله هناك",
+            "تاريخ بدء العمل",
+            "سنوات الخبرة"
+          ]
+        }
+      }
+    },
+    {
+      "id": "meeting-intelligence",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Architecture — AI Meeting Intelligence",
+          "href": "#architecture"
+        }
+      ],
+      "related": [
+        "llms-and-agents",
+        "ai-engineering-experience",
+        "business-and-ai"
+      ],
+      "source_files": {
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "7928236d4221827f",
+      "i18n": {
+        "en": {
+          "question": "How does the AI meeting intelligence pipeline work?",
+          "answer": "Mohamed's meeting-intelligence work at Prolumios turns recorded sales conversations into structured information inside the CRM:\n\n**Audio → ASR (Whisper) → speaker diarization → speaker-attributed transcript → LLM analysis (sentiment, themes) → insights and follow-up recommendations → CRM integration**\n\nIt runs on AWS with Python backend integration. Each stage produces an inspectable artefact, and results are delivered where sales teams already work.",
+          "paraphrases": [
+            "explain the meeting intelligence system",
+            "how do you analyze sales calls",
+            "sales conversation analysis pipeline",
+            "how does he turn meetings into insights",
+            "whisper diarization llm crm pipeline",
+            "how does the crm ai work"
+          ]
+        },
+        "de": {
+          "question": "Wie funktioniert die Pipeline für Meeting Intelligence?",
+          "answer": "Mohameds Meeting-Intelligence-Arbeit bei Prolumios macht aus aufgezeichneten Verkaufsgesprächen strukturierte Informationen im CRM:\n\n**Audio → ASR (Whisper) → Speaker Diarization → Transkript mit Sprecherzuordnung → LLM-Analyse (Sentiment, Themen) → Erkenntnisse und Follow-up-Empfehlungen → CRM-Integration**\n\nDas Ganze läuft auf AWS mit Python-Backend-Integration. Jede Stufe erzeugt ein prüfbares Zwischenergebnis, und die Ergebnisse landen dort, wo Vertriebsteams ohnehin arbeiten.",
+          "paraphrases": [
+            "wie analysiert er verkaufsgespräche",
+            "erkläre das meeting intelligence system",
+            "wie werden aus meetings erkenntnisse",
+            "whisper diarization llm crm",
+            "wie funktioniert die ki im crm"
+          ]
+        },
+        "ar": {
+          "question": "كيف يعمل نظام ذكاء الاجتماعات؟",
+          "answer": "يحوّل عمل محمد في Prolumios محادثات المبيعات المسجّلة إلى معلومات منظّمة داخل نظام CRM:\n\n**الصوت → التعرّف على الكلام (Whisper) → تمييز المتحدثين → نص منسوب لكل متحدث → تحليل بالنماذج اللغوية (المشاعر والمواضيع) → رؤى وتوصيات للمتابعة → التكامل مع CRM**\n\nيعمل النظام على AWS مع تكامل خلفي بلغة Python. كل مرحلة تنتج مخرجات يمكن فحصها، وتصل النتائج إلى المكان الذي تعمل فيه فرق المبيعات أصلًا.",
+          "paraphrases": [
+            "كيف يتم تحليل مكالمات المبيعات",
+            "اشرح نظام تحليل الاجتماعات",
+            "كيف تتحول الاجتماعات إلى رؤى",
+            "خط معالجة Whisper وتمييز المتحدثين",
+            "كيف يعمل الذكاء الاصطناعي في CRM"
+          ]
+        }
+      }
+    },
+    {
+      "id": "prolumios-role",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Experience",
+          "href": "#experience"
+        }
+      ],
+      "related": [
+        "ai-engineering-experience",
+        "business-and-ai",
+        "employment-dates"
+      ],
+      "source_files": {
+        "experience/prolumios.md": "ebdeb42d07ea448b"
+      },
+      "generated_hash": "91b49f702c8921cd",
+      "i18n": {
+        "en": {
+          "question": "What does Mohamed do at Prolumios?",
+          "answer": "At **Prolumios** (professional work), Mohamed is an AI Engineer focused on **integrating AI into CRM systems**:\n\n- developing end-to-end AI solutions for enterprise CRMs\n- engineering speech recognition and speaker diarization pipelines\n- building NLP and LLM-driven analysis workflows\n- extracting actionable insights from sales conversations\n- collaborating with business teams to identify AI use cases",
+          "paraphrases": [
+            "prolumios",
+            "his job at prolumios",
+            "responsibilities at prolumios",
+            "what is his current role",
+            "current job",
+            "what does he work on now"
+          ]
+        },
+        "de": {
+          "question": "Was macht Mohamed bei Prolumios?",
+          "answer": "Bei **Prolumios** (Berufstätigkeit) ist Mohamed AI Engineer mit Fokus auf der **Integration von KI in CRM-Systeme**:\n\n- End-to-End-KI-Lösungen für Enterprise-CRMs entwickeln\n- Pipelines für Spracherkennung und Speaker Diarization bauen\n- NLP- und LLM-basierte Analyse-Workflows entwickeln\n- verwertbare Erkenntnisse aus Verkaufsgesprächen gewinnen\n- mit Fachbereichen KI-Anwendungsfälle identifizieren",
+          "paraphrases": [
+            "seine aufgaben bei prolumios",
+            "aktuelle stelle",
+            "was ist seine aktuelle rolle",
+            "woran arbeitet er gerade",
+            "prolumios job"
+          ]
+        },
+        "ar": {
+          "question": "ماذا يعمل محمد في Prolumios؟",
+          "answer": "في **Prolumios** (عمل مهني)، يعمل محمد مهندس ذكاء اصطناعي مع التركيز على **دمج الذكاء الاصطناعي في أنظمة CRM**:\n\n- تطوير حلول ذكاء اصطناعي متكاملة لأنظمة CRM في المؤسسات\n- بناء خطوط معالجة للتعرّف على الكلام وتمييز المتحدثين\n- تطوير سير عمل للتحليل بمعالجة اللغة الطبيعية والنماذج اللغوية الكبيرة\n- استخلاص رؤى قابلة للتنفيذ من محادثات المبيعات\n- التعاون مع فرق الأعمال لتحديد حالات الاستخدام",
+          "paraphrases": [
+            "مهامه في Prolumios",
+            "وظيفته الحالية",
+            "ما هو دوره الحالي",
+            "على ماذا يعمل الآن",
+            "عمله في شركة Prolumios"
+          ]
+        }
+      }
+    },
+    {
+      "id": "research-internship",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Experience",
+          "href": "#experience"
+        },
+        {
+          "label": "MedEntity — GitHub",
+          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+        }
+      ],
+      "related": [
+        "medentity",
+        "medentity-accuracy",
+        "nlp-ml"
+      ],
+      "source_files": {
+        "experience/fernuni-research-internship.md": "a52bfb31b205a907",
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142"
+      },
+      "generated_hash": "58e828ae6e59fc00",
+      "i18n": {
+        "en": {
+          "question": "What did Mohamed do in his research internship?",
+          "answer": "His **research internship at FernUniversität in Hagen** (academic research, not commercial employment) focused on **cloud-based information extraction**:\n\n- developing web-based annotation interfaces\n- implementing spaCy-based named entity recognition\n- configuring and optimizing Google Cloud Platform resources\n\nThe result was **MedEntity**, a spaCy NER model for biomedical entities in scientific articles, deployed on GCP.",
+          "paraphrases": [
+            "fernuni internship",
+            "research internship",
+            "what was his internship about",
+            "academic research experience",
+            "fachpraktikum",
+            "internship at fernuniversität"
+          ]
+        },
+        "de": {
+          "question": "Was hat Mohamed in seinem Forschungspraktikum gemacht?",
+          "answer": "Sein **Forschungspraktikum an der FernUniversität in Hagen** (akademische Forschung, keine Anstellung in der Wirtschaft) drehte sich um **cloudbasierte Informationsextraktion**:\n\n- webbasierte Annotationsoberflächen entwickeln\n- Named Entity Recognition mit spaCy umsetzen\n- Ressourcen auf der Google Cloud Platform konfigurieren und optimieren\n\nErgebnis war **MedEntity**, ein spaCy-NER-Modell für biomedizinische Entitäten in wissenschaftlichen Artikeln, bereitgestellt auf GCP.",
+          "paraphrases": [
+            "praktikum an der fernuni",
+            "fachpraktikum",
+            "worum ging es im praktikum",
+            "forschungserfahrung",
+            "akademische forschung"
+          ]
+        },
+        "ar": {
+          "question": "ماذا فعل محمد في تدريبه البحثي؟",
+          "answer": "ركّز **تدريبه البحثي في FernUniversität in Hagen** (بحث أكاديمي وليس عملًا تجاريًا) على **استخراج المعلومات سحابيًا**:\n\n- تطوير واجهات ويب لتوسيم البيانات\n- تنفيذ حلول التعرّف على الكيانات المسماة باستخدام spaCy\n- إعداد موارد Google Cloud Platform وتحسينها\n\nوكانت النتيجة **MedEntity**، وهو نموذج spaCy للتعرّف على الكيانات الطبية الحيوية في المقالات العلمية، منشور على GCP.",
+          "paraphrases": [
+            "التدريب في الجامعة",
+            "خبرته البحثية",
+            "عن ماذا كان تدريبه",
+            "التدريب البحثي",
+            "البحث الأكاديمي"
+          ]
+        }
+      }
+    },
+    {
+      "id": "speech-experience",
+      "category": "experience",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Experience",
+          "href": "#experience"
+        }
+      ],
+      "related": [
+        "ai-engineering-experience",
+        "business-and-ai",
+        "employment-dates"
+      ],
+      "source_files": {
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346"
+      },
+      "generated_hash": "73f887fd0faf5c3a",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed have experience with speech recognition and speaker diarization?",
+          "answer": "Yes, in two settings:\n\n- **Professionally at Prolumios:** speech recognition with Whisper-based pipelines and speaker diarization to attribute transcript segments to speakers, followed by NLP/LLM analysis of sales conversations.\n- **Academic research:** in his multimodal RAG project for Moodle, lecture videos are transcribed with Whisper so their content becomes searchable.",
+          "paraphrases": [
+            "asr experience",
+            "has he worked with whisper",
+            "speech to text experience",
+            "speaker diarization",
+            "audio ai experience",
+            "does he know speech processing"
+          ]
+        },
+        "de": {
+          "question": "Hat Mohamed Erfahrung mit Spracherkennung und Speaker Diarization?",
+          "answer": "Ja, in zwei Kontexten:\n\n- **Beruflich bei Prolumios:** Spracherkennung mit Whisper-basierten Pipelines und Speaker Diarization zur Zuordnung von Transkriptabschnitten zu Sprechern, gefolgt von NLP/LLM-Analyse der Verkaufsgespräche.\n- **Akademische Forschung:** In seinem multimodalen RAG-Projekt für Moodle werden Vorlesungsvideos mit Whisper transkribiert und so durchsuchbar.",
+          "paraphrases": [
+            "erfahrung mit asr",
+            "hat er mit whisper gearbeitet",
+            "speech to text erfahrung",
+            "sprecherzuordnung",
+            "audioverarbeitung erfahrung"
+          ]
+        },
+        "ar": {
+          "question": "هل لدى محمد خبرة في التعرّف على الكلام وتمييز المتحدثين؟",
+          "answer": "نعم، في سياقين:\n\n- **مهنيًا في Prolumios:** التعرّف على الكلام عبر خطوط معالجة تعتمد على Whisper، وتمييز المتحدثين لنسب أجزاء النص إلى كل متحدث، ثم تحليل محادثات المبيعات بمعالجة اللغة الطبيعية والنماذج اللغوية.\n- **بحثيًا:** في مشروع RAG متعدد الوسائط لمنصة Moodle، تُفرَّغ محاضرات الفيديو نصيًا باستخدام Whisper ليصبح محتواها قابلًا للبحث.",
+          "paraphrases": [
+            "خبرته في تحويل الكلام إلى نص",
+            "هل استخدم Whisper",
+            "خبرة في معالجة الصوت",
+            "تمييز المتحدثين",
+            "هل يعرف معالجة الكلام"
+          ]
+        }
+      }
+    },
+    {
+      "id": "local-llms",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "source-attribution",
+        "rag-experience",
+        "vector-databases"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "e22a010fe6050883",
+      "i18n": {
+        "en": {
+          "question": "Has Mohamed worked with local or open-source LLMs?",
+          "answer": "Yes. In the Moodle RAG project, generation and embeddings run **locally via Ollama** — with small open models such as **Gemma 3 (1B)** and **Phi-3 mini**, and embedding models **nomic-embed-text** and **mxbai-embed-large**. Running locally keeps course data on the institution's own infrastructure, a privacy-conscious design choice. The provider layer also supports OpenAI and Cohere.",
+          "paraphrases": [
+            "ollama experience",
+            "self hosted llm",
+            "open source models",
+            "has he used gemma or phi",
+            "on premise llm",
+            "local inference"
+          ]
+        },
+        "de": {
+          "question": "Hat Mohamed mit lokalen oder Open-Source-LLMs gearbeitet?",
+          "answer": "Ja. Im Moodle-RAG-Projekt laufen Generierung und Embeddings **lokal über Ollama** – mit kleinen offenen Modellen wie **Gemma 3 (1B)** und **Phi-3 mini** sowie den Embedding-Modellen **nomic-embed-text** und **mxbai-embed-large**. Der lokale Betrieb hält Kursdaten auf der eigenen Infrastruktur – eine bewusst datenschutzfreundliche Entscheidung. Die Provider-Schicht unterstützt zusätzlich OpenAI und Cohere.",
+          "paraphrases": [
+            "erfahrung mit ollama",
+            "selbst gehostete llms",
+            "open source modelle",
+            "hat er gemma oder phi genutzt",
+            "on premise llm"
+          ]
+        },
+        "ar": {
+          "question": "هل عمل محمد بنماذج لغوية محلية أو مفتوحة المصدر؟",
+          "answer": "نعم. في مشروع RAG لمنصة Moodle، يعمل التوليد والتضمين **محليًا عبر Ollama** باستخدام نماذج مفتوحة صغيرة مثل **Gemma 3 (1B)** و**Phi-3 mini**، ونماذج التضمين **nomic-embed-text** و**mxbai-embed-large**. يحافظ التشغيل المحلي على بقاء بيانات المقررات داخل البنية التحتية للمؤسسة، وهو خيار تصميمي يراعي الخصوصية. كما تدعم طبقة المزودين OpenAI وCohere.",
+          "paraphrases": [
+            "خبرته مع Ollama",
+            "نماذج لغوية مستضافة ذاتيًا",
+            "النماذج مفتوحة المصدر",
+            "هل استخدم Gemma أو Phi",
+            "التشغيل المحلي للنماذج"
+          ]
+        }
+      }
+    },
+    {
+      "id": "medentity",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MedEntity_NER_spaCy — GitHub",
+          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+        }
+      ],
+      "related": [
+        "research-internship",
+        "medentity-accuracy",
+        "projects-overview"
+      ],
+      "source_files": {
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
+        "experience/fernuni-research-internship.md": "a52bfb31b205a907"
+      },
+      "generated_hash": "37e4881c8709d4bd",
+      "i18n": {
+        "en": {
+          "question": "What is the MedEntity NER project?",
+          "answer": "**MedEntity** is a named entity recognition project from Mohamed's research internship at FernUniversität in Hagen (academic research).\n\n- A **spaCy NER model trained from scratch on the CRAFT corpus** to find biomedical entities in scientific articles.\n- Ontology-based entity types: chemicals (CHEBI), cell types (CL), Gene Ontology terms, diseases (MONDO), proteins (PR), taxonomy (NCBITaxon), sequences (SO), anatomy (UBERON), and more.\n- A **Streamlit** app highlights entities with displaCy; the app is **Dockerized and deployed on Google Cloud Platform**.",
+          "paraphrases": [
+            "medentity",
+            "ner project",
+            "spacy project",
+            "biomedical entity recognition",
+            "craft corpus model",
+            "named entity recognition project"
+          ]
+        },
+        "de": {
+          "question": "Was ist das MedEntity-NER-Projekt?",
+          "answer": "**MedEntity** ist ein Named-Entity-Recognition-Projekt aus Mohameds Forschungspraktikum an der FernUniversität in Hagen (akademische Forschung).\n\n- Ein **spaCy-NER-Modell, von Grund auf auf dem CRAFT-Korpus trainiert**, um biomedizinische Entitäten in wissenschaftlichen Artikeln zu finden.\n- Ontologiebasierte Entitätstypen: Chemikalien (CHEBI), Zelltypen (CL), Gene-Ontology-Begriffe, Krankheiten (MONDO), Proteine (PR), Taxonomie (NCBITaxon), Sequenzen (SO), Anatomie (UBERON) u. a.\n- Eine **Streamlit**-App hebt Entitäten mit displaCy hervor; sie ist **mit Docker containerisiert und auf der Google Cloud Platform bereitgestellt**.",
+          "paraphrases": [
+            "medentity projekt",
+            "ner projekt",
+            "spacy projekt",
+            "biomedizinische entitätserkennung",
+            "modell auf craft korpus"
+          ]
+        },
+        "ar": {
+          "question": "ما هو مشروع MedEntity للتعرّف على الكيانات؟",
+          "answer": "**MedEntity** مشروع للتعرّف على الكيانات المسماة من تدريب محمد البحثي في FernUniversität in Hagen (بحث أكاديمي).\n\n- **نموذج spaCy دُرِّب من الصفر على مجموعة بيانات CRAFT** لاستخراج الكيانات الطبية الحيوية من المقالات العلمية.\n- أنواع كيانات مبنية على أنطولوجيات: المواد الكيميائية (CHEBI) وأنواع الخلايا (CL) ومصطلحات Gene Ontology والأمراض (MONDO) والبروتينات (PR) والتصنيف (NCBITaxon) والتسلسلات (SO) والتشريح (UBERON) وغيرها.\n- تطبيق **Streamlit** يبرز الكيانات باستخدام displaCy، وهو **مغلّف بـ Docker ومنشور على Google Cloud Platform**.",
+          "paraphrases": [
+            "مشروع MedEntity",
+            "مشروع NER",
+            "مشروع spaCy",
+            "التعرف على الكيانات الطبية",
+            "نموذج مدرب على CRAFT"
+          ]
+        }
+      }
+    },
+    {
+      "id": "medentity-accuracy",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MedEntity_NER_spaCy — GitHub",
+          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "see-code",
+        "medentity",
+        "projects-overview"
+      ],
+      "source_files": {
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "d054e7f0bcceb9b6",
+      "i18n": {
+        "en": {
+          "question": "How accurate is the MedEntity model?",
+          "answer": "Accuracy or F1 scores for MedEntity are **not included** in the information published here. For evaluation details, please contact Mohamed at [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "medentity f1 score",
+            "ner model performance",
+            "precision and recall of the model",
+            "how good is the spacy model",
+            "evaluation metrics of medentity",
+            "model accuracy"
+          ]
+        },
+        "de": {
+          "question": "Wie genau ist das MedEntity-Modell?",
+          "answer": "Genauigkeits- oder F1-Werte für MedEntity sind in den hier veröffentlichten Informationen **nicht enthalten**. Für Details zur Evaluation kontaktieren Sie Mohamed bitte unter [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "f1 wert von medentity",
+            "leistung des ner modells",
+            "precision und recall",
+            "wie gut ist das spacy modell",
+            "genauigkeit des modells"
+          ]
+        },
+        "ar": {
+          "question": "ما مدى دقة نموذج MedEntity؟",
+          "answer": "قيم الدقة أو F1 لنموذج MedEntity **غير مذكورة** في المعلومات المنشورة هنا. لتفاصيل التقييم، يُرجى التواصل مع محمد عبر [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "دقة نموذج MedEntity",
+            "أداء نموذج NER",
+            "مقياس F1",
+            "ما مدى جودة نموذج spaCy",
+            "مقاييس تقييم النموذج"
+          ]
+        }
+      }
+    },
+    {
+      "id": "multimodal-rag-evaluation",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "backend-skills",
+        "llm-evaluation",
+        "rag-experience"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "skills/technical-skills.md": "bd44c1689b135b0a"
+      },
+      "generated_hash": "ec0046364fadc55c",
+      "i18n": {
+        "en": {
+          "question": "How was the Moodle RAG system evaluated?",
+          "answer": "With **RAGAS**, in three experiment sets documented in the repository:\n\n1. **40 questions** comparing chunk size/overlap (500/100 vs. 1200/200 characters) and retrieval depth (top-k 3 vs. 5).\n2. **30 questions** focused on multimodality — questions grouped by modality.\n3. **Updated-knowledge** tests, including answers of a Gemma LLM without the knowledge base for comparison.\n\nThe numeric scores are in the reports in the repository.",
+          "paraphrases": [
+            "rag evaluation",
+            "did he use ragas",
+            "how did he test the rag system",
+            "chunk size experiments",
+            "evaluation results",
+            "how was retrieval quality measured"
+          ]
+        },
+        "de": {
+          "question": "Wie wurde das Moodle-RAG-System evaluiert?",
+          "answer": "Mit **RAGAS**, in drei im Repository dokumentierten Versuchsreihen:\n\n1. **40 Fragen** zum Vergleich von Chunk-Größe/Overlap (500/100 vs. 1200/200 Zeichen) und Retrieval-Tiefe (Top-k 3 vs. 5).\n2. **30 Fragen** mit Fokus auf Multimodalität – nach Modalität gruppiert.\n3. Tests mit **aktualisiertem Wissen**, inklusive Antworten eines Gemma-LLMs ohne Wissensbasis zum Vergleich.\n\nDie konkreten Kennzahlen stehen in den Berichten im Repository.",
+          "paraphrases": [
+            "rag evaluation",
+            "hat er ragas genutzt",
+            "wie wurde das rag system getestet",
+            "experimente mit chunk größen",
+            "evaluationsergebnisse"
+          ]
+        },
+        "ar": {
+          "question": "كيف تم تقييم نظام RAG الخاص بمنصة Moodle؟",
+          "answer": "باستخدام **RAGAS** في ثلاث مجموعات تجارب موثّقة في المستودع:\n\n1. **40 سؤالًا** لمقارنة حجم المقاطع والتداخل (500/100 مقابل 1200/200 حرف) وعدد النتائج المسترجعة (top-k 3 مقابل 5).\n2. **30 سؤالًا** تركّز على تعدد الوسائط، مصنّفة حسب نوع الوسيط.\n3. اختبارات **المعرفة المحدّثة**، بما فيها إجابات نموذج Gemma دون قاعدة المعرفة للمقارنة.\n\nالنتائج الرقمية موجودة في التقارير داخل المستودع.",
+          "paraphrases": [
+            "تقييم نظام RAG",
+            "هل استخدم RAGAS",
+            "كيف اختبر النظام",
+            "تجارب حجم المقاطع",
+            "نتائج التقييم"
+          ]
+        }
+      }
+    },
+    {
+      "id": "multimodal-rag-modalities",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "local-llms",
+        "multimodal-rag-evaluation",
+        "multimodal-rag-overview"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "bbea4d2e537af60d",
+      "i18n": {
+        "en": {
+          "question": "How are lecture videos and images made searchable in the Moodle RAG system?",
+          "answer": "Each modality has its own processing path, and all of them end up in **one vector index**:\n\n- **PDF text** is extracted and chunked.\n- **Images inside PDFs** are extracted together with their surrounding page context, producing searchable descriptions.\n- **Lecture videos** are transcribed with **OpenAI Whisper**; the transcripts are indexed like documents.\n\nThese slow jobs run in **Celery workers with Redis**, so the API returns a job id immediately instead of blocking.",
+          "paraphrases": [
+            "how does it handle videos",
+            "how are images indexed",
+            "multimodal processing",
+            "how are lecture videos searchable",
+            "whisper transcription in moodle",
+            "how does it search figures in pdfs"
+          ]
+        },
+        "de": {
+          "question": "Wie werden Vorlesungsvideos und Bilder im Moodle-RAG durchsuchbar?",
+          "answer": "Jede Modalität hat ihren eigenen Verarbeitungsweg, alle landen in **einem Vektorindex**:\n\n- **PDF-Text** wird extrahiert und in Chunks zerlegt.\n- **Bilder in PDFs** werden zusammen mit dem umgebenden Seitenkontext extrahiert und als durchsuchbare Beschreibungen gespeichert.\n- **Vorlesungsvideos** werden mit **OpenAI Whisper** transkribiert; die Transkripte werden wie Dokumente indexiert.\n\nDiese langsamen Jobs laufen in **Celery-Workern mit Redis**, sodass die API sofort eine Job-ID zurückgibt.",
+          "paraphrases": [
+            "wie werden videos verarbeitet",
+            "wie werden bilder indexiert",
+            "multimodale verarbeitung",
+            "transkription mit whisper",
+            "wie findet das system abbildungen in pdfs"
+          ]
+        },
+        "ar": {
+          "question": "كيف تصبح محاضرات الفيديو والصور قابلة للبحث في نظام Moodle؟",
+          "answer": "لكل نوع من الوسائط مسار معالجة خاص، وتنتهي جميعها في **فهرس متجهات واحد**:\n\n- **نصوص PDF** تُستخرج وتُقسَّم إلى مقاطع.\n- **الصور داخل ملفات PDF** تُستخرج مع سياق الصفحة المحيط بها لتتحول إلى أوصاف قابلة للبحث.\n- **محاضرات الفيديو** تُفرَّغ نصيًا باستخدام **OpenAI Whisper** وتُفهرس النصوص مثل المستندات.\n\nتعمل هذه المهام البطيئة عبر **عمّال Celery مع Redis**، فيُعيد الخادم رقم المهمة فورًا دون انتظار.",
+          "paraphrases": [
+            "كيف يتعامل مع الفيديو",
+            "كيف تتم فهرسة الصور",
+            "المعالجة متعددة الوسائط",
+            "تفريغ المحاضرات باستخدام Whisper",
+            "كيف يبحث في الأشكال داخل ملفات PDF"
+          ]
+        }
+      }
+    },
+    {
+      "id": "multimodal-rag-overview",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        },
+        {
+          "label": "Projects",
+          "href": "#projects"
+        }
+      ],
+      "related": [
+        "local-llms",
+        "multimodal-rag-evaluation",
+        "multimodal-rag-modalities"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "401c9ee5ed07f957",
+      "i18n": {
+        "en": {
+          "question": "Explain Mohamed's Multimodal RAG project.",
+          "answer": "**MR. Multi@Moodle** is an end-to-end multimodal retrieval-augmented generation system integrated into the **Moodle** learning platform (academic research).\n\nIt answers questions about course material — **PDFs, images and tables inside PDFs, and lecture videos** — and links answers back to the source files. A Moodle plugin provides search and chat; a FastAPI backend handles chunking, embeddings, pgvector indexing, retrieval, and generation with local LLMs via Ollama. Media processing runs asynchronously in Celery workers, and the whole stack runs with Docker Compose and Prometheus/Grafana monitoring.",
+          "paraphrases": [
+            "multimodal rag",
+            "moodle project",
+            "mr multi moodle",
+            "tell me about the rag project",
+            "what is mr multi@moodle",
+            "his rag for moodle"
+          ]
+        },
+        "de": {
+          "question": "Erkläre Mohameds multimodales RAG-Projekt.",
+          "answer": "**MR. Multi@Moodle** ist ein End-to-End-System für multimodale Retrieval-Augmented Generation, integriert in die Lernplattform **Moodle** (akademische Forschung).\n\nEs beantwortet Fragen zu Kursmaterial – **PDFs, Bilder und Tabellen in PDFs sowie Vorlesungsvideos** – und verlinkt die Antworten auf die Quelldateien. Ein Moodle-Plugin bietet Suche und Chat; ein FastAPI-Backend übernimmt Chunking, Embeddings, pgvector-Indexierung, Retrieval und Generierung mit lokalen LLMs über Ollama. Medienverarbeitung läuft asynchron in Celery-Workern, der gesamte Stack mit Docker Compose und Prometheus/Grafana-Monitoring.",
+          "paraphrases": [
+            "multimodales rag",
+            "moodle projekt",
+            "was ist mr multi moodle",
+            "erzähl mir vom rag projekt",
+            "sein rag system für moodle"
+          ]
+        },
+        "ar": {
+          "question": "اشرح مشروع RAG متعدد الوسائط الخاص بمحمد.",
+          "answer": "**MR. Multi@Moodle** نظام متكامل للتوليد المعزّز بالاسترجاع متعدد الوسائط، مدمج في منصة التعلّم **Moodle** (بحث أكاديمي).\n\nيجيب عن الأسئلة حول المواد الدراسية — **ملفات PDF والصور والجداول داخلها ومحاضرات الفيديو** — ويربط الإجابات بالملفات المصدرية. توفر إضافة Moodle البحث والمحادثة، بينما يتولى خادم FastAPI تقسيم النصوص والتضمينات والفهرسة في pgvector والاسترجاع والتوليد بنماذج لغوية محلية عبر Ollama. تتم معالجة الوسائط بشكل غير متزامن عبر Celery، ويعمل النظام كاملًا بـ Docker Compose مع مراقبة Prometheus وGrafana.",
+          "paraphrases": [
+            "مشروع RAG متعدد الوسائط",
+            "مشروع Moodle",
+            "ما هو MR Multi Moodle",
+            "حدثني عن مشروع RAG",
+            "نظام RAG لمنصة مودل"
+          ]
+        }
+      }
+    },
+    {
+      "id": "multimodal-rag-stack",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "local-llms",
+        "multimodal-rag-evaluation",
+        "multimodal-rag-modalities"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "36d5d1f1dc344851",
+      "i18n": {
+        "en": {
+          "question": "Which technologies does the Moodle RAG system use?",
+          "answer": "- **Backend:** Python, FastAPI, SQLAlchemy, Alembic\n- **Retrieval:** PostgreSQL + **pgvector** (Qdrant also supported via a provider interface)\n- **Models:** local LLMs and embedding models via **Ollama**; provider abstractions for OpenAI and Cohere; **Whisper** for transcription\n- **Async processing:** **Celery** + **Redis**\n- **Integration:** Moodle block plugin (PHP/JavaScript), Nginx reverse proxy\n- **Operations:** Docker Compose, **Prometheus**, **Grafana**\n- **Evaluation:** RAGAS",
+          "paraphrases": [
+            "tech stack of the rag project",
+            "which database does the moodle project use",
+            "does it use pgvector",
+            "what llm does it use",
+            "architecture of mr multi moodle",
+            "which vector database"
+          ]
+        },
+        "de": {
+          "question": "Welche Technologien nutzt das Moodle-RAG-System?",
+          "answer": "- **Backend:** Python, FastAPI, SQLAlchemy, Alembic\n- **Retrieval:** PostgreSQL + **pgvector** (Qdrant über eine Provider-Schnittstelle ebenfalls unterstützt)\n- **Modelle:** lokale LLMs und Embedding-Modelle über **Ollama**; Provider-Abstraktionen für OpenAI und Cohere; **Whisper** für Transkription\n- **Asynchrone Verarbeitung:** **Celery** + **Redis**\n- **Integration:** Moodle-Block-Plugin (PHP/JavaScript), Nginx als Reverse Proxy\n- **Betrieb:** Docker Compose, **Prometheus**, **Grafana**\n- **Evaluation:** RAGAS",
+          "paraphrases": [
+            "tech stack des rag projekts",
+            "welche datenbank nutzt das moodle projekt",
+            "welches llm wird verwendet",
+            "architektur von mr multi moodle",
+            "welche vektordatenbank"
+          ]
+        },
+        "ar": {
+          "question": "ما هي التقنيات المستخدمة في نظام RAG الخاص بمنصة Moodle؟",
+          "answer": "- **الخادم:** Python وFastAPI وSQLAlchemy وAlembic\n- **الاسترجاع:** PostgreSQL مع **pgvector** (ويدعم Qdrant أيضًا عبر واجهة موحّدة)\n- **النماذج:** نماذج لغوية ونماذج تضمين محلية عبر **Ollama**، وواجهات لمزودي OpenAI وCohere، و**Whisper** للتفريغ النصي\n- **المعالجة غير المتزامنة:** **Celery** و**Redis**\n- **التكامل:** إضافة Moodle (PHP/JavaScript) وNginx كوكيل عكسي\n- **التشغيل:** Docker Compose و**Prometheus** و**Grafana**\n- **التقييم:** RAGAS",
+          "paraphrases": [
+            "التقنيات المستخدمة في مشروع RAG",
+            "ما قاعدة البيانات في مشروع مودل",
+            "هل يستخدم pgvector",
+            "ما النموذج اللغوي المستخدم",
+            "قاعدة بيانات المتجهات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "portfolio-assistant",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Projects",
+          "href": "#projects"
+        }
+      ],
+      "related": [
+        "projects-overview",
+        "why-no-live-chatbot",
+        "ci-cd"
+      ],
+      "source_files": {
+        "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f"
+      },
+      "generated_hash": "7fd12a0bd976b799",
+      "i18n": {
+        "en": {
+          "question": "How does this assistant work?",
+          "answer": "This assistant shows **prepared answers**, not live AI output:\n\n1. Mohamed keeps his knowledge base as Markdown files.\n2. An **offline Python tool** sends it to the **Google Gemini API** (structured output) to draft questions, answers, sources, German and Arabic translations, native paraphrases, and test questions.\n3. Mohamed **reviews and approves** every item; only approved items are published.\n4. In your browser, a small multilingual matcher finds the closest prepared question. If none is close enough, you're invited to email him.\n\nThe site is fully static on GitHub Pages.",
+          "paraphrases": [
+            "how does this chatbot work",
+            "is this a real ai",
+            "how was this assistant built",
+            "what powers this chat",
+            "is this chatgpt",
+            "how do you answer my questions"
+          ]
+        },
+        "de": {
+          "question": "Wie funktioniert dieser Assistent?",
+          "answer": "Dieser Assistent zeigt **vorbereitete Antworten**, keine Live-KI-Ausgaben:\n\n1. Mohamed pflegt seine Wissensbasis als Markdown-Dateien.\n2. Ein **Offline-Python-Tool** schickt sie an die **Google-Gemini-API** (Structured Output) und erstellt Entwürfe für Fragen, Antworten, Quellen, deutsche und arabische Übersetzungen, muttersprachliche Umformulierungen und Testfragen.\n3. Mohamed **prüft und gibt jeden Eintrag frei**; nur freigegebene werden veröffentlicht.\n4. In Ihrem Browser findet ein kleiner mehrsprachiger Matcher die passendste vorbereitete Frage. Passt keine, werden Sie eingeladen, ihm zu schreiben.\n\nDie Website ist vollständig statisch auf GitHub Pages.",
+          "paraphrases": [
+            "wie funktioniert dieser chatbot",
+            "ist das eine echte ki",
+            "wie wurde dieser assistent gebaut",
+            "ist das chatgpt",
+            "wie beantwortest du meine fragen"
+          ]
+        },
+        "ar": {
+          "question": "كيف يعمل هذا المساعد؟",
+          "answer": "يعرض هذا المساعد **إجابات معدّة مسبقًا** وليس مخرجات ذكاء اصطناعي مباشرة:\n\n1. يحتفظ محمد بقاعدة معرفته كملفات Markdown.\n2. ترسلها **أداة Python تعمل دون اتصال** إلى **Google Gemini API** (بمخرجات منظّمة) لإعداد مسودات الأسئلة والإجابات والمصادر والترجمات الألمانية والعربية وصيغ بديلة أصيلة لكل لغة وأسئلة اختبار.\n3. **يراجع محمد كل عنصر ويعتمده**، ولا يُنشر إلا ما اعتمده.\n4. في متصفحك، تبحث أداة مطابقة صغيرة متعددة اللغات عن أقرب سؤال معدّ. وإن لم يوجد سؤال قريب، تتم دعوتك لمراسلته.\n\nالموقع ثابت بالكامل على GitHub Pages.",
+          "paraphrases": [
+            "كيف يعمل روبوت المحادثة هذا",
+            "هل هذا ذكاء اصطناعي حقيقي",
+            "كيف بُني هذا المساعد",
+            "هل هذا ChatGPT",
+            "كيف تجيب عن أسئلتي"
+          ]
+        }
+      }
+    },
+    {
+      "id": "projects-overview",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Projects",
+          "href": "#projects"
+        }
+      ],
+      "related": [
+        "see-code",
+        "local-llms",
+        "medentity"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142",
+        "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f",
+        "profile/professional-profile.md": "d6d58578bb40e394"
+      },
+      "generated_hash": "28d0f3482d6421a6",
+      "i18n": {
+        "en": {
+          "question": "What AI projects has Mohamed built?",
+          "answer": "- **Multimodal RAG for Moodle** (academic research) — question answering over course PDFs, images, tables, and lecture videos with source attribution; FastAPI, Celery, pgvector, Ollama, Whisper.\n- **MedEntity** (research internship) — spaCy NER for biomedical entities in scientific articles, deployed on GCP.\n- **AI meeting intelligence** (professional, Prolumios) — ASR, diarization, and LLM analysis of sales calls integrated into CRMs.\n- **This portfolio's assistant** (personal) — offline-generated, human-reviewed multilingual Q&A.",
+          "paraphrases": [
+            "show me his projects",
+            "what has he built",
+            "list of projects",
+            "portfolio projects",
+            "github projects",
+            "which ai systems did he build"
+          ]
+        },
+        "de": {
+          "question": "Welche KI-Projekte hat Mohamed umgesetzt?",
+          "answer": "- **Multimodales RAG für Moodle** (akademische Forschung) – Fragebeantwortung über Kurs-PDFs, Bilder, Tabellen und Vorlesungsvideos mit Quellenangaben; FastAPI, Celery, pgvector, Ollama, Whisper.\n- **MedEntity** (Forschungspraktikum) – spaCy-NER für biomedizinische Entitäten in wissenschaftlichen Artikeln, bereitgestellt auf GCP.\n- **KI-Meeting-Intelligence** (beruflich, Prolumios) – ASR, Diarization und LLM-Analyse von Verkaufsgesprächen, integriert in CRMs.\n- **Der Assistent dieses Portfolios** (privat) – offline generierte, manuell geprüfte mehrsprachige Q&A.",
+          "paraphrases": [
+            "zeig mir seine projekte",
+            "was hat er gebaut",
+            "projektliste",
+            "github projekte",
+            "welche ki systeme hat er entwickelt"
+          ]
+        },
+        "ar": {
+          "question": "ما هي مشاريع الذكاء الاصطناعي التي بناها محمد؟",
+          "answer": "- **نظام RAG متعدد الوسائط لمنصة Moodle** (بحث أكاديمي) — الإجابة عن الأسئلة من ملفات PDF والصور والجداول ومحاضرات الفيديو مع ذكر المصادر؛ باستخدام FastAPI وCelery وpgvector وOllama وWhisper.\n- **MedEntity** (تدريب بحثي) — نموذج spaCy للتعرّف على الكيانات الطبية الحيوية في المقالات العلمية، منشور على GCP.\n- **ذكاء الاجتماعات** (عمل مهني في Prolumios) — التعرّف على الكلام وتمييز المتحدثين وتحليل مكالمات المبيعات بالنماذج اللغوية ودمجها في أنظمة CRM.\n- **مساعد هذا الموقع** (مشروع شخصي) — أسئلة وأجوبة متعددة اللغات تُولَّد مسبقًا وتُراجع يدويًا.",
+          "paraphrases": [
+            "اعرض مشاريعه",
+            "ماذا بنى",
+            "قائمة المشاريع",
+            "مشاريعه على GitHub",
+            "ما الأنظمة التي طوّرها"
+          ]
+        }
+      }
+    },
+    {
+      "id": "source-attribution",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Architecture",
+          "href": "#architecture"
+        }
+      ],
+      "related": [
+        "local-llms",
+        "rag-experience",
+        "vector-databases"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "1dde6b88043bc834",
+      "i18n": {
+        "en": {
+          "question": "Why is source attribution important in Mohamed's RAG systems?",
+          "answer": "In education — and in most business settings — an answer is only useful if people can **verify where it comes from**. In the Moodle project, answers link back to the original course files.\n\nTechnically this works because **every chunk keeps provenance metadata** (document, title, source) from ingestion all the way to the final answer, and the model is instructed to say when the retrieved evidence is insufficient instead of guessing.",
+          "paraphrases": [
+            "how does source attribution work",
+            "does the rag system cite sources",
+            "how do you avoid hallucinations",
+            "grounded answers",
+            "citations in rag",
+            "provenance metadata"
+          ]
+        },
+        "de": {
+          "question": "Warum sind Quellenangaben in Mohameds RAG-Systemen wichtig?",
+          "answer": "In der Lehre – und in den meisten Unternehmen – ist eine Antwort nur nützlich, wenn man **nachprüfen kann, woher sie stammt**. Im Moodle-Projekt verlinken die Antworten deshalb auf die ursprünglichen Kursdateien.\n\nTechnisch funktioniert das, weil **jeder Chunk seine Herkunfts-Metadaten** (Dokument, Titel, Quelle) von der Ingestion bis zur Antwort behält und das Modell angewiesen ist, unzureichende Belege offen zu benennen statt zu raten.",
+          "paraphrases": [
+            "wie funktionieren quellenangaben",
+            "nennt das rag system quellen",
+            "wie vermeidet er halluzinationen",
+            "belegte antworten",
+            "zitate im rag"
+          ]
+        },
+        "ar": {
+          "question": "لماذا يُعدّ ذكر المصادر مهمًا في أنظمة RAG لدى محمد؟",
+          "answer": "في التعليم — وفي معظم بيئات العمل — لا تكون الإجابة مفيدة إلا إذا أمكن **التحقق من مصدرها**. لذلك تربط الإجابات في مشروع Moodle بملفات المقرر الأصلية.\n\nتقنيًا، يتحقق ذلك لأن **كل مقطع يحتفظ ببيانات مصدره** (المستند والعنوان والمصدر) من مرحلة الإدخال حتى الإجابة النهائية، ويُطلب من النموذج التصريح بعدم كفاية الأدلة بدل التخمين.",
+          "paraphrases": [
+            "كيف يعمل ذكر المصادر",
+            "هل يذكر النظام المصادر",
+            "كيف يتجنب الهلوسة",
+            "إجابات موثّقة",
+            "الاستشهاد بالمصادر في RAG"
+          ]
+        }
+      }
+    },
+    {
+      "id": "why-no-live-chatbot",
+      "category": "projects",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Projects",
+          "href": "#projects"
+        }
+      ],
+      "related": [
+        "local-llms",
+        "portfolio-assistant",
+        "projects-overview"
+      ],
+      "source_files": {
+        "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "85b733a212ab7d01",
+      "i18n": {
+        "en": {
+          "question": "Why isn't this a live AI chatbot?",
+          "answer": "A deliberate engineering decision. Mohamed first built a live RAG chatbot (FastAPI, Gemini, pgvector) and then replaced it: for a small, well-known knowledge base, a live model adds **hallucination risk, hosting, API cost, abuse surface, and privacy questions** without adding much value.\n\nPrepared, human-reviewed answers are **instant, free to serve, and always accurate** — while Gemini still does the heavy lifting offline. Not every problem needs a live LLM.",
+          "paraphrases": [
+            "why not use a real llm",
+            "why no live llm on this site",
+            "why prepared answers",
+            "why no rag chatbot",
+            "why is the chat not generative",
+            "why not chatgpt",
+            "isn't a live chatbot better"
+          ]
+        },
+        "de": {
+          "question": "Warum ist das kein Live-KI-Chatbot?",
+          "answer": "Eine bewusste Engineering-Entscheidung. Mohamed hat zuerst einen Live-RAG-Chatbot gebaut (FastAPI, Gemini, pgvector) und ihn dann ersetzt: Bei einer kleinen, bekannten Wissensbasis bringt ein Live-Modell **Halluzinationsrisiko, Hosting, API-Kosten, Missbrauchsfläche und Datenschutzfragen** mit sich – ohne großen Mehrwert.\n\nVorbereitete, geprüfte Antworten sind **sofort da, kostenlos auszuliefern und immer korrekt** – Gemini erledigt die Arbeit trotzdem, nur offline. Nicht jedes Problem braucht ein Live-LLM.",
+          "paraphrases": [
+            "warum kein echtes llm",
+            "warum vorbereitete antworten",
+            "warum kein rag chatbot",
+            "warum nicht chatgpt",
+            "wäre ein live chatbot nicht besser"
+          ]
+        },
+        "ar": {
+          "question": "لماذا ليس هذا روبوت محادثة مباشرًا بالذكاء الاصطناعي؟",
+          "answer": "قرار هندسي مقصود. بنى محمد أولًا روبوت محادثة مباشرًا يعتمد على RAG (FastAPI وGemini وpgvector) ثم استبدله: ففي قاعدة معرفة صغيرة ومعروفة، يضيف النموذج المباشر **مخاطر الهلوسة وتكاليف الاستضافة والاستخدام ومخاطر إساءة الاستخدام وأسئلة الخصوصية** دون قيمة تُذكر.\n\nالإجابات المعدّة والمراجَعة **فورية ومجانية التقديم ودقيقة دائمًا**، بينما يؤدي Gemini العمل الشاق دون اتصال. ليست كل مشكلة بحاجة إلى نموذج لغوي مباشر.",
+          "paraphrases": [
+            "لماذا لا تستخدم نموذجًا لغويًا حقيقيًا",
+            "لماذا إجابات جاهزة",
+            "لماذا لا يوجد روبوت RAG",
+            "لماذا ليس ChatGPT",
+            "أليس روبوت المحادثة المباشر أفضل"
+          ]
+        }
+      }
+    },
+    {
+      "id": "backend-skills",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "llm-evaluation",
+        "rag-experience",
+        "vector-databases"
+      ],
+      "source_files": {
+        "skills/technical-skills.md": "bd44c1689b135b0a",
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "46bd25d2f6a65439",
+      "i18n": {
+        "en": {
+          "question": "Which backend technologies does Mohamed work with?",
+          "answer": "Python is his main language. He builds **FastAPI** services and **REST APIs**, runs background jobs with **Celery** and **Redis**, and designs **microservice** architectures — for example the Moodle RAG system, where an API, async workers, a vector database, local LLMs, and a Moodle plugin run as separate services behind **Nginx**. He also works with **SQLAlchemy/Alembic**, **pandas**, and **LangChain**.",
+          "paraphrases": [
+            "does he know fastapi",
+            "backend experience",
+            "python backend",
+            "api development",
+            "has he used celery",
+            "microservices experience"
+          ]
+        },
+        "de": {
+          "question": "Mit welchen Backend-Technologien arbeitet Mohamed?",
+          "answer": "Python ist seine Hauptsprache. Er baut **FastAPI**-Services und **REST-APIs**, verarbeitet Hintergrundjobs mit **Celery** und **Redis** und entwirft **Microservice**-Architekturen – etwa im Moodle-RAG-System, in dem API, asynchrone Worker, Vektordatenbank, lokale LLMs und ein Moodle-Plugin als getrennte Services hinter **Nginx** laufen. Außerdem arbeitet er mit **SQLAlchemy/Alembic**, **pandas** und **LangChain**.",
+          "paraphrases": [
+            "kennt er fastapi",
+            "backend erfahrung",
+            "python backend",
+            "api entwicklung",
+            "microservices erfahrung"
+          ]
+        },
+        "ar": {
+          "question": "ما هي تقنيات الخوادم التي يعمل بها محمد؟",
+          "answer": "لغة Python هي لغته الأساسية. يبني خدمات **FastAPI** و**واجهات REST**، ويشغّل المهام الخلفية باستخدام **Celery** و**Redis**، ويصمّم بنى **الخدمات المصغّرة** — مثل نظام RAG لمنصة Moodle، حيث تعمل الواجهة البرمجية والعمّال غير المتزامنين وقاعدة المتجهات والنماذج المحلية وإضافة Moodle كخدمات منفصلة خلف **Nginx**. كما يعمل مع **SQLAlchemy/Alembic** و**pandas** و**LangChain**.",
+          "paraphrases": [
+            "هل يعرف FastAPI",
+            "خبرته في تطوير الخوادم",
+            "تطوير واجهات API",
+            "هل استخدم Celery",
+            "خبرة الخدمات المصغرة"
+          ]
+        }
+      }
+    },
+    {
+      "id": "llm-evaluation",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "backend-skills",
+        "rag-experience",
+        "vector-databases"
+      ],
+      "source_files": {
+        "skills/technical-skills.md": "bd44c1689b135b0a",
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "ef350a8f7c9a94a3",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed know how to evaluate LLM and RAG systems?",
+          "answer": "Yes — LLM evaluation is part of his skill set. In the Moodle RAG project he evaluated answers with **RAGAS** across different **chunk sizes and overlaps** (500/100 vs. 1200/200), **top-k values** (3 vs. 5), a **per-modality** question set, and a comparison against an LLM without the knowledge base. His principle: tune retrieval parameters through systematic evaluation, not intuition.",
+          "paraphrases": [
+            "llm evaluation experience",
+            "rag evaluation",
+            "ragas",
+            "how does he measure answer quality",
+            "testing llm systems",
+            "evaluation metrics"
+          ]
+        },
+        "de": {
+          "question": "Kann Mohamed LLM- und RAG-Systeme evaluieren?",
+          "answer": "Ja – LLM-Evaluation gehört zu seinen Kenntnissen. Im Moodle-RAG-Projekt evaluierte er die Antworten mit **RAGAS** über verschiedene **Chunk-Größen und Overlaps** (500/100 vs. 1200/200), **Top-k-Werte** (3 vs. 5), einen **nach Modalität** gegliederten Fragensatz und einen Vergleich mit einem LLM ohne Wissensbasis. Sein Prinzip: Retrieval-Parameter systematisch per Evaluation abstimmen, nicht nach Gefühl.",
+          "paraphrases": [
+            "erfahrung mit llm evaluation",
+            "rag evaluierung",
+            "ragas",
+            "wie misst er antwortqualität",
+            "testen von llm systemen"
+          ]
+        },
+        "ar": {
+          "question": "هل يعرف محمد كيفية تقييم أنظمة النماذج اللغوية وRAG؟",
+          "answer": "نعم، تقييم النماذج اللغوية من ضمن مهاراته. في مشروع RAG لمنصة Moodle قيّم الإجابات باستخدام **RAGAS** عبر **أحجام مقاطع وتداخلات** مختلفة (500/100 مقابل 1200/200)، و**قيم top-k** (3 مقابل 5)، ومجموعة أسئلة **حسب نوع الوسيط**، ومقارنة مع نموذج لغوي دون قاعدة المعرفة. مبدؤه: ضبط معاملات الاسترجاع عبر تقييم منهجي لا بالحدس.",
+          "paraphrases": [
+            "خبرته في تقييم النماذج اللغوية",
+            "تقييم RAG",
+            "RAGAS",
+            "كيف يقيس جودة الإجابات",
+            "اختبار أنظمة النماذج اللغوية"
+          ]
+        }
+      }
+    },
+    {
+      "id": "llms-and-agents",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "rag-experience",
+        "vector-databases",
+        "meeting-intelligence"
+      ],
+      "source_files": {
+        "skills/technical-skills.md": "bd44c1689b135b0a",
+        "experience/prolumios.md": "ebdeb42d07ea448b",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822"
+      },
+      "generated_hash": "287f880816f708c3",
+      "i18n": {
+        "en": {
+          "question": "Tell me about Mohamed's experience with LLMs and AI agents.",
+          "answer": "**LLMs:** he uses them in production-style systems — LLM-driven analysis of sales conversations (sentiment, themes, follow-up recommendations) at Prolumios, grounded generation in his Moodle RAG system with local models (Gemma, Phi-3 via Ollama) and OpenAI/Cohere provider abstractions, and the Gemini API with structured output for this portfolio.\n\n**AI agents and prompt engineering** are part of his skill set; a dedicated AI-agent project is not documented here — ask Mohamed directly for details.",
+          "paraphrases": [
+            "llm experience",
+            "has he built ai agents",
+            "experience with large language models",
+            "agentic ai",
+            "prompt engineering experience",
+            "which llms has he used"
+          ]
+        },
+        "de": {
+          "question": "Welche Erfahrung hat Mohamed mit LLMs und KI-Agenten?",
+          "answer": "**LLMs:** Er setzt sie in produktionsnahen Systemen ein – LLM-basierte Analyse von Verkaufsgesprächen (Sentiment, Themen, Follow-up-Empfehlungen) bei Prolumios, belegte Generierung in seinem Moodle-RAG mit lokalen Modellen (Gemma, Phi-3 über Ollama) und Provider-Abstraktionen für OpenAI/Cohere sowie die Gemini-API mit Structured Output für dieses Portfolio.\n\n**KI-Agenten und Prompt Engineering** gehören zu seinen Kenntnissen; ein eigenes Agenten-Projekt ist hier nicht dokumentiert – fragen Sie Mohamed gern direkt.",
+          "paraphrases": [
+            "llm erfahrung",
+            "hat er ki agenten gebaut",
+            "erfahrung mit großen sprachmodellen",
+            "agentic ai",
+            "prompt engineering erfahrung"
+          ]
+        },
+        "ar": {
+          "question": "ما هي خبرة محمد في النماذج اللغوية الكبيرة ووكلاء الذكاء الاصطناعي؟",
+          "answer": "**النماذج اللغوية الكبيرة:** يستخدمها في أنظمة قريبة من بيئة الإنتاج — تحليل محادثات المبيعات (المشاعر والمواضيع وتوصيات المتابعة) في Prolumios، والتوليد المستند إلى الأدلة في نظام RAG لمنصة Moodle بنماذج محلية (Gemma وPhi-3 عبر Ollama) مع واجهات لمزودي OpenAI وCohere، وواجهة Gemini API بمخرجات منظّمة لهذا الموقع.\n\n**وكلاء الذكاء الاصطناعي وهندسة الأوامر** من ضمن مهاراته، لكن لا يوجد مشروع وكلاء موثّق هنا — يمكنك سؤال محمد مباشرة.",
+          "paraphrases": [
+            "خبرته في النماذج اللغوية",
+            "هل بنى وكلاء ذكاء اصطناعي",
+            "خبرة في هندسة الأوامر",
+            "الذكاء الاصطناعي الوكيلي",
+            "ما النماذج التي استخدمها"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nlp-ml",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        },
+        {
+          "label": "MedEntity_NER_spaCy — GitHub",
+          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+        }
+      ],
+      "related": [
+        "medentity",
+        "medentity-accuracy",
+        "projects-overview"
+      ],
+      "source_files": {
+        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346",
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142"
+      },
+      "generated_hash": "5ec83e6ff031a62e",
+      "i18n": {
+        "en": {
+          "question": "What NLP and Machine Learning experience does Mohamed have?",
+          "answer": "- **Named entity recognition:** trained a spaCy NER model from scratch on the CRAFT biomedical corpus (MedEntity) and built an annotation interface for training data.\n- **Speech:** Whisper-based ASR and speaker diarization (Prolumios; lecture transcription in the Moodle project).\n- **LLM-based text analysis:** sentiment and theme detection, insights, and follow-up recommendations from sales conversations.\n- **Frameworks:** PyTorch, spaCy, Whisper, pandas, LangChain.",
+          "paraphrases": [
+            "nlp experience",
+            "machine learning experience",
+            "has he trained models",
+            "ml skills",
+            "natural language processing",
+            "does he know pytorch"
+          ]
+        },
+        "de": {
+          "question": "Welche NLP- und Machine-Learning-Erfahrung hat Mohamed?",
+          "answer": "- **Named Entity Recognition:** ein spaCy-NER-Modell von Grund auf auf dem biomedizinischen CRAFT-Korpus trainiert (MedEntity) und eine Annotationsoberfläche für Trainingsdaten gebaut.\n- **Sprache:** Whisper-basierte Spracherkennung und Speaker Diarization (Prolumios; Vorlesungstranskription im Moodle-Projekt).\n- **LLM-basierte Textanalyse:** Sentiment- und Themenerkennung, Erkenntnisse und Follow-up-Empfehlungen aus Verkaufsgesprächen.\n- **Frameworks:** PyTorch, spaCy, Whisper, pandas, LangChain.",
+          "paraphrases": [
+            "nlp erfahrung",
+            "machine learning erfahrung",
+            "hat er modelle trainiert",
+            "ml kenntnisse",
+            "verarbeitung natürlicher sprache"
+          ]
+        },
+        "ar": {
+          "question": "ما هي خبرة محمد في معالجة اللغة الطبيعية وتعلّم الآلة؟",
+          "answer": "- **التعرّف على الكيانات المسماة:** درّب نموذج spaCy من الصفر على مجموعة بيانات CRAFT الطبية الحيوية (MedEntity) وبنى واجهة لتوسيم بيانات التدريب.\n- **الكلام:** تحويل الكلام إلى نص باستخدام Whisper وتمييز المتحدثين (في Prolumios، وتفريغ المحاضرات في مشروع Moodle).\n- **تحليل النصوص بالنماذج اللغوية:** اكتشاف المشاعر والمواضيع واستخلاص الرؤى وتوصيات المتابعة من محادثات المبيعات.\n- **الأطر:** PyTorch وspaCy وWhisper وpandas وLangChain.",
+          "paraphrases": [
+            "خبرته في معالجة اللغة الطبيعية",
+            "خبرته في تعلم الآلة",
+            "هل درّب نماذج",
+            "مهارات تعلم الآلة",
+            "هل يعرف PyTorch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rag-experience",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        },
+        {
+          "label": "Architecture",
+          "href": "#architecture"
+        }
+      ],
+      "related": [
+        "vector-databases",
+        "backend-skills",
+        "llm-evaluation"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822",
+        "skills/technical-skills.md": "bd44c1689b135b0a"
+      },
+      "generated_hash": "cc1558864b05d210",
+      "i18n": {
+        "en": {
+          "question": "What experience does Mohamed have with RAG?",
+          "answer": "RAG is a core specialty:\n\n- He built **MR. Multi@Moodle**, an end-to-end **multimodal RAG** system over PDFs, images, and lecture videos with source attribution (academic research).\n- He works across the whole pipeline: extraction, chunking, embeddings, **pgvector** storage, semantic retrieval, grounded generation, and **evaluation with RAGAS** (chunk size, overlap, top-k).\n- He has used local models via Ollama, with provider abstractions for OpenAI and Cohere, and designed asynchronous ingestion with Celery and Redis.",
+          "paraphrases": [
+            "retrieval augmented generation experience",
+            "has he built rag systems",
+            "rag skills",
+            "does he know rag",
+            "experience with retrieval",
+            "rag pipeline experience"
+          ]
+        },
+        "de": {
+          "question": "Welche Erfahrung hat Mohamed mit RAG?",
+          "answer": "RAG ist ein Kernschwerpunkt:\n\n- Er hat **MR. Multi@Moodle** gebaut, ein End-to-End-System für **multimodales RAG** über PDFs, Bilder und Vorlesungsvideos mit Quellenangaben (akademische Forschung).\n- Er deckt die gesamte Pipeline ab: Extraktion, Chunking, Embeddings, Speicherung in **pgvector**, semantisches Retrieval, belegte Generierung und **Evaluation mit RAGAS** (Chunk-Größe, Overlap, Top-k).\n- Er hat lokale Modelle über Ollama genutzt, mit Provider-Abstraktionen für OpenAI und Cohere, und asynchrone Ingestion mit Celery und Redis umgesetzt.",
+          "paraphrases": [
+            "erfahrung mit retrieval augmented generation",
+            "hat er rag systeme gebaut",
+            "rag kenntnisse",
+            "kennt er sich mit rag aus",
+            "rag pipeline erfahrung"
+          ]
+        },
+        "ar": {
+          "question": "ما هي خبرة محمد في RAG؟",
+          "answer": "يُعدّ RAG من أهم تخصصاته:\n\n- بنى **MR. Multi@Moodle**، وهو نظام **RAG متعدد الوسائط** متكامل يعمل على ملفات PDF والصور ومحاضرات الفيديو مع ذكر المصادر (بحث أكاديمي).\n- يعمل على خط المعالجة بالكامل: الاستخراج والتقسيم والتضمينات والتخزين في **pgvector** والاسترجاع الدلالي والتوليد المستند إلى الأدلة و**التقييم باستخدام RAGAS** (حجم المقاطع والتداخل وعدد النتائج).\n- استخدم نماذج محلية عبر Ollama مع واجهات لمزودي OpenAI وCohere، وصمّم إدخالًا غير متزامن للبيانات باستخدام Celery وRedis.",
+          "paraphrases": [
+            "خبرته في التوليد المعزز بالاسترجاع",
+            "هل بنى أنظمة RAG",
+            "مهاراته في RAG",
+            "هل يعرف RAG",
+            "خبرته في الاسترجاع"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tech-stack",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "backend-skills",
+        "llm-evaluation",
+        "llms-and-agents"
+      ],
+      "source_files": {
+        "skills/technical-skills.md": "bd44c1689b135b0a"
+      },
+      "generated_hash": "4cbe9b48ea7afee7",
+      "i18n": {
+        "en": {
+          "question": "What technologies does Mohamed use?",
+          "answer": "- **AI & GenAI:** LLMs, RAG, multimodal RAG, embeddings, semantic search, prompt engineering, LLM evaluation\n- **ML & NLP:** PyTorch, spaCy, NER, ASR (Whisper), speaker diarization\n- **Backend:** Python, FastAPI, LangChain, pandas, REST APIs, Celery, Redis, microservices\n- **Data & infrastructure:** PostgreSQL, pgvector, MySQL, Docker/Docker Compose, AWS, Google Cloud Platform, Prometheus, Grafana, Git/GitHub, ETL/ELT",
+          "paraphrases": [
+            "tech stack",
+            "what tools does he know",
+            "programming languages",
+            "technical skills",
+            "which frameworks does he use",
+            "skills list"
+          ]
+        },
+        "de": {
+          "question": "Welche Technologien nutzt Mohamed?",
+          "answer": "- **KI & GenAI:** LLMs, RAG, multimodales RAG, Embeddings, semantische Suche, Prompt Engineering, LLM-Evaluation\n- **ML & NLP:** PyTorch, spaCy, NER, ASR (Whisper), Speaker Diarization\n- **Backend:** Python, FastAPI, LangChain, pandas, REST-APIs, Celery, Redis, Microservices\n- **Daten & Infrastruktur:** PostgreSQL, pgvector, MySQL, Docker/Docker Compose, AWS, Google Cloud Platform, Prometheus, Grafana, Git/GitHub, ETL/ELT",
+          "paraphrases": [
+            "tech stack",
+            "welche tools kennt er",
+            "programmiersprachen",
+            "technische kenntnisse",
+            "welche frameworks nutzt er"
+          ]
+        },
+        "ar": {
+          "question": "ما هي التقنيات التي يستخدمها محمد؟",
+          "answer": "- **الذكاء الاصطناعي التوليدي:** النماذج اللغوية الكبيرة وRAG وRAG متعدد الوسائط والتضمينات والبحث الدلالي وهندسة الأوامر وتقييم النماذج اللغوية\n- **تعلّم الآلة ومعالجة اللغة:** PyTorch وspaCy والتعرّف على الكيانات وتحويل الكلام إلى نص (Whisper) وتمييز المتحدثين\n- **الخوادم:** Python وFastAPI وLangChain وpandas وواجهات REST وCelery وRedis والخدمات المصغّرة\n- **البيانات والبنية التحتية:** PostgreSQL وpgvector وMySQL وDocker/Docker Compose وAWS وGoogle Cloud Platform وPrometheus وGrafana وGit/GitHub وETL/ELT",
+          "paraphrases": [
+            "المهارات التقنية",
+            "ما الأدوات التي يعرفها",
+            "لغات البرمجة",
+            "ما الأطر التي يستخدمها",
+            "قائمة المهارات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vector-databases",
+      "category": "skills",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Architecture",
+          "href": "#architecture"
+        }
+      ],
+      "related": [
+        "rag-experience",
+        "backend-skills",
+        "llm-evaluation"
+      ],
+      "source_files": {
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "rag-llm/rag-engineering-approach.md": "8f36f40c478ff822",
+        "skills/technical-skills.md": "bd44c1689b135b0a"
+      },
+      "generated_hash": "b8846f213c725f9a",
+      "i18n": {
+        "en": {
+          "question": "Has Mohamed worked with vector databases?",
+          "answer": "Yes. His main choice is **PostgreSQL with pgvector**: vectors live next to metadata and full-text indexes, which allows metadata filtering and hybrid search in one system. In the Moodle RAG project he used pgvector behind a provider interface that also supports **Qdrant**, with Ollama embedding models (nomic-embed-text, mxbai-embed-large) and Alembic-managed schemas.",
+          "paraphrases": [
+            "pgvector experience",
+            "vector db",
+            "has he used qdrant",
+            "semantic search database",
+            "embedding storage",
+            "which vector store does he use"
+          ]
+        },
+        "de": {
+          "question": "Hat Mohamed mit Vektordatenbanken gearbeitet?",
+          "answer": "Ja. Seine bevorzugte Wahl ist **PostgreSQL mit pgvector**: Vektoren liegen neben Metadaten und Volltextindizes, was Metadatenfilter und hybride Suche in einem System ermöglicht. Im Moodle-RAG-Projekt nutzte er pgvector hinter einer Provider-Schnittstelle, die auch **Qdrant** unterstützt, mit Ollama-Embedding-Modellen (nomic-embed-text, mxbai-embed-large) und per Alembic verwalteten Schemata.",
+          "paraphrases": [
+            "erfahrung mit pgvector",
+            "vektordatenbank",
+            "hat er qdrant genutzt",
+            "datenbank für semantische suche",
+            "speicherung von embeddings"
+          ]
+        },
+        "ar": {
+          "question": "هل عمل محمد بقواعد بيانات المتجهات؟",
+          "answer": "نعم. خياره الأساسي هو **PostgreSQL مع pgvector**، حيث تُخزَّن المتجهات بجانب البيانات الوصفية وفهارس البحث النصي، مما يتيح التصفية حسب البيانات الوصفية والبحث الهجين في نظام واحد. في مشروع RAG لمنصة Moodle استخدم pgvector خلف واجهة تدعم **Qdrant** أيضًا، مع نماذج تضمين عبر Ollama (nomic-embed-text وmxbai-embed-large) ومخططات تُدار بـ Alembic.",
+          "paraphrases": [
+            "خبرته مع pgvector",
+            "قاعدة بيانات المتجهات",
+            "هل استخدم Qdrant",
+            "قاعدة بيانات البحث الدلالي",
+            "تخزين التضمينات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ci-cd",
+      "category": "cloud",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "cloud-experience",
+        "docker-containers",
+        "monitoring"
+      ],
+      "source_files": {
+        "cloud-devops/cloud-and-infrastructure.md": "ef9ee38033b62afc",
+        "projects/portfolio-ai-assistant.md": "fc14c639681bbc0f"
+      },
+      "generated_hash": "873cebeac3fe48ce",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed work with CI/CD?",
+          "answer": "Yes — he uses **Git, GitHub, and GitHub Actions**. For this portfolio, GitHub Actions validates the Q&A data, runs the tests, builds the site, and deploys it to **GitHub Pages** automatically on every push.",
+          "paraphrases": [
+            "ci cd experience",
+            "github actions",
+            "continuous integration",
+            "deployment pipelines",
+            "does he automate deployments",
+            "git experience"
+          ]
+        },
+        "de": {
+          "question": "Arbeitet Mohamed mit CI/CD?",
+          "answer": "Ja – er nutzt **Git, GitHub und GitHub Actions**. Für dieses Portfolio validiert GitHub Actions die Q&A-Daten, führt die Tests aus, baut die Website und veröffentlicht sie bei jedem Push automatisch auf **GitHub Pages**.",
+          "paraphrases": [
+            "ci cd erfahrung",
+            "github actions",
+            "continuous integration",
+            "deployment pipelines",
+            "automatisiert er deployments"
+          ]
+        },
+        "ar": {
+          "question": "هل يعمل محمد بالتكامل والنشر المستمر (CI/CD)؟",
+          "answer": "نعم، يستخدم **Git وGitHub وGitHub Actions**. في هذا الموقع، يتحقق GitHub Actions من بيانات الأسئلة والأجوبة ويشغّل الاختبارات ويبني الموقع وينشره تلقائيًا على **GitHub Pages** مع كل تحديث.",
+          "paraphrases": [
+            "خبرته في CI/CD",
+            "GitHub Actions",
+            "التكامل المستمر",
+            "خطوط النشر",
+            "هل يؤتمت عمليات النشر"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cloud-experience",
+      "category": "cloud",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "ci-cd",
+        "docker-containers",
+        "monitoring"
+      ],
+      "source_files": {
+        "cloud-devops/cloud-and-infrastructure.md": "ef9ee38033b62afc"
+      },
+      "generated_hash": "2b6e78919ceacbac",
+      "i18n": {
+        "en": {
+          "question": "What experience does Mohamed have with cloud infrastructure?",
+          "answer": "- **AWS:** the meeting-intelligence solutions he works on at Prolumios run on AWS.\n- **Google Cloud Platform:** in his research internship he configured and optimized GCP resources to train and deploy a spaCy NER model.\n- **Containers:** Docker and Docker Compose, including a multi-service RAG stack (API, workers, Redis, PostgreSQL/pgvector, Ollama, Nginx, monitoring).\n- **Observability and CI/CD:** Prometheus, Grafana, and GitHub Actions.",
+          "paraphrases": [
+            "cloud experience",
+            "aws experience",
+            "gcp experience",
+            "has he used google cloud",
+            "devops skills",
+            "infrastructure experience"
+          ]
+        },
+        "de": {
+          "question": "Welche Erfahrung hat Mohamed mit Cloud-Infrastruktur?",
+          "answer": "- **AWS:** Die Meeting-Intelligence-Lösungen, an denen er bei Prolumios arbeitet, laufen auf AWS.\n- **Google Cloud Platform:** Im Forschungspraktikum konfigurierte und optimierte er GCP-Ressourcen für Training und Deployment eines spaCy-NER-Modells.\n- **Container:** Docker und Docker Compose, u. a. für einen RAG-Stack aus vielen Services (API, Worker, Redis, PostgreSQL/pgvector, Ollama, Nginx, Monitoring).\n- **Observability und CI/CD:** Prometheus, Grafana und GitHub Actions.",
+          "paraphrases": [
+            "cloud erfahrung",
+            "aws erfahrung",
+            "gcp erfahrung",
+            "hat er google cloud genutzt",
+            "devops kenntnisse"
+          ]
+        },
+        "ar": {
+          "question": "ما هي خبرة محمد في البنية التحتية السحابية؟",
+          "answer": "- **AWS:** تعمل حلول ذكاء الاجتماعات التي يطوّرها في Prolumios على AWS.\n- **Google Cloud Platform:** في تدريبه البحثي أعدّ موارد GCP وحسّنها لتدريب نموذج spaCy للتعرّف على الكيانات ونشره.\n- **الحاويات:** Docker وDocker Compose، بما في ذلك منظومة RAG متعددة الخدمات (واجهة برمجية وعمّال وRedis وPostgreSQL/pgvector وOllama وNginx ومراقبة).\n- **المراقبة والتكامل المستمر:** Prometheus وGrafana وGitHub Actions.",
+          "paraphrases": [
+            "خبرته السحابية",
+            "خبرته في AWS",
+            "هل استخدم Google Cloud",
+            "مهارات DevOps",
+            "خبرته في البنية التحتية"
+          ]
+        }
+      }
+    },
+    {
+      "id": "docker-containers",
+      "category": "cloud",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        }
+      ],
+      "related": [
+        "monitoring",
+        "ci-cd",
+        "cloud-experience"
+      ],
+      "source_files": {
+        "cloud-devops/cloud-and-infrastructure.md": "ef9ee38033b62afc",
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "f418ac6870bf968f",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed use Docker?",
+          "answer": "Yes. His Moodle RAG system runs as a **multi-container Docker Compose stack**: Moodle, the FastAPI API, Celery workers, Redis, PostgreSQL with pgvector, Ollama, an Nginx reverse proxy, Prometheus, Grafana, node-exporter, and postgres-exporter. His MedEntity NER app was also **containerized with Docker** and deployed on Google Cloud Platform.",
+          "paraphrases": [
+            "docker experience",
+            "docker compose",
+            "containerization",
+            "has he containerized applications",
+            "does he know containers",
+            "kubernetes or docker"
+          ]
+        },
+        "de": {
+          "question": "Nutzt Mohamed Docker?",
+          "answer": "Ja. Sein Moodle-RAG-System läuft als **Docker-Compose-Stack aus mehreren Containern**: Moodle, die FastAPI-API, Celery-Worker, Redis, PostgreSQL mit pgvector, Ollama, Nginx als Reverse Proxy, Prometheus, Grafana, node-exporter und postgres-exporter. Auch seine MedEntity-NER-App wurde **mit Docker containerisiert** und auf der Google Cloud Platform bereitgestellt.",
+          "paraphrases": [
+            "docker erfahrung",
+            "docker compose",
+            "containerisierung",
+            "kennt er container",
+            "hat er anwendungen containerisiert"
+          ]
+        },
+        "ar": {
+          "question": "هل يستخدم محمد Docker؟",
+          "answer": "نعم. يعمل نظام RAG لمنصة Moodle كـ **منظومة Docker Compose متعددة الحاويات**: Moodle وواجهة FastAPI وعمّال Celery وRedis وPostgreSQL مع pgvector وOllama ووكيل Nginx العكسي وPrometheus وGrafana وnode-exporter وpostgres-exporter. كما **غُلِّف تطبيق MedEntity بـ Docker** ونُشر على Google Cloud Platform.",
+          "paraphrases": [
+            "خبرته في Docker",
+            "Docker Compose",
+            "الحاويات",
+            "هل يعرف الحاويات",
+            "تغليف التطبيقات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "monitoring",
+      "category": "cloud",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Technical expertise",
+          "href": "#expertise"
+        }
+      ],
+      "related": [
+        "docker-containers",
+        "ci-cd",
+        "cloud-experience"
+      ],
+      "source_files": {
+        "cloud-devops/cloud-and-infrastructure.md": "ef9ee38033b62afc",
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975"
+      },
+      "generated_hash": "2ac059fdfe3a82ab",
+      "i18n": {
+        "en": {
+          "question": "Has Mohamed set up monitoring for AI systems?",
+          "answer": "Yes. For his Moodle RAG stack he set up **Prometheus and Grafana**, including **node-exporter** for host metrics and **postgres-exporter** for database metrics.",
+          "paraphrases": [
+            "observability",
+            "prometheus grafana",
+            "does he know monitoring",
+            "metrics and dashboards",
+            "how does he monitor production",
+            "grafana experience"
+          ]
+        },
+        "de": {
+          "question": "Hat Mohamed Monitoring für KI-Systeme eingerichtet?",
+          "answer": "Ja. Für seinen Moodle-RAG-Stack richtete er **Prometheus und Grafana** ein, inklusive **node-exporter** für Host-Metriken und **postgres-exporter** für Datenbank-Metriken.",
+          "paraphrases": [
+            "observability",
+            "prometheus grafana",
+            "kennt er sich mit monitoring aus",
+            "metriken und dashboards",
+            "grafana erfahrung"
+          ]
+        },
+        "ar": {
+          "question": "هل أعدّ محمد أنظمة مراقبة لتطبيقات الذكاء الاصطناعي؟",
+          "answer": "نعم. أعدّ لمنظومة RAG الخاصة بمنصة Moodle نظامي **Prometheus وGrafana**، بما في ذلك **node-exporter** لمقاييس الخادم و**postgres-exporter** لمقاييس قاعدة البيانات.",
+          "paraphrases": [
+            "المراقبة",
+            "Prometheus وGrafana",
+            "هل يعرف أنظمة المراقبة",
+            "المقاييس ولوحات المعلومات",
+            "خبرته في Grafana"
+          ]
+        }
+      }
+    },
+    {
+      "id": "certifications",
+      "category": "education",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Education",
+          "href": "#education"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "education",
+        "masters-subjects",
+        "teaching-activities"
+      ],
+      "source_files": {
+        "education/education-and-activities.md": "7820a984d7f8ae5d",
+        "cloud-devops/cloud-and-infrastructure.md": "ef9ee38033b62afc"
+      },
+      "generated_hash": "5e39d9e6a0a24f8b",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed have any certifications?",
+          "answer": "No professional or cloud certifications are listed in the information Mohamed has published here. His formal qualifications are an **M.Sc. Information Systems** (FernUniversität in Hagen), a **B.Sc. Economics** (Alexandria University), and a **Diploma in Computerized Accounting**. For anything else, please email [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "aws certification",
+            "is he certified",
+            "certificates",
+            "google cloud certification",
+            "professional certifications",
+            "any certificates"
+          ]
+        },
+        "de": {
+          "question": "Hat Mohamed Zertifizierungen?",
+          "answer": "In den hier veröffentlichten Informationen sind keine beruflichen oder Cloud-Zertifizierungen aufgeführt. Seine formalen Abschlüsse sind ein **M.Sc. Information Systems** (FernUniversität in Hagen), ein **B.Sc. Economics** (Alexandria University) und ein **Diplom in computergestützter Buchhaltung**. Für weitere Fragen schreiben Sie bitte an [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "aws zertifizierung",
+            "ist er zertifiziert",
+            "zertifikate",
+            "google cloud zertifikat",
+            "berufliche zertifizierungen"
+          ]
+        },
+        "ar": {
+          "question": "هل لدى محمد شهادات احترافية؟",
+          "answer": "لا توجد شهادات مهنية أو سحابية مذكورة في المعلومات المنشورة هنا. مؤهلاته الرسمية هي **ماجستير نظم المعلومات** (FernUniversität in Hagen) و**بكالوريوس الاقتصاد** (جامعة الإسكندرية) و**دبلوم المحاسبة المحوسبة**. لأي استفسار آخر يُرجى مراسلة [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de).",
+          "paraphrases": [
+            "شهادة AWS",
+            "هل هو حاصل على شهادات",
+            "الشهادات المهنية",
+            "شهادة Google Cloud",
+            "هل لديه شهادات"
+          ]
+        }
+      }
+    },
+    {
+      "id": "education",
+      "category": "education",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Education",
+          "href": "#education"
+        }
+      ],
+      "related": [
+        "certifications",
+        "masters-subjects",
+        "teaching-activities"
+      ],
+      "source_files": {
+        "education/education-and-activities.md": "7820a984d7f8ae5d"
+      },
+      "generated_hash": "c0e82cc531d271ff",
+      "i18n": {
+        "en": {
+          "question": "What is Mohamed's educational background?",
+          "answer": "- **M.Sc. Information Systems** (Business Informatics) — FernUniversität in Hagen, 2025\n- **B.Sc. Economics** — Alexandria University\n- **Diploma in Computerized Accounting**",
+          "paraphrases": [
+            "education",
+            "which degrees does he have",
+            "where did he study",
+            "university",
+            "academic background",
+            "does he have a masters degree"
+          ]
+        },
+        "de": {
+          "question": "Welchen Bildungshintergrund hat Mohamed?",
+          "answer": "- **M.Sc. Information Systems** (Wirtschaftsinformatik) – FernUniversität in Hagen, 2025\n- **B.Sc. Economics** – Alexandria University\n- **Diplom in computergestützter Buchhaltung**",
+          "paraphrases": [
+            "ausbildung",
+            "welche abschlüsse hat er",
+            "wo hat er studiert",
+            "studium",
+            "hat er einen master"
+          ]
+        },
+        "ar": {
+          "question": "ما هي الخلفية التعليمية لمحمد؟",
+          "answer": "- **ماجستير نظم المعلومات** (نظم المعلومات الإدارية) — FernUniversität in Hagen، عام 2025\n- **بكالوريوس الاقتصاد** — جامعة الإسكندرية\n- **دبلوم المحاسبة المحوسبة**",
+          "paraphrases": [
+            "التعليم",
+            "ما هي شهاداته",
+            "أين درس",
+            "الجامعة",
+            "هل لديه ماجستير"
+          ]
+        }
+      }
+    },
+    {
+      "id": "masters-subjects",
+      "category": "education",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Education",
+          "href": "#education"
+        }
+      ],
+      "related": [
+        "certifications",
+        "education",
+        "teaching-activities"
+      ],
+      "source_files": {
+        "education/education-and-activities.md": "7820a984d7f8ae5d"
+      },
+      "generated_hash": "2e73d078a6760ff0",
+      "i18n": {
+        "en": {
+          "question": "What did Mohamed study in his Master's degree?",
+          "answer": "His **M.Sc. Information Systems** (Business Informatics / Wirtschaftsinformatik) at **FernUniversität in Hagen**, completed in 2025, included relevant subjects such as **Business Intelligence, Digital Transformation, Business/IT Alignment, and Information Retrieval**.",
+          "paraphrases": [
+            "master's subjects",
+            "what was his master about",
+            "wirtschaftsinformatik",
+            "business informatics degree",
+            "information retrieval course",
+            "fernuniversität hagen master"
+          ]
+        },
+        "de": {
+          "question": "Was hat Mohamed im Master studiert?",
+          "answer": "Sein **M.Sc. Information Systems** (Wirtschaftsinformatik) an der **FernUniversität in Hagen**, abgeschlossen 2025, umfasste relevante Fächer wie **Business Intelligence, Digitale Transformation, Business/IT-Alignment und Information Retrieval**.",
+          "paraphrases": [
+            "masterfächer",
+            "worum ging es im master",
+            "wirtschaftsinformatik studium",
+            "information retrieval",
+            "master an der fernuni hagen"
+          ]
+        },
+        "ar": {
+          "question": "ماذا درس محمد في الماجستير؟",
+          "answer": "شملت دراسته لـ **ماجستير نظم المعلومات** (نظم المعلومات الإدارية) في **FernUniversität in Hagen**، التي أتمّها عام 2025، مواد ذات صلة مثل **ذكاء الأعمال والتحول الرقمي ومواءمة الأعمال مع تقنية المعلومات واسترجاع المعلومات**.",
+          "paraphrases": [
+            "مواد الماجستير",
+            "عن ماذا كان الماجستير",
+            "نظم المعلومات الإدارية",
+            "استرجاع المعلومات",
+            "ماجستير جامعة هاغن"
+          ]
+        }
+      }
+    },
+    {
+      "id": "teaching-activities",
+      "category": "education",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Education & activities",
+          "href": "#education"
+        }
+      ],
+      "related": [
+        "certifications",
+        "education",
+        "masters-subjects"
+      ],
+      "source_files": {
+        "education/education-and-activities.md": "7820a984d7f8ae5d",
+        "ml-nlp/ml-nlp-experience.md": "2bd560da728cd346"
+      },
+      "generated_hash": "495499d49d6b6f2f",
+      "i18n": {
+        "en": {
+          "question": "Does Mohamed teach or give talks?",
+          "answer": "Yes. He has worked as a **guest lecturer on NLP and Generative AI**, and he facilitates **Smart City workshops**.",
+          "paraphrases": [
+            "guest lecture",
+            "does he teach",
+            "public speaking",
+            "workshops",
+            "smart city workshop",
+            "has he given talks"
+          ]
+        },
+        "de": {
+          "question": "Unterrichtet Mohamed oder hält er Vorträge?",
+          "answer": "Ja. Er war als **Gastdozent für NLP und Generative KI** tätig und moderiert **Smart-City-Workshops**.",
+          "paraphrases": [
+            "gastvortrag",
+            "unterrichtet er",
+            "hält er vorträge",
+            "workshops",
+            "smart city workshop"
+          ]
+        },
+        "ar": {
+          "question": "هل يقوم محمد بالتدريس أو إلقاء المحاضرات؟",
+          "answer": "نعم. عمل **محاضرًا زائرًا في معالجة اللغة الطبيعية والذكاء الاصطناعي التوليدي**، ويدير **ورش عمل حول المدن الذكية**.",
+          "paraphrases": [
+            "محاضر زائر",
+            "هل يدرّس",
+            "هل يلقي محاضرات",
+            "ورش العمل",
+            "ورشة المدن الذكية"
+          ]
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "category": "contact",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "open-to-roles",
+        "salary-availability",
+        "see-code"
+      ],
+      "source_files": {
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "85e2b5eb42b6ab8e",
+      "i18n": {
+        "en": {
+          "question": "How can I contact Mohamed?",
+          "answer": "- **Email:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — the fastest way\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nHe is based in Berlin, Germany.",
+          "paraphrases": [
+            "email address",
+            "how to reach him",
+            "contact details",
+            "linkedin profile",
+            "get in touch",
+            "how can i talk to him"
+          ]
+        },
+        "de": {
+          "question": "Wie kann ich Mohamed kontaktieren?",
+          "answer": "- **E-Mail:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) – der schnellste Weg\n- **LinkedIn:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nEr lebt in Berlin.",
+          "paraphrases": [
+            "e-mail adresse",
+            "wie erreiche ich ihn",
+            "kontaktdaten",
+            "linkedin profil",
+            "kontakt aufnehmen"
+          ]
+        },
+        "ar": {
+          "question": "كيف يمكنني التواصل مع محمد؟",
+          "answer": "- **البريد الإلكتروني:** [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — الطريقة الأسرع\n- **لينكدإن:** [mohamed-megahed-WiInfo](https://www.linkedin.com/in/mohamed-megahed-WiInfo/)\n- **GitHub:** [mmm-megahed](https://github.com/mmm-megahed)\n\nيقيم في برلين، ألمانيا.",
+          "paraphrases": [
+            "البريد الإلكتروني",
+            "كيف أصل إليه",
+            "معلومات الاتصال",
+            "حسابه على لينكدإن",
+            "التواصل معه"
+          ]
+        }
+      }
+    },
+    {
+      "id": "open-to-roles",
+      "category": "contact",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "location",
+        "role-fit",
+        "contact"
+      ],
+      "source_files": {
+        "contact/contact.md": "ae9afe07af702033",
+        "profile/professional-profile.md": "d6d58578bb40e394"
+      },
+      "generated_hash": "b8dbc9b0a2981a73",
+      "i18n": {
+        "en": {
+          "question": "Is Mohamed open to new opportunities?",
+          "answer": "Yes. Mohamed is open to roles such as **AI Engineer, RAG / LLM Engineer, and Machine Learning Engineer**, and to conversations about AI systems. The best way to start is an email to [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) or a message on LinkedIn.",
+          "paraphrases": [
+            "is he looking for a job",
+            "can we hire him",
+            "is he available for hire",
+            "job opportunity",
+            "collaboration",
+            "would he join our team"
+          ]
+        },
+        "de": {
+          "question": "Ist Mohamed offen für neue Möglichkeiten?",
+          "answer": "Ja. Mohamed ist offen für Rollen als **AI Engineer, RAG-/LLM-Engineer und Machine Learning Engineer** sowie für Gespräche über KI-Systeme. Am besten schreiben Sie ihm eine E-Mail an [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) oder eine Nachricht auf LinkedIn.",
+          "paraphrases": [
+            "sucht er einen job",
+            "können wir ihn einstellen",
+            "ist er verfügbar",
+            "stellenangebot",
+            "zusammenarbeit"
+          ]
+        },
+        "ar": {
+          "question": "هل محمد منفتح على فرص عمل جديدة؟",
+          "answer": "نعم. محمد منفتح على وظائف مثل **مهندس ذكاء اصطناعي، ومهندس RAG/نماذج لغوية، ومهندس تعلّم آلة**، وعلى النقاش حول أنظمة الذكاء الاصطناعي. أفضل طريقة للبدء هي مراسلته على [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) أو عبر لينكدإن.",
+          "paraphrases": [
+            "هل يبحث عن عمل",
+            "هل يمكننا توظيفه",
+            "هل هو متاح للتوظيف",
+            "فرصة عمل",
+            "التعاون معه"
+          ]
+        }
+      }
+    },
+    {
+      "id": "salary-availability",
+      "category": "contact",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "related": [
+        "contact",
+        "open-to-roles",
+        "see-code"
+      ],
+      "source_files": {
+        "contact/contact.md": "ae9afe07af702033"
+      },
+      "generated_hash": "383f3f8c984bae71",
+      "i18n": {
+        "en": {
+          "question": "What are Mohamed's salary expectations and notice period?",
+          "answer": "Salary expectations, notice period, availability dates, and work-permit details are **not covered here**. Please ask Mohamed directly at [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) — he'll be glad to discuss them.",
+          "paraphrases": [
+            "salary",
+            "expected salary",
+            "notice period",
+            "when can he start",
+            "availability date",
+            "work permit or visa"
+          ]
+        },
+        "de": {
+          "question": "Welche Gehaltsvorstellung und Kündigungsfrist hat Mohamed?",
+          "answer": "Gehaltsvorstellung, Kündigungsfrist, Verfügbarkeit und Fragen zur Arbeitserlaubnis werden **hier nicht behandelt**. Bitte fragen Sie Mohamed direkt unter [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de) – er bespricht das gern mit Ihnen.",
+          "paraphrases": [
+            "gehalt",
+            "gehaltsvorstellung",
+            "kündigungsfrist",
+            "wann kann er anfangen",
+            "arbeitserlaubnis oder visum"
+          ]
+        },
+        "ar": {
+          "question": "ما هي توقعات محمد للراتب وفترة الإشعار؟",
+          "answer": "توقعات الراتب وفترة الإشعار وموعد التوفر وتفاصيل تصريح العمل **غير مذكورة هنا**. يُرجى سؤال محمد مباشرة عبر [mohamed.megahed@web.de](mailto:mohamed.megahed@web.de)، وسيسعده مناقشتها معك.",
+          "paraphrases": [
+            "الراتب",
+            "الراتب المتوقع",
+            "فترة الإشعار",
+            "متى يمكنه البدء",
+            "تصريح العمل أو التأشيرة"
+          ]
+        }
+      }
+    },
+    {
+      "id": "see-code",
+      "category": "contact",
+      "status": "draft",
+      "sources": [
+        {
+          "label": "MR.Multi.RAG-Moodle — GitHub",
+          "href": "https://github.com/mmm-megahed/MR.Multi.RAG-Moodle"
+        },
+        {
+          "label": "MedEntity_NER_spaCy — GitHub",
+          "href": "https://github.com/mmm-megahed/MedEntity_NER_spaCy"
+        }
+      ],
+      "related": [
+        "medentity-accuracy",
+        "projects-overview",
+        "contact"
+      ],
+      "source_files": {
+        "contact/contact.md": "ae9afe07af702033",
+        "projects/multimodal-rag-moodle.md": "5125a6cda137a975",
+        "projects/medentity-ner-spacy.md": "8f758e8ce346d142"
+      },
+      "generated_hash": "3261ee0d421be172",
+      "i18n": {
+        "en": {
+          "question": "Where can I see Mohamed's code?",
+          "answer": "On GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). The most relevant public repositories are the **multimodal RAG system for Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) and the **spaCy NER project** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). His work at Prolumios is commercial and not published here.",
+          "paraphrases": [
+            "github",
+            "source code",
+            "show me his repositories",
+            "code samples",
+            "open source work",
+            "github profile"
+          ]
+        },
+        "de": {
+          "question": "Wo kann ich Mohameds Code sehen?",
+          "answer": "Auf GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). Die wichtigsten öffentlichen Repositories sind das **multimodale RAG-System für Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) und das **spaCy-NER-Projekt** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). Seine Arbeit bei Prolumios ist kommerziell und hier nicht veröffentlicht.",
+          "paraphrases": [
+            "github",
+            "quellcode",
+            "zeig mir seine repositories",
+            "codebeispiele",
+            "github profil"
+          ]
+        },
+        "ar": {
+          "question": "أين يمكنني رؤية أكواد محمد؟",
+          "answer": "على GitHub: [github.com/mmm-megahed](https://github.com/mmm-megahed). أهم المستودعات العامة هي **نظام RAG متعدد الوسائط لمنصة Moodle** ([MR.Multi.RAG-Moodle](https://github.com/mmm-megahed/MR.Multi.RAG-Moodle)) و**مشروع spaCy للتعرّف على الكيانات** ([MedEntity_NER_spaCy](https://github.com/mmm-megahed/MedEntity_NER_spaCy)). أما عمله في Prolumios فهو تجاري وغير منشور هنا.",
+          "paraphrases": [
+            "GitHub",
+            "الكود المصدري",
+            "اعرض مستودعاته",
+            "أمثلة على الكود",
+            "حسابه على GitHub"
+          ]
+        }
+      }
+    }
+  ]
+}

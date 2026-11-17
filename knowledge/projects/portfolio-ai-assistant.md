@@ -1,30 +1,26 @@
 ---
-title: Portfolio AI Assistant — RAG Chatbot with Google Gemini
-source_label: Portfolio AI Assistant — Technical Documentation
+title: Portfolio Assistant — Offline-Generated, Human-Reviewed Q&A
+source_label: Portfolio Assistant — Technical Documentation
 category: projects
 ---
 
 # Overview
 
-The AI assistant on Mohamed's portfolio website is a personal project he built. It is a Retrieval-Augmented Generation (RAG) chatbot that answers visitor questions about his background using a version-controlled knowledge base, and shows the sources it used.
+The assistant on Mohamed's portfolio website is a personal project. It answers visitor questions with curated, prepared answers in English, German, and Arabic — not with a live chatbot. The website is fully static and hosted on GitHub Pages.
 
 Type: personal project.
 
-# Architecture
+# Why no live RAG chatbot
 
-Ingestion pipeline (offline, separate from chat): documents (Markdown, PDF, GitHub READMEs) → text extraction → cleaning → heading-aware chunking with configurable size and overlap → metadata enrichment (title, category, heading path, source label, URL) → Gemini embeddings → PostgreSQL with pgvector.
+Mohamed first built a live RAG chatbot (FastAPI, Gemini, PostgreSQL/pgvector) and then deliberately replaced it. For a small, well-known knowledge base a live model adds hallucination risk, hosting, API cost, abuse surface, and privacy questions without adding much value. Prepared answers that a human reviewed are faster, cheaper, and always accurate.
 
-Query pipeline: visitor question → query processing (including the previous question for follow-ups) → query embedding → hybrid retrieval (pgvector cosine similarity + PostgreSQL full-text search, merged with reciprocal rank fusion) → relevance threshold and metadata filtering → numbered context → Google Gemini → streamed, grounded answer with source citations.
+# How it works
 
-# Engineering details
+- Offline generation: a Python tool sends the version-controlled Markdown knowledge base to the Google Gemini API with structured output. It drafts English questions and answers with sources, translates them into German and Arabic, writes native paraphrases in each language, and creates test questions for the matcher.
+- Human review: every item has a status (draft, approved, needs-review). Only approved items are published. When a knowledge file changes, items based on it are regenerated if untouched, or flagged for review if Mohamed edited or approved them — human edits are never overwritten.
+- In the browser: visitors click suggested questions or type their own. A lightweight multilingual matcher (language detection, normalization, light stemming, fuzzy token matching, IDF-weighted coverage) finds the closest prepared question. If nothing is close enough, the assistant invites the visitor to email Mohamed, with the question pre-filled.
+- Quality gates: Python and Vitest tests, a validation step that blocks the build on missing translations, broken links, or empty answers, and a threshold test set of matching and off-topic questions.
 
-- Backend: Python, FastAPI, official Google Gen AI SDK, psycopg with pgvector.
-- Streaming answers over Server-Sent Events.
-- Incremental, deduplicated ingestion using content hashes; an ingestion CLI supports adding, updating, removing, and re-indexing documents.
-- Only sources the model actually cited are shown to the visitor.
-- Retrieved documents and visitor messages are treated as untrusted data (prompt-injection resistance).
-- Rate limiting per client, request-size limits, CORS restrictions, timeouts, and a daily request budget protect the public endpoint.
-- Conversations are kept in memory for a limited time; visitors do not register and no personal data is stored.
-- Tests use fake model clients; an evaluation dataset measures retrieval hit rate, MRR, and answer faithfulness.
-- Frontend: React, TypeScript, Vite, Tailwind CSS, deployed on GitHub Pages. The backend is deployed separately.
-- Supports answers in English, German, and Arabic.
+# Technologies
+
+Python, Google Gemini API (structured output), Pydantic, React, TypeScript, Vite, Tailwind CSS, Vitest, GitHub Actions, GitHub Pages.

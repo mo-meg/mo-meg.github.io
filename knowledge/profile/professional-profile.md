@@ -37,4 +37,4 @@ Mohamed positions himself as an AI Engineer who specializes in RAG, LLM systems,
 
 - Professional work: AI Engineer at Prolumios (AI integration into CRM systems, meeting intelligence).
 - Academic research: research internship at FernUniversität in Hagen (cloud-based information extraction with spaCy NER), and the Multimodal RAG for Moodle research project.
-- Personal project: the AI assistant on his portfolio website.
+- Personal project: the portfolio website and its curated Q&A assistant.

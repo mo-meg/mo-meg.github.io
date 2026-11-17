@@ -54,11 +54,11 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
-      - name: Build
+      - run: npm test            # matcher, language detection, threshold sweep, qa.json validation
+      - name: Build              # validates qa.json first; publishes approved Q&A items only
         run: npm run build
         env:
-          # Set the repository variable CHAT_API_URL to your deployed backend to enable the assistant.
-          VITE_CHAT_API_URL: ${{ vars.CHAT_API_URL }}
+          QA_INCLUDE_DRAFTS: "false"
 
       - name: SPA fallback + custom domain
         run: |

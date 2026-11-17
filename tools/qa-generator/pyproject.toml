@@ -1,0 +1,34 @@
+[project]
+name = "qa-generator"
+version = "0.1.0"
+description = "Offline generator for the portfolio's curated multilingual Q&A"
+authors = [
+    { name = "mo-meg", email = "mohamed.megahed@web.de" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=3.4.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.14.3",
+    "pyyaml>=6.0.3",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]  # long prompt strings; formatting is handled by `ruff format`
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
